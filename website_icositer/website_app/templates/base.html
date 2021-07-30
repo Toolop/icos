@@ -22,6 +22,7 @@
 		<!-- Styling and icon -->
 		<link rel="stylesheet" href="{% static 'base.css' %}">
 		{% block style %}{% endblock style %}
+		<link rel="stylesheet" href="{% static 'mainfont.css' %}">
         <script src="https://kit.fontawesome.com/05d609b6c5.js" crossorigin="anonymous"></script> 
 		<link rel = "icon" href = "{% static 'home/asset/logo.png' %}" type = "image/x-icon">
         
@@ -31,6 +32,8 @@
     <body>
     	<!-- TOP-NAVBAR -->
 	    <div class="header">
+		  <div class="panjanggaris">
+			  <div class="isilogo"></div>
 		  <div class="kumpulangaris">
 			<div class="garis1"></div>
 			<div class="garis1"></div>
@@ -38,6 +41,8 @@
 			<div class="garis1"></div>
 			<div class="garis1"></div>
 		  </div>
+		  <div class="tulisan-navbar"></div>
+		</div>
 	      <nav class="navbar navbar-expand-lg fixed-top">
 	        <a class="navbar-brand" href= "{% url 'home' %}" >
 				<img src="{% static 'home/asset/logowhite.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -51,7 +56,7 @@
 	              <a class="nav-link home" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
 	            </li>
 				<li class="nav-item">
-					<a class="nav-link about" href="">News</a>
+					<a class="nav-link" href="">News</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link event dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,7 +69,7 @@
 						<a class="nav-link" href="{% url 'virtualex' %}">Virtual Exibition</a>
 					</div>
 					<li class="nav-item">
-						<a class="nav-link about" href="{% url 'about' %}">About</a>
+						<a class="nav-link about" href="{% url 'about' %}">More Info</a>
 					</li>
 				</li>
 	          </ul>
@@ -72,8 +77,10 @@
 	      </nav>
 	    </div>
 	    <!-- TOP-NAVBAR -->
+		<div class="contentsemua">
 	    {% block isi %}
 	    {% endblock isi %}
+		</div>
 	    <!-- Footer -->
 		<!-- Footer -->
 		<footer class="page-footer font-small bg-light">

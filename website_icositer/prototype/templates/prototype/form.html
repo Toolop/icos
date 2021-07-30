@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}Prototype Registrations{% endblock title %}
 
-{% block title %}Perlombaan Poster{% endblock title %}
-
-{% block style %}<link rel="stylesheet" href="{% static 'poster/form.css' %}">{% endblock style %}
-
+{% block style %}<link rel="stylesheet" href="{% static 'prototype/form.css' %}">{% endblock style %}
 
 <body>
   <div class="main-wrapper">
@@ -24,23 +22,106 @@
 </div>
 
   <div class="judul">
-    <h1>Daftar Perlombaan Prototype</h1>
-    <div class="garisbawah"></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolore quia fugiat cupiditate aut iusto necessitatibus non asperiores officia dolores ullam eaque tenetur laudantium illum modi obcaecati, excepturi natus repellendus.
-    <form method="POST">
-      {% csrf_token %}
-        <table>
-          {{akun_form.as_table}}
-        </table>
-      <button type="Submit">Kirim</button>
-    </form>
-      
+    <h1>PROTOTYPE REGISTRATIONS</h1>
+    <div class="garisbawah"></div>      
+      <div class="form-v9">
+        <div class="page-content">
+          <div class="form-v9-content">
+            <form class="form-detail" action="#" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" name='nama_ketua' required/>
+                    <label for="name" class="form-label">Name</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" name='email' required/>
+                    <label for="name" class="form-label">Email</label>
+                </div>
+
+                <!-- <div class="form-row">
+                  <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                </div> -->
+              </div>
+              
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="number" name="no_telepon" value="" required />
+                    <label for="phone" class="form-label">Phone Number</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" name='prodi_ketua' required/>
+                    <label for="name" class="form-label">Prodi Ketua</label>
+                </div>
+              </div>
+              
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" name='instansi' required/>
+                    <label for="name" class="form-label">Instansi</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" name='subtema' required/>
+                    <label for="name" class="form-label">Subtema</label>
+                </div>
+              </div>
+
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" name='nama_anggota1' required/>
+                    <label for="name" class="form-label">Nama Anggota</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" name='prodi_anggota1' required/>
+                    <label for="name" class="form-label">Prodi Anggota</label>
+                </div>
+              </div>
+              
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" name='nama_anggota2' required/>
+                    <label for="name" class="form-label">Nama Anggota</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" name='prodi_anggota2' required/>
+                    <label for="name" class="form-label">Prodi Anggota</label>
+                </div>
+              </div>
+
+              <div class="upload-btn-wrapper form-row">
+                    <button class="btn">Upload a file</button>
+                    <input type="file" id="actual-btn" name='file_pdf' />
+                    <label for="name" class="form-label">File PDF</label>
+                    <span id="file-chosen">No file chosen</span>
+                    <!-- {{ form.file_pdf }} -->
+              </div>
+
+              <!-- <div class="form-group">
+                    
+                    <input type="file" id="actual-btn" hidden/>
+                    <button for="actual-btn" class="label-upload">Choose File</button>
+                    <span id="file-chosen">No file chosen</span>
+
+              </div> -->
+              <div class="form-row-last">
+                <input type="submit" class="regist" value="Register">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <script type="text/javascript">
+    const actualBtn = document.getElementById('actual-btn');
 
+    const fileChosen = document.getElementById('file-chosen');
 
-  
-  
+    actualBtn.addEventListener('change', function(){
+      fileChosen.textContent = this.files[0].name
+    })
+  </script>
 {% endblock isi %}
 </body>
+

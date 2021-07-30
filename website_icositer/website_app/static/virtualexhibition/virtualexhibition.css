@@ -93,6 +93,9 @@ p{
     .isi{
         display: block;
     }
+    .viwes{
+        width:80%;
+    }
 }
 @media(max-width:600px){
     .line{
@@ -110,13 +113,13 @@ p{
     position: relative;
     margin: 0 auto;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1115px) {
     .kotak{
         width: 50%;
         height: 300px;
     }
     .viwes{
-        width:10%;
+        width:80%;
     }
  }
 
@@ -130,7 +133,7 @@ p{
 }
 .viwes{
     float: right;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-right: 10%;
 }
 .tombol{

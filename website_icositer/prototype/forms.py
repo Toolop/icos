@@ -11,7 +11,10 @@ class PROTOTYPEForm(forms.ModelForm):
 			'no_telepon',
 			'instansi',
 			'prodi_ketua',
-			'nama_anggota',
-			'prodi_anggota',
+			'nama_anggota1',
+			'prodi_anggota1',
+			'nama_anggota2',
+			'prodi_anggota2',
 			'subtema',
+			'file_pdf',
 		]

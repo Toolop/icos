@@ -11,13 +11,13 @@
   <div class="main-wrapper">
 {% block isi %}
 
-  <div class="leftline">
+  <div class="circuits leftline">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
   </div>
-  <div class="rightline">
+  <div class="circuits rightline">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
@@ -25,7 +25,7 @@
   </div>
 
   <div class="judul">
-    <div class="bulet">
+    <div class="circuits bulet">
       <img src="{% static 'about/asset/circuit.png' %}">
     </div>
     <h1>ICoSITeR 2021</h1>
@@ -44,7 +44,7 @@
     </div>
     <img id="kebalik" src="{% static 'about/asset/kota.png' %}">
   </div>
-  <div class="circuit2">
+  <div class="circuits circuit2">
       <img src="{% static 'about/asset/circuit2.png' %}" alt="">
   </div>
 
@@ -58,35 +58,35 @@
         <image id="image0" width="351" height="308" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV8AAAE0CAYAAACLhjAYAAABgmlDQ1BzUkdCIElFQzYxOTY2LTIuMQAAKJF1kc8rRFEUxz8zaMRMIywsLCYNpWY0qImNxYihsJgZZbCZefNLzY/XeyPJVtlOUWLj14K/gK2yVopIyU5ZExum5zyjRjLndu753O+953TvuWCNZJWcXu+DXL6ohYIB11x03mV7wkYLDnppjSm6Oh0ej1DT3m+xmPHaa9aqfe5fa04kdQUsjcIjiqoVhSeEp1aKqslbwu1KJpYQPhH2aHJB4RtTj1f42eR0hT9N1iKhUbC2CLvSvzj+i5WMlhOWl+POZZeVn/uYL7En87NhiV3ineiECBLAxSRjjOKnn2GZ/XgZoE9W1Mj3fefPUJBcRWaVVTSWSJOhiEfUZamelJgSPSkjy6rZ/7991VODA5Xq9gA0PBrGazfYNqFcMoyPA8MoH0LdA5znq/mFfRh6E71U1dx74FyH04uqFt+Gsw3ouFdjWuxbqhO3plLwcgyOKLRdQdNCpWc/+xzdQWRNvuoSdnahR847F78AYu1n5Al0nJwAAAAJcEhZcwAALiMAAC4jAXilP3YAACAASURBVHic7Z1nuF1V1bbvTUggEHovAkYJHYJKE+nygkFFmhUFFQSx0HxFBAsKonQsNBVBREUQC4gNaQoiIEVK6AEpQgBBIBBK8nw/1vYz73HHeMYc66xdnvu61s9znrGePcfca8815xhgjDHGGGOMMcYYY4wxxhhjjDHGGNNLtJoOYFAQTASWazoOY+bAQy24sekgBgFPviOAYHHgLmDhpmMxZg48CazcgieaDqTfmavpAAaEw/DEa3qDRajGq6kZP/nWjGAtqp9x/qIzvcIMYGILbmk6kH7GE0KNqPpyOwH7bHqLUcAJ8sNZrXhSqJftgS2bDsKYAFsBb206iH7G32w1IZgXuBUY33QsxgS5F1i9BS80HUg/4iff+tgPT7ymtxlPNY5NDfjJtwYEywB3AuOajsWYQp6l2nr2SNOB9Bt+8q2HL+GJ1/QH46jGs0nGT77JCNYDrmk6DmOSWb8F1zYdRD/hJ99E2ltzvtp0HMbUwIneepaLJ99c3g1s2HQQxtTARsC7mg6in/A3WRKC+YE7cPEc0788CKzagmlNB9IP+Mk3j4PwxGv6m+WBTzYdRL/gJ98EBCsBk6kOVhjTz0ynevq9v+lAeh0/+eZwFJ54zWAwL9V4N4X4ybcQwWbAZUn/bhrwaaqqUsZkMgo4Epgv6f9t1oIrkv6XMcNDMEpwo0BJ1yFN35PpXwSHJo7VG1RN6MaMPII9EwfzFMHYpu/J9C+CsYL7EsfsHk3fkxlABAsLpiYO5J2avifT/wh2ThyzUwULNX1PZsAQHJs4iC+V19/NCCBoCS5LHLvHNH1PZoAQrCJ4KWnwzhCs0/Q9mcFBMFEwM2n8viRYpel7MgOC4BeJTw6nNH0/ZvAQnJo4hi9s+n7MACB4U+KgfUqwRNP3ZAYPwRLt8Zc1lrdt+p5MHyMYLbg9ccC6S4BpDMH+iWN5smB00/dk+hTBfh6spl8QjEl+mNi36XsyfYh/ppl+RDApcUx7Gc3kIzglcZD+oun7MeafCC5KHNsnN30/po8QrKNqS1jG4PTWHNNVCFZV7tbJtZu+J9MHqNqUfmnik8GxTd+TMUMRHJc4xi+RDw3NERs0B1Qd+z0v6d89BkxowVPDjGE0cAOwWlIcpr+YSdXg8oboPxAsDNwFLJ4U004tOD/pf5lBQ1UhkimJTwR7BuP4eGIMvvrzukKFD1OCvRLjmSLXuDZRBIckDsYbFSjBJ1hc8GQXJLev7r92KRzvowQ3Jcbz6ZJ4+h0vO8wGVf3Y7qBqjJnB5i24PBDHN4B9kmIw/c1fqVr8PB/9B4LNgUuT4plGtcz2cNL/6yvcRmj2HEnexHtucOJdC9g7KQbT/6wAfKLkH7SqrixZ7zjmp8oj0wE/+XZAsCHwx6R/Nx1YrQX3DTOGFvA7YIukOMxg8DywSgseiP4DVQ1hbwfmSYppwxb8Kel/9Q1+8h2CKk9OTPyXRw934m3zNjzxmuEzFvhyyT9oj9ejU6KpOFGea8ycELwv8YXDgwosXQjmFdzTBS9wfPXutXFhHowTPJQYz3tL4ulH/G00C4JxFD41DOGgVvXSYbjsB4xPjMMMHkVPmy14FjgoMZ4vt/PLmH9HcETiN/1VCqypC5YVPNsFT06+ev/avTAf5hL8MTGew0vi6Tf8wq2NqifN28h7ybB+C64NxHEGsFtSDGaweZRqq9fT0X8gWJ+8l2UvUL18npL0/3oaLzv8i6PJm3jPCE686+OJ1+SxFIUHHVpwDXBmTjjMQ+6LvJ7GT76AYEuqbV0ZPEv1tPG3YcbQAq6i2uY2XK6j2p9p+pelgV0Df/cisEYL7o4KC5YF7iRv3/uWrbyDHKZXEcwt+EviutangnG8J6j3omDlbF9Md9Fef706OEZ+mqB/cGKO3KTAUXvTZwj2ThxU9yhQTERl23qOqsMX030INigYm28s1J5XcG9iruyV5YvpQQSLCB5PHFBvC8bxxaDeo4IFs30x3Yvgu8Gxcotg7kLtHRJz5XHBIlm+mB5DcELiYLpYsa1lKwmmBzU/WIcvpnsRLKf4VsSPFGq3BL9LzJnjs3wxPYRgdcHLSYNohmDNYBznBjX/LK+bDSSCTwfHzN8FixVqr6XcllpuEDBItL/Bf5X4Df6NYBybFWi+IdsX0xuoWn+dEhw3X0vQPykxd36Z4YnpEQTbJQ6e0NOEqsLVNwY1f1CHL6Z3EOwYHDsvK/grbRbt7AL/k7J8MV2MYIzgzsSB87FgHB8K6j2nqm6rGWBU/Xq7JDiGfqvylkOZra3uEIzJ8sZ0KYIDEwfNraqaWw43hoUFjwU1P1+DLaYHEayt+PrrWwu1RwtuS8ylA7J8MV2IYCnBPxIHzNbBOKJtuh8QzJfti+ldBCcHx9LdKjxOL9gmMZf+IVgyyxfTZQi+mThYfh6MYRVVb3kjmu/M9sT0NoIlFF9//WSC/gWJOXVahiemyxCsK5iZNEjCR3oFvwhq/kGuxWE6INg3OKaeUVUzokR7QjsfMvJqpmBili+mC1D1cuKKxG/o0JFewaSCQfnabF9Mf6Bq/XVycGydnqB/dGJuXe6HjD5C8PbEwRE60qtql8XtQc1v1+GL6R8E2xaM6dcVai/UzousHNslyxfTIIL5BPcnDowPBOPYP6j3tAp/GprBQHBhcIxdWfq0KfhgYo7dr6oRqOllBJ9NHBR/VqAAvaqXIk8FNf+3Dl9M/6Fq/TX6MvddhdqjBNcn5tpnsnwxDSB4hapDCVkDInSkV3BKUO8u5XXXMAOA4JjgWHtAhcXSBZsk5to0wfJZvpgRRnB24mAIHekVTFR8l8Vbsj0x/Y2q9depwfF2WIL+DxNz7nsZnpgRRrBx4iAIHelVtcvisqDmb+S3viaAYM/gmHtesGKh9grt/5OVe6/P8sWMAKparlyXOAA+F4xj56Dey4I1sn0xg4Gq9dcbgmPvhwn6n0/MvWvlRr+9g+D9iR/+XxU40isYK7gvqPnVOnwxg4Ng04Ixv0mh9nyq1pCzcnD3JFtMnQgWFDyS+MGHjvQKDgnqPSFYNNsXM3gIzgmOwetVWKhf8K7EHPybYIEsX0xNCL6c+KGHjvSqavUyLai5Tx2+mMFDsKLi6697FGq32vmTlYtHZvliakDwasELSR92+Eiv4Kyg5s0qbHJozKwIvhAci1MFCxVqv1Z59VReELwqyxeTjOCnid+03wrGsFGB5lbZnpjBRjC/4MHgeDw6Qf/biTn5kwxPTDKCrRM/5KcFSwVimEtwjQeW6SYE7w6OyRcFEwq1l27nU1ZuvjHLF5OAYG7BLYkfcOhIr+B9QT3/pDK1oWr99crg2LwgQf+Tibl5i7w01z0IPpL44YaO9AoWEDwc1PTLBFMrgtcV5MS2hdrzqOqckZWjfindDQgWU9VBOOuDDR3pFXwpqOdtNGZEEJweHKOTFehVOET7rYk56u2Y3YDga4kf6q8V21o2XvFdFrvXYIsx/4aq9ddnguP044XaLVVH5rNy1QeRmkSwpqqjuBkf5suC1YNxnB/U9NFJM6IIDgqO1ScFixdqr5Gcrz6C3wTtb9LfNv1NKtiyQHOjbF+M+U+obP31pAT9zF+qLj7VBOqCNSRVuyz+EtR0uTzTCILtg2N2hmDtQu1F2/mWlbsuuzqSFH57d7pCb08FHw7quVC0aQyV/Wq8pPRpU12wO8kEUe6+wdCR3vY3+ONBTbdIMY2i6n3JjOD43aFQuyv25ZthorI3tp2u0JFewYlBPTcHNF2B4OvBMXyvYN5C7Tcm5rCbzI4Eiu9V7HSFjvQKVlf8ra3bYpuuQGV75A9O0M+sxfLtDE/MbFB1SqfRKkmq1st+HdS8XH47a7oIwUeDY/lZwbKF2l1RhdDMAZWdT+90hY70Ct5cMDjWzfbFmBJUtv56ZoJ+4/W3zRxQF1TGF4xR9XY1onlaHb4YU4rKKgKuX6i9QDsfs3I71HnGzAZVNUkze0LtFozjE0G9fwiWzPbFmCwEPwuO7atVeEpTsHtibj+gQM9FMxsEhyV+ONdEBotgKcXrkh5Qhy/GZKFq/fXF4PjetVB7LlVH7bNy/PNJtgw2ghUU70PV6Qod6RV8M6h3h2BMti/GZCP4SnCMPyQYV6j9+sQcf06wQpYvA4vgh4kfSuhIr+A1iu+y2C7bE2PqQGWdvw9P0D87Mdd/kOHJwCLYJPHDCB3pVbXL4vdBzV/Kb19NDyH4QHCsTxesVKi9vOJdvztdmyTZMlgIRgmuT/wgDg3G8Y6g3kuC1bJ9MaZOVK2/Xhcc8+cm6H8mMeevF4zK8GWgEOyR+CHcp8CRXsF8gr8GNY+vwxdj6kawcUGubV6oPVbVEfys3P9gki2DgWAhwaOJH0DoSK/gs0G9xwSLZPtizEgh+H5w7N9U+rQpeHti7j8qWDDLl75HcHSi+aEjvYJXqHprGtHcuw5fjBkpCsf/XoXaLcEViXPAUVm+9DWCCYrvNxx6zRRMDMbR2De/Md2A4HPBHHhMsHCh9rrKq+PyomDlLF/6FsEFid94pwZjeEOB5hbZnhjTBCp753Fcgv5piXPBzzM86VsE2yaa/ZRgiUAMJW97z6vDF2OaQmW7fVYt1F5S1dH8rDlhmyxf+grBaMHkRKNDR3oF7w/qTRe8MtsXY5pEZfvcL0rQPzBxTrhNMDrDl75C8PFEk0NHelV2wueIOnwxpmlUdsJzUqH2GMGdiXPDx7J86QsEiwueTDQ49IErfrb9YRWebTemmxF8K5gbt0cehIZob5c4NzwpWDzLl55HcFKiuaGfOoKVFd9l8d5sT4zpJlRW1W//Qu2WqqP6WXPEN7J86WkEayveRXXoFV7kV4P1TI3pBRSvZ/2UCutZC1ZTvG/i0GuGYK0sX3qS9jfaJYnfaKEjvSqr5L9Bti/GdCMqW38Nbfscon9C4lzxOw1y0SvBDolmho70quphdWtQ87t1+GJMt6KyHoahA0+zaC8ieDxxznhbli89hWBewb2JRoaONKqse+ty2b4Y082orHv3ZaVPm4K9E+eMewTzZnnTMwgOTjQxdKRXsJjg70HNT9fhizHdjmB1xddfdy7UHtXO96y541NZvvQEgmXbT45ZBm4ejOPrQb0pA/mNaUwbwYnB3AmVdx2ivUXi3PGsYNksX7oewZmJ5oWO9ArWVHyXxY7ZnhjTS6hs/TXU2GCI/o8T55AzEizpfgTrJ5oWOtKrat3q4qDmpRrkt6TGtBF8OJhD01T4vkQwvp3/WXPJelm+dCWqitZcnWhYqGmfYPug3gzBOtm+GNOLqNopdHMwl85K0D8icS75Y18/VAl2TTQr1K5aMI+qt5wRzZPr8MWYXkWwVUEOb1SoPU7V0f6sOeU9Wb50FW2jHko0atdgHAcF9Z5UoESlMf2O4PxgTl2jwtOhgvc2/UDX9QgOTzQpdKRXsIzgmaDmvnX4Ykyvo2r99YVgXu1WqD2X4E+Jc8sXs3zpCgQrKXdxPHSkV3B6UG+yXAfUmNki+FIwt/4mWKBQe8PEueV5wUpJtjSP4NxEc84MxrBegea22Z4Y008IFmhPpJH8OjJB/7uJc8yPMjxpHMHmiaaENkSr2lp2VVDzwjp8MabfEOwWzLEXBOMLtZdT7sGtzbJ8aQTlHwU8OBjHu4N6LwkmZPtiTD+iav31mmCunZ+g/+nEueZG9XIXcsFeiWbcq8CRXsH8ggeDmsfU4Ysx/Ypgo4Ic36pQe15VR/+z5pwPZfkyoggWVlXmMcuI0JFewWFBvamChbJ9MabfEZwVzLmbBXMXau+UOOdMFSyc5cuIITgu0YRLFDh9IlhR1dvLiOaedfhiTL+jav11WjDv9inUbqkqAZA19xyb5cuIIFhV1Xppxs3PEKwdjOOcoOYN6uX1HmMaRnBoMPceFyxaqL2OcluTrZLlS+0ILkr85jkpGMOmBZqbZntizCAhGKuqfGQk/05M0D85cQ76RYYntSOYlHjToTbPqnZZ3BDUPKcOX4wZNAQ7B3PwZcHqhdpLqGrcmTUXTcrypRZUNdi7I/GGQ0d6BXsG9Z4XrJjtizGDiKr118uCufgblbcc2i9xLrpd3XzKVbB/4s2GjvQKFlL1ljKi+YU6fDFmUBFMVNU8M5KPbynUHt2eR7LmpP2yfElFsKRyH/O3CcZxTFDvQcH82b4YM+gITg3m5F2CMYXa2ybOSU+pGysbFhjc6bogGMMqiu+yeHe2J8YYStdfP5Ggf2Hi3HRKhidpqOynxdDrRQWP9BaYfKX6uYq9MQ2j+JLk04KlCrUnFDyUDb1mCiZm+VKEqkX1yxO/WUJHelX28+J12b4YY/6Fqpfxtwfz81sJ+scmzlGXdcXDmuLbSTpdoSO9KltY/04dvhhj/i+Kb0OdKXhNofbCir+I73TtlOVL9IZKNlJ3uvYIxrFvUO8ZwTLZvhhjOqP4Aazflz5tKr4FtdM1RTA2y5fIzUSPEHa6rlfgSK/KFvMPqsMXY0xnVFZ64B2F2iWHrzpdh2T5MtwbWV7x4hmdrk2CcUSPEd4tmCfbF2PMf0bxolt/FcxXqF1SdmDoNU2wXJYvw7mJ7yXeROhIr2BtxQtobJ/tiTFmzqis3OznEvR/lDh3nZXhyXCCLymYPPQKHelVtcvikqDmxeqGt5XGDCiKN1p4TvCKQu2VFC812+naMMuXOQVe0iqk03VYMI4dg3ozBGtm+2KM+e9RWYux7yfofyFxDvuTYK4MX+YU9G6JQT+gwJFelbUL+XodvhhjhofKmuu+oVC7pL1Yp+t9Wb7MLuCS9tCdrncF44g2yvu7YLFsX4wxMQTnBnP5z6VPm4o31u10PSxYIMuXTsEemRhs6EivYFnFW0R/tA5fjDExVK2/Tg/m8wcKtVuCqxLntC9l+TI00PGCFxIDDR3pFZwZ1LtVhc35jDH5CA4P5vSjggULtddLnNOmC8Zn+TJrkOcnBnl6MIYNCjS3zvbEGFOOYJzgoWBefyVB/zuJc9uPMzyZNbitEoN7RrB0IIa5BFcHNX+WaogxJhXBrsHcflGwcqH2Mu15KWuO2zLLlLkFNycG9slgHO8t+HBenWKGMaYW2g9Xf2zq4UpwUOIc9xdlLHEK9kkMKnSkV9XPkoeDmsU/S4wx9SNYv2Bu+Z9C7XkE9yTOdR8uNWNRweOJAYWO9AqOCOo9osIFeWPMyKEGX6gL3pY41z0uWKQkmBMTg/mtYlvLXqmGtqIYY0YWNbiVVNXWs4sT57wTooGsLng5KYiXFTzSKzgvqHmdRuLInzEmFcHBwZwvPkQlWFPxYl2d5r3VhxtAS/CbxG+ArwWN2KJAc+OIpjGmWVSVD7g3mPfF5QMEX0+c+36t4fziF7wlUTz0baRql0VjhTeMMc0h2CGY+zMEaxVqL9aet7LmwDd30unmn+XjgbWDf+t9vcb0NhcDzwX+bi5mM9n1BKqWHX6dOPNHlx3OCOrdJhid7YsxZmRQfIfT31RY4Ea5yw6/0nA3GqgLXrip7OTJx4erZ4xpHlV1ZKI7nHYv1F5LuS/cVosGkrnVLNQ9QvCpoN6TgsVDN26MaQzBj4M5f60KllJV/eL/XeKcF9tq1g5mETV8yELVm8/oyZOTwjdvjBlxBFsWzC8bFWp3zyGLdkDdcLy45M1n9KWdMWYEUbXD6S/BXD+7ULu7jhfPYkijhXVU9nPgErlZpjFdj2DvYI5PEyxfqN19hXXagXVDScmShfAdUowwxtSCypY4P1Oo3Z0lJWcJsBuKqX8jqHevYN5UQ4wxaQhOCOb2/YKxhdrfSZzbcouptwPMbiO0XiCGkpMnB6ebYowpRmXbWncp1O7+NkLtQLuhgebHgnrPCpatwxdjTAxV73N+FczpKyJzyBDt7m+g2Q628dbxgtGqTrBF9M6owRZjTBDBdsFcnilYt1C7d1rHtwPeLTHgBwTzB2LYpkBz/Tp8McYMD8EYwZ3BPD6tUHt+wYOJc9n7snz5T0HPJbgmMejDgnH8PKh3tbq7oJAxA4HgwGAO/0OwZKH2FxLnsD+N2Jwi2Cgx8OcFKwZiWFlVc8yI5q51+GKM+e8QLNWeRCP5e0Ch9krteSdrDtswy5f/9gbOSgz+nGAMRwX1HhKMy/bEGPPfIfhmMHfvEIwp1P5R4tz13SxPhnMDy6k6WZJ1E5sGYlhQ8GhQ74t1+GKM+c8I1lX1wiySt9sVam+WOGdNEyyX5ctwb+TQxBu5XjAqEMMHg3rTBSvVYIsxZjao2t51RTBnf6myrWWjBDckzlmHZHoz3JsZK7gv8Wb2CMQwSvDnoN65dfhijOmM4O3BXH1J0dq4/9LeM3GumqLCk3XFCHZOvKGpgoUCMbyhQHPzGmwxxgxBMJ+q48CRPD2+UHvh9vySNVftlOVLyU21BJcl3tQxwTh+ENS7UYHlDmPM8BB8Npijj6mwNq7g2MQ56lJ1S6VEwUTFF9CHXi8JJgRiWEHwXFDzQ3X4YoypELyiID/3LtRepT2vZMxPMwTrZPmSguDUxG+WC4IxfD6o95hg4WxPjDEVgrODuXmTCn+ZCi5MnJtOyfIkDcESgqcSb3LbQAzzqTqyHNE7rg5fjBl0BBsXzANbFGq/KXFOekqwRJYvqQj2T7zRyQq0fxe8M6j3kmDVOnwxZlBRVY7gumBOnleoPVpwe+KctF+WL+moKpSRebP7BmJoCf4Q1LuoDl+MGVQE7w/m4nTBKwu192v6YXBEEUxKvOFQ+3fBaxV/ATipDl+MGTRUnUB9JJiHRxRqZy+DvinLl1oRXJR406H274JvB/VuV+HZcWMMCL4czMGHVVh7RXBy4hz0iyxPakewqnK3dgy7/btgacHTQc396/DFmEFB8GrF2469t1B7HcWb7Q69XhKskuXLiCA4LvGbJ9T+XfC/Qb2nVFgv1JhBRvDTYO4V1dtW9c7n0sS559hMX0YEVcf5Hks0YcdADPMI7grqnVqHL8b0O4KtC/J8g0LtnRLnnKnq1f3/gg8lGjFFgfbvgrcE9WYKJtbhizH9imBuwS3BnCuqjauq0NeUxDlnzyxfRhxVFcduTDTj04EYWoLfBPUuU7ec4TamBxB8JJhrz6qwNq7gkMS5pvdrvgg2TzQk1P5dsIbg5aDmznX4Yky/IVhM8PeRerAaor1ce37Imms2y/KlUQTnJppyZjCGrwb17lPTdTuN6QEEXwvm2BQFlhSHaH83cY75UZYnjaOqYd30RHOGvSgvWFTwRFDv0Dp8MaZfEKyp+K/LYb9MH6K9YeLc8rz6rcON4IuJBoW2owj2Ceo116vJmC5H1XuV3wZz61KVtQaaS1Xr9qy55QuZ3nQFgnGqugZnmTTsjdiq3sTeHNQ7qw5fjOl1BG8N5lRxbVzB+xLnlAcF82f50lUIdk00KtT+XbBVgeZGdfhiTK+iai/93cF8OrlQe5yqo8hZc8p7snzpOlT9RPhjolmHB+P4SVDvGhWcvjGm3xB8MphLT6qwNq7giMS55Cr1+7ZSwfqJhoXKzglepfi5893q8MWYXkNV/ZRngnk07HKxQ7THK/cl/npZvnQ1gjMSTQsVXBYcGdT7m2CBbE+M6TUEpwdzqLg2ruDHiXPId7I86XoEyyp3Q/TmgRgWaE+kEb0v1WCLMT2D4HUF+TrsFmFDtLdInDueESyT5UtPIDg40cBQkz3B7kG9FwTj6/DFmG5H1dayK4O5c2Gh9tztfM+aOz6V5UvPIJhXcG+iiXsFYphLcG1Q7/w6fDGm2xG8K5gzLwkmFGrvnThn3KPCk3U9i2CHRCMfFywSiGGjAs2t6vDFmG5FML/iHcKPKdRepJ3nWXPG27J86TlU/Xz5XaKZxwfj+F5Q72bB3Nm+GNOtCA4L5spUwUKF2ickzhUXq9+3ls0JwVrKbfmxWiCG5VUdIY5ofrgOX4zpNgQrqqp9EMmTotq4gtUVrx0x9JohWDPLl55GcFLiN9ovgzF8Jqj3uGDRbE+M6TYEPwzmyA0qqI2r6hfyrxLniG9k+tLTCBZXdeIly9xht39XVQX//qDeiXX4Yky3INikIB83LdTeLnFu+LtgsSxf+gLBxxMNvkOB9u+CXYJ6LwtWr8MXY5pGVUea64O5cU6h9hjBnYlzw8eyfOkbBKMFtyWafEAghpbg8qDerzXoC/imLxHsEcyJ5wUrFmofmDgn3KrCk3V9i2CbRKP/oUD7d8FEVc0zI5pvrsMXY5pCsJCqnQqRfCiqjStYqp3HWXPC1lm+9CWCCxLNPi0Yw2lBvbsUWO4wplsRHB3MheLauIJvJs4FP8/ypG8RTBC8mGR4qP27YMmCb9xP1OGLMSNNYS6+u1B7XcV/gQ69XhSsnOVLX1PwbdvpulyBtVjBAUG9pwVL1eGLMSOJ4r9Cr4zk3Cy6LcEViXPAUZm+9DWq1pkeTTR/l0AMY1TtmojofasOX4wZKQTbFuTb6wq1356Y+48KFszyZSAQfDDxA7hfgfbvgklBvZmC19ThizF1o2rn0eTg2P9OofZ8iu+373R9IMuXgUHV3sI/J34InwnGcVFQ7/fy1jPTgyi+5764Nq7gs4k5f53c9iuGyk7VDL2mCZYPxLCqqpoREc131OGLMXWhstOmBxVqv0LwXGLOvyHLl4FE8fPkna7vBWM4Pqj3V8F82Z4YUxeK11m5WzBPofbZibn+gyxPBhbBCopXUup0vT4QwyKCx4J6n6vDF2OyEayteIXB7Qu1N07M8ecEK2T5MtAIPp/4wVyrwDqQYK+CgfCKOnwxJgtV27suCY7xotq4qjrKXJeY437gyULVG9Bo9fxO1+6BGEYp3jvq+zXYYkwagh2DY7u4Nq7g/Ym57aW+bBTvG9XpCrV/F2xeoOnFf9OVqKyf4tcLtRcUPJKY2+/M8sW0UfWz6A+JH9KRwTjOC+r9Wd72YroQxTuJF9fGFXw5Maf/IG/vrAfBa5V33vsFwasCMbxSMD2o6Q3fpqsQLCt44XlGyAAACo5JREFUNjieP1qo/ep2Hmbk80zBa7N8MR0QfDvxm/InwRgOD+o9Ih91NF2E4MzgWL5Fhc1jBT9NzGUf6a8bwdKqitdkfWhvDMQwTvBQUO8rdfhizHARrF+QN0W1cQVbJ+awi1mNFIJPJn5woW9wwXuDei5vZxpH1fauq4Nj+GeF2nO38y4rh/83yxczBwTzqDpRk/Xh7ROIobHBa0wpgl0LHh5eXaj9kcTcvUuFJ+vMMBG8NfEDfEKB9u+CDQo03dLENIIaXDYTLKZql0RW7r4lyxfzX6Jq69lvEj/ErwbjiL6wuFWFLyyMiaAGXxgLvpaYs25a2xSCNVS1bc/4IF8WrBGIobGtOsYMFzW4VVKwZnK+rp7liwkg+GriN+lvIt+kanCTujHDQXBucKwW1cZV9Uv14sRcPTHTFxNAsKiqNdusD/WtgRgaO55pzH+Lyo7Hb1yovX1ijobe0ZgaUBe8PVWDhUmMmRNqsDCUumB3kqkJdcG+QTVYks+YOaEGS6Iqd1/+zfKL6u5CsFXiB/y0YOlADI0VozZmdqhqBvB4cFx+rlB7aVW93bJyc6ssX0wigp8kfsjfDsYQbcNyj7xZ3NSAGmyDJTg9MSfPz/LEJCN4lRqukqQGGxAaMxQ12ABW8LrEifcFwfgsX0wNqAvqgwr2DeoVt942ZlYEFwXH4u8jY38W3ZbgysRcDNXfNiOIYAFVnSqyPvRhV8YXjBZMDuqdXocvZvAQTAqOwZmC1xRqN955xjSAYPfED/4BBda9BNsUaK5Xhy9mcBCMEdwRHH9FtXEF8yu35+JuWb6YmlFVcezaxA//88E4LgjqXSVvPTMFCA4Ijr3i2riCwxJz7xq5/VZvIXh94gB4XrBCIIYJqkrwRTTfXYcvpv8RLCn4R3DcfaJQe8V2vmTl3kZZvpgRRHB24iD4QTCGY4J6Dwrmz/bE9D+CU4Nj7k7BmELtHybm3PeyPDEjjGB5wbTEwbBJIIaFBFODeofV4YvpXwQTFW8y++ZC7U0Sc22aYPksX0wDCD6TOCCuF4wKxLBHUO95wYp1+GL6D1Xbuy4PjrVfqWxr2ah2fmTl2qGZ3pgGEIwV3J84KD4YiKFkYJ5Thy+m/xDsEhxjxbVxCx4wOl33CcZm+WIapGBQdroeFSwUiKHkJ9mmdfhi+ofCh4yi2rgqW1rrdO2c5YtpGFU/x65IHBxHB+M4J6h3gwLLHWZwEBwaHFuPCxYp1I6+VO50XS5vs+wvBOsq/iJi6BVq/66ybTh71OGL6X1U9mL5w4XaJdsph14zBROzfDFdhOC0xG/onwdjiG5An6rAcofpfwTfC46p4tq4ih8k6nSdmuWJ6TJUtvm807VNIIaSo5fH1OGL6V1Udphoy0LtbRNz6SnBElm+mC5E8WOXna7bBKMDMUSLjrwkWKUOX0zvobJj9EW1cVVWPKrTtX+WL6ZLUVnBkU7XxwMxlJTbu7AOX0zvoXgBqeLauIqXTe103aHCk3WmRxBslzhwnhQsHoihpND0tnX4YnoHlZVO/VKhdknDgE7XpCxfTJfTfvL8ZeLg+UYwjmiLlckKLHeY/kFwZHDsPKzC2riKt8rqdF2U5YnpEQSrKd5eZeg1Q7BWIIaS5oL71uGL6X5U1i7rfYXaJU1ih14vCVbN8sX0EIo3Fux0XaJYy6FoW22/HR5QFG8U+ycV1MZV9YvxksScOS7TF9NDqGqp/VjiYNohEMM8gruDeifX4YvpXgRbFYzPDQu1d0zMlccEC2f5YnoQwd6JA+pewbyBGLYP6s0QrF2HL6b7EMyt6mBEZKycVag9b3t8Z+XKXlm+mB5FVcWxmxIH1acCMbQEvw3qhZY7TO8h2Cc4RqYJlivUPjgxR26Sa5UYAMEWiQPrWcGygRjWVFXaL6K5Yx2+mO5BsKjgieD4OKRQe9n2uM7Kkc2TbOlp/MTURnAesFPSvzuzBbsHYvga8NGA3nTgycDfmd5hLLE10vuA1VvwfFRYcCaFuyRm4bwW7JL0v3oaT75tBK8EJgPzJP3LDVpwzTBjWAy4i8ISf8bMwi6t6sEihGAD4OqkWF4AVm1VXwgDj1syt2nBFODYxH954nDXYlvwBPDZxBjMYHM58OPoH6uaH4oKrQ/hGE+8/8JPvrMgGAfcCSyT9C93bcHZw4xhbuBGYI2kGMxgMhN4basaSyEEu1K4S2IWHgZWacGzSf+v5/GT7yy0B8ZBif/yqPaEPpwYXgb2S4zBDCbfLJx4xwFfSYznIE+85j+iqkzf1Ylvdr8YjOOniTH4Gqyr+PSj4PDEeP4oP+j9G1526IC64CWD4NXAbbiAjhk+B7Tg+OgfqwtePg8C/jbqQAv+RN5a1zzAUYEY7qYggczAcgfBKnuzcBR5E+93PfF2xk++s0HViaA7gPmT/uXmrert83BiWJDqBeBSSTGY/mdSC34Z/WNVByAuTYplGjChVb1sM0Pwk+9saMFDFBadHsKJGuaRyhY8DRycGIPpby4qnHhHkbu17AhPvCaEqmIiUxJfPHwoEMNcguu64CWOr+6+ivv7CfZKjCdUZMqY/49gp8QBOVWBI6KCjbsguX1191VUG1ewsHLLq7reyBzwmu8cUOXRJeQVAzmuBQcG4jgEV/03nZkJ7NuCp6L/oD15Z3UQvhTYqgVK+n9mUBGso9zWKW7/broGwarKbanlGtMmD8HJiT/JftH0/RjzTwQXJY7tk5q+H9NnCJZQbrvsNzV9T8YIJiWO6ScFizd9T6YPEeyXOFBvl0+vmQYRjGmPw6wx7Y7aph4EowWTEwerC+iYxhDsnziWJ/thwtSKYNvEAev276YRBEu2x1/WWN6m6XsyA4DgwsRBe0rT92MGD8GpiWP4gqbvxwwIggnK3ZqzTtP3ZAYHwUTBzKTx+6JgQtP3ZAYIwbGJTw6XygdezAggaAkuSxy7xzR9T2bAUHUcc2riIM7qnGzMbBHsnDhmpwoWavqezAAi2DNxIE9R1R7cmFoQjBXclzhm92j6nsyAIhgluCFxMB/S9D2Z/kVwaOJYvV7DLJFq/i9eZyxEsCnDLJL+H3iOqn7vjKT/Z8w/GQUcCcyX9P82bcHvk/7XQOLJNwHBj4Bdmo7DmBHiRy14R9NB9DqefBMQrETVcNDFo02/M52qIez9TQfS67iNUALtzsRHNx2HMSPAUZ54c/CTbxKqGm3eQdV405h+5EGqp95pTQfSD/jJN4n2gDyo6TiMqZGDPPHm4SffRFT5eSWwUdOxGJPMVcAb3BooD0++yQjWA65pOg5jklmvBdc1HUQ/4WWHZFpwLXBG03EYk8h3PPHm4yffGhAsA9wJjGs6FmMKeRZYuQWPNB1Iv+En3xpowd+AI5qOw5gEDvfEWw9+8q0JVQcubgXGNx2LMUHuAdZowQtNB9KP+Mm3JlrVSaADm47DmAIO9MRbH37yrZH21rPfAls1HYsxw+Ri4H+8taw+PPnWjGBN4Cb8K8P0DjOAiS24pelA+hlPCDXTHsBukml6iVM88daPn3xHAMFiwF3AIk3HYswceJJqa9kTTQfS73jyHSEEE3HRHdP9PNSCG5sOwhhjjDHGGGOMMcYYY4wxxhhjjDHGdBv/D2vWXy7UyWxtAAAAAElFTkSuQmCC"/>
       </defs>
     </svg>
-
-    <div class="circuit3">
-      <img src="{% static 'about/asset/circuit3.png' %}">
-    </div>
+    
     <!-- organizing committee -->
     <div class="committee-section">
-      <div class="committee-main container row justify-content-center">
-        <a class="committee-main-info col-4" href="#link">
+      <div class="committee-main container">
+        <a class="committee-main-info col-sm" href="javascript:void(0);">
           <div class="committee-main-img">
             <svg class="committee-img-svg" viewBox="0 0 228 201">
               <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
             </svg>
-            <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+            <img class="committee-img" src="{% static 'about/asset/panitia/PakMitra-KetuplakDF.jpg' %}">
           </div>
           <div class="committee-main-info-text">
             <h3>
-              Chariman
+              Chairman
             </h3>
             <p>
-              Lorem Ipsum
+              Prof. Dr.-Ing. Drs. Ir. Mitra Djamal, IPU.
             </p>
           </div>
         </a>
-        <h1 class="col-4">organizing committee</h1>
+        <h1 class="col-sm">organizing committee</h1>
+        <div class="circuits circuit3">
+          <img src="{% static 'about/asset/circuit3.png' %}">
+        </div>
       </div>
       <div class="committee-tree container">
         <div class="committee-tree-section">
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -98,11 +98,11 @@
                   Vice Chairman
                 </h3>
                 <p>
-                  Lorem Ipsum
+                  Dr. Abdul Rajak, M.Sc.
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -111,14 +111,14 @@
               </div>
               <div class="committee-info-text">
                 <h3>
-                  Vice Chairman
+                  Secretary
                 </h3>
                 <p>
-                  Lorem Ipsum
+                  Goldie Melinda Wijayanti., ST., MT
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -127,16 +127,16 @@
               </div>
               <div class="committee-info-text">
                 <h3>
-                  Vice Chairman
+                  Treasurer
                 </h3>
                 <p>
-                  Lorem Ipsum
+                  Dr. Melany Febrina, M.Si.
                 </p>
               </div>
             </a>
           </div>
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -152,7 +152,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -168,7 +168,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -187,13 +187,13 @@
           </div>
         </div>
 
-        <div class="circuit4">
+        <div class="circuits circuit4">
           <img src="{% static 'about/asset/circuitmid.png' %}">
         </div>
 
         <div class="committee-tree-section">
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -209,7 +209,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -225,7 +225,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -243,7 +243,7 @@
             </a>
           </div>
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -259,7 +259,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -275,7 +275,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -294,48 +294,46 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="circuit5">
-      <img src="{% static 'about/asset/circuit5.png' %}">
+      <div class="circuits circuit5">
+        <img src="{% static 'about/asset/circuit5.png' %}">
+      </div>
+
     </div>
-      
-    <div class="circuit3 rotate">
-      <img src="{% static 'about/asset/circuit3.png' %}">
-  </div>
 
     <!-- student committee -->
     <div class="committee-section">
-      <div class="committee-main container row justify-content-center">
-        <h1 class="col-4">student committee</h1>
-        <a class="committee-main-info col-4" href="#link">
+      <div class="committee-main container reversed">
+        <a class="committee-main-info col-sm" href="javascript:void(0);">
           <div class="committee-main-img">
             <svg class="committee-img-svg" viewBox="0 0 228 201">
               <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
             </svg>
-            <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+            <img class="committee-img" src="{% static 'about/asset/panitia/Ikhsan-KetuplakF.jpg' %}">
           </div>
           <div class="committee-main-info-text">
-            <center>
             <h3>
-              Chariman
+              Chairman
             </h3>
             <p>
               Radisya Ikhsan
             </p>
-          </center>
           </div>
         </a>
+        <h1 class="col-sm">student committee</h1>
+        <div class="circuits circuit3 rotate">
+          <img src="{% static 'about/asset/circuit3.png' %}">
+        </div>
       </div>
       <div class="committee-tree container">
         <div class="committee-tree-section">
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0)">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Elma-SekjenF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -346,12 +344,12 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0)" onclick="togglePopup('popup-secretary')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Vininda-Sekertaris1F.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -362,16 +360,16 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-treasurer')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Tatu-Bendahara1F.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
-                  General Treasurer
+                  General Treasurer 1
                 </h3>
                 <p>
                   Tatu Alfiyah
@@ -380,12 +378,12 @@
             </a>
           </div>
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-eventDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Iqbal-AcaraF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -396,12 +394,12 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-externalDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Mayang-EksternalF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -412,7 +410,7 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0)" onclick="togglePopup('popup-operationalDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
@@ -431,18 +429,18 @@
           </div>
         </div>
 
-        <div class="circuit4">
+        <div class="circuits circuit4">
           <img src="{% static 'about/asset/circuitmid.png' %}">
         </div>
 
         <div class="committee-tree-section">
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-creativeDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Lutfia-KreatifF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -453,12 +451,12 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0)" onclick="togglePopup('popup-dataCenterDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Faman-PusdatF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -469,12 +467,12 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-cominfoDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Ardi-MedkomF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -487,12 +485,12 @@
             </a>
           </div>
           <div class="row justify-content-around">
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-fundDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Andra-FundraisingF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -503,12 +501,12 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0)" onclick="togglePopup('popup-accomodationDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Vilona-AkomodasiF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -519,12 +517,12 @@
                 </p>
               </div>
             </a>
-            <a class="committee-info" href="#link">
+            <a class="committee-info" href="javascript:void(0);" onclick="togglePopup('popup-consumptionDiv')">
               <div class="committee-info-img">
                 <svg class="committee-img-svg" viewBox="0 0 228 201">
                   <path d="M228 0H0V200.895H228V0Z" fill="url(#hexagon-pattern)"/>
                 </svg>
-                <img class="committee-img" src="{% static 'about/asset/1.jpg' %}">
+                <img class="committee-img" src="{% static 'about/asset/panitia/Jeannette-KetuaKonsumsiF.jpg' %}">
               </div>
               <div class="committee-info-text">
                 <h3>
@@ -540,169 +538,12 @@
       </div>
     </div>
   </div>
+  <!-- Popups Extend -->
+  {% include 'about/about-popups.html' %}
 
-  <!-- Template Popup -->
-<!--Bagian Hexagon-->
-<!-- <div class="row g-5">
-  <div class="col-md-6">
-    <img src="{% static 'about/asset/1.jpg' %}" style="text-align:center; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
-  </div>
-  <div class="col-md-6">
-    <h1>Comite Organizing</h1>
-  </div>
-</div>
-<br> -->
+  <!-- Scripts Required -->
 
+<script src="{% static 'about/about.js' %}"></script>
 
-<!--Bagian Pop Up-->
-<!-- <div class="row g-5" style="text-align: center;">
-  <div class="col-md-4">
-    <a href="#popup1" class="popup-link">
-    <img src="{% static 'about/asset/1.jpg' %}" width="200px" height="200px" style="text-align:center; clip-path: border-box; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
-    </a>
-    <p style="font-size: 20px; color:white">Ketua</p>
-    <p style="font-size: 20px; color:white">Chris Evan</p>
-    <div id="popup1">
-      <div class="popup-container">
-        <div class="row">
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-        </div>
-        <a class="popup-close" href="#closed">X</a>
-      </div>
-    </div>
-  </div> -->
-
-  <!--Bagis Isi 2-->
-  <!-- <div class="col-md-4">
-    <a href="#popup2" class="popup-link">
-    <img src="{% static 'about/asset/1.jpg' %}" width="200px" height="200px" style="text-align:center; clip-path: border-box; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
-    </a>
-    <p style="font-size: 20px; color:white">Ketua</p>
-    <p style="font-size: 20px; color:white">Chris Evan</p>
-    <div id="popup2">
-      <div class="popup-container">
-        <div class="row">
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-        </div>
-        <a class="popup-close" href="#closed">X</a>
-      </div>
-    </div>
-  </div> -->
-
-  <!--Bagian Isi 3-->
-  <!-- <div class="col-md-4">
-    <a href="#popup3" class="popup-link">
-    <img src="{% static 'about/asset/1.jpg' %}" width="200px" height="200px" style="text-align:center; clip-path: border-box; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);">
-    </a>
-    <p style="font-size: 20px; color:white">Ketua</p>
-    <p style="font-size: 20px; color:white">Chris Evan</p>
-    <div id="popup3">
-      <div class="popup-container">
-        <div class="row">
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img class="img_hexa" width="40%" height="20%" src="../../static/home/asset/Speaker/1.jpg">
-            <br>
-            <br>
-            <h6>Divisi PusatData</h6>
-            <p class="teks_isi_popup">
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-              Apri<br>Yusuf<br>Rafi<br>
-            </p>
-          </div>
-        </div>
-        <a class="popup-close" href="#closed">X</a>
-      </div>
-    </div>
-  </div>
-</div>
-<br> -->
-<!--End Pop up-->
 {% endblock isi %}
 </body>

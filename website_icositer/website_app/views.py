@@ -15,3 +15,6 @@ def conference (request):
 
 def virtualex (request):
 	return render(request,'virtualexhibition/virtualexhibition.html')
+
+def regist(request):
+	return render(request, 'regist.html')

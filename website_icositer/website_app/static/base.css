@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("home/asset/bg/Circuit\ Board.svg");
+    background-image: url("home/asset/bg/Circuit Board.svg");
     overflow-x: hidden;
     max-width: 100%;
 }
@@ -16,6 +16,30 @@ body{
     width: 1.83em;
     height: 1.83em;
     padding: 0 0 0.15em 0.35em ;
+}
+.contentsemua{
+    width: 100%;
+    max-width: 1920px;
+    margin: -0px auto;
+    position: relative;
+}
+.leftline{
+    display: flex;
+    z-index: -1;
+    height: 3100px;
+    width: fit-content;
+    top: -200px;
+    position: absolute;
+    left: 10px;
+}
+.rightline{
+    display: flex;
+    z-index: -1;
+    height: 3100px;
+    top: -200px;
+    width: fit-content;
+    position: absolute;
+    right: 20px;
 }
 
 .navbar-toggler-inner::before,
@@ -42,26 +66,26 @@ body{
     color: #12006B;
 }
 
+
 .kumpulangaris{
-    z-index: 5;
-    top: 3px;
-    position: absolute;
+    z-index: 105;
     width: fit-content;
-    max-width: 70vw;
-    left: 130px;
-    height: fit-content;
-}
-
-.garis1{
-    width: 52vw;
-    height: 3px;
-    margin-top: 10px;
-    background-image: linear-gradient(to left, #FF0411 70%, #12006B);
-}
-
-.navbar{
-    z-index: 3;
     height: calc(60px + 1vw);
+    position: relative;
+    margin-top: 5px ;
+    margin-left: 150px;
+    margin-right: 500px;
+}
+.garis1{
+    width: 100%;
+    height: 3px;
+    margin: 10px auto;
+    background-color: red;
+}
+.navbar{
+    z-index: 100;
+    height: calc(60px + 1vw);
+
     background: rgba(0, 17, 86, 0.6);
 }
 
@@ -80,7 +104,7 @@ body{
 }
 .nav-item > a{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -172,21 +196,6 @@ body{
 }
 
 
-@media (min-width:1500px){
-    .garis1{
-        width: 62vw;
-    }
-}
-@media (max-width:1150px){
-    .garis1{
-        width: 42vw;
-    }
-}
-@media (max-width:370px){
-    .garis1{
-        width: 40vw;
-    }
-}
 @media (max-width:991px){
     .nav-item > a{
         color: white;
@@ -203,6 +212,10 @@ body{
     }
     .dropdown-menu{
         background: rgba(0, 0, 0, 0.3);
+    }
+    .kumpulangaris{
+        margin-right: 90px;
+        margin-left: 110px;
     }
 }
 

@@ -1,10 +1,10 @@
 from django.conf.urls import url
+from django.urls import path
+from .views import *
 
-from . import views
 urlpatterns = [
-	url(r'^regis/$',views.create, name='create'),
-	url(r'^$',views.list, name='list'),
-	url(r'^export/$', views.export_prototype_xls),
+	path('registration', regist, name='regist-pro'),
+	path('export-file-xls-prototype', export_prototype_xls, 'export'),
 ]
 
 app_name = 'prototype'
