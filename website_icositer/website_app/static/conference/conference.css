@@ -318,6 +318,9 @@
     .bulet{
         display: none;
     }
+    .judul{
+        margin-top: 50px;
+    }
 }
 @media(max-width:500px){
     .judul p{

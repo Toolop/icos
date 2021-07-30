@@ -11,7 +11,7 @@ def regist(request):
         form = PROTOTYPEForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect("/competition")            
+            return HttpResponseRedirect("/prototype/registration")            
     else:
         form = PROTOTYPEForm
         if 'berhasil' in request.GET:

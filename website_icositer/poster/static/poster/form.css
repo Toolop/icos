@@ -409,6 +409,7 @@ input:not(:placeholder-shown) ~ label {
     display: block;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 
   /*style untuk popup */  
 a.popup-link {
@@ -601,3 +602,52 @@ a.popup-close {
   color:rgb(255, 255, 255);
 }
 
+=======
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 10000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal p{
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px 20px 40px 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  margin-left: auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+>>>>>>> 7ad6c2e0b6b6a6787c9d75303555a480e9309e9d

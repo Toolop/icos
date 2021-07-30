@@ -98,12 +98,14 @@ h1{
     background-color: #FF0411;
     position: absolute;
     right: 0%;
+    top: -200px;
     filter: blur(100px);
 }
 .gambarbelakang{
     z-index: -1;
     width: 10%;
     height: 1%;
+    top: -200px;
     background-color: #FF0411;
     position: absolute;
     right: 0%;
@@ -201,6 +203,82 @@ h1{
 }
 
 
+
+/*event */
+
+.webicostahunlalu{
+    width: 100%;
+    height: 100%;
+}
+.recent h1{
+    margin-top: 150px;
+}
+.kartu a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+.kartu{
+    width: 80%;
+    margin: 100px auto 100px auto;
+}
+.kartu-speaker{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.kartu-speaker-isi{
+    background-color: #FF0411;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.kartu-speaker-isi-gambar{
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+.kartu-speaker-isi-gambar img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.kartu-speaker-isi p{
+    width: 80%;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px auto 40px auto;
+
+}
+.kartu-speaker-isi a{
+   padding:10px 20% 10px 20%;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   background-color: white;
+   color: black;
+}
+
+
+/* media */
+
+@media(min-width:900px){
+    .speakertime-list{
+        display: flex;
+    }
+    .speakertime-list li{
+        display: block;
+        width: 15%;
+        text-align: left;
+        color: white;
+        margin-left: 30px;
+    }
+}
+
+/* akhir event */
 @media(max-width:999px){
     .deskripsi{
         max-width: 832px;
@@ -463,53 +541,13 @@ h1{
 
 /* tahun lalu */
 
-.tahunlalu{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
+@media(min-width:1920px){
+    h2{
+
+        font-size: 300px;
+    }
 }
 
-.duapuluh{
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    display: block;
-}
-.duapuluh a img{
-    width: 60%;
-    background-color: white;
-    border: 2px solid red;
-}
-
-.des{
-    margin-top: 4%;
-    font-size: 190%;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-
-.webicostahunlalu{
-    margin-top: 10%;
-    padding-bottom: 40px;
-}
-h2{
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 6%;
-    font-size: 300%;
-    width: fit-content;
-    font-weight: bold;
-    color: white;
-
-}
-.recent{
-    border-radius: 100px;
-    width: 400px;
-    margin: 1% auto 6%;
-    text-align: center;
-    background-color: #FF0411;
-}
 
 /*apri */
 
@@ -537,61 +575,6 @@ h2{
   }
 
 
-
-.garisrecent{
-    z-index: -1;
-    width: 60%;
-    height: 3px;
-    position: absolute;
-    margin-top: 1.5%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    background: #FF0411;
-}
-
-.recentmid{
-    z-index: -1;
-    position: absolute;
-    width: 3px;
-    height : 7vw;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    background: #FF0411;;
-}   
-
-.recentmidbulet{
-    position: absolute;
-    margin-top: 7vw; 
-    width: 20px;
-    height: 20px;
-    left: -0.55em;
-    border-radius: 100%;
-    background: #FF0411;
-}
-.recentleft{
-    position: absolute;
-    width: 3px;
-    height : 7vw;
-    left: -4.2%; 
-    margin-top: -1.6%;
-    background:#FF0411;
-    transform: rotate(45deg);
-}
-.recentright{
-    position: absolute;
-    width: 3px;
-    height : 7vw;
-    right:  -4.2%; 
-    margin-top: -1.6%;
-    background:#FF0411;
-    transform: rotate(-45deg);
-}
-
-
 @media(max-width:1000px){
     .des{
         margin-top: 4%;
@@ -606,13 +589,6 @@ h2{
         font-weight: bold;
         color: white;
     
-    }
-    .recent{
-        border-radius: 100px;
-        width: 250px;
-        margin: 3% auto 10%;
-        text-align: center;
-        background-color: #FF0411;
     }
 }
 @media(max-width:700px){
@@ -636,13 +612,6 @@ h2{
         font-weight: bold;
         color: white;
     
-    }
-    .recent{
-        border-radius: 100px;
-        width: 150px;
-        margin: 3% auto 10%;
-        text-align: center;
-        background-color: #FF0411;
     }
    
 }
@@ -923,19 +892,6 @@ h2{
         display: none;
         height: calc(300px + 10vw);
     }
-    .recentmid2{
-        z-index: -1;
-        position: absolute;
-        width: 3px;
-        height : 50vw;
-        margin-top: -50%;
-        left: 0; 
-        right: 0; 
-        transform: rotate(180deg);
-        margin-left: auto; 
-        margin-right: auto; 
-        background: #FF0411;
-    } 
     .linehorizontalleft{
         display: none;
     }

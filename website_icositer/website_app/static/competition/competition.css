@@ -291,6 +291,9 @@
     .gariskiri{
         display: none;
     }
+    .judul{
+        margin-top: 60px;
+    }
     .judul p{
         margin-top: 0px;
     }
@@ -303,6 +306,7 @@
     }
     .cabangcompetition h2{
         text-align: center;
+        font-size: 30px;
     }
     .cabangcompetition p{
         margin-top: 10px;

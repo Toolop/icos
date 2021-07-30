@@ -13,7 +13,6 @@ var berita3 = "berita3";
 
 $('#beritateks').html(berita1);
 
-
 //menganti berita untuk + 1
 function changenews() {
     currentIndex = $('div.beritaitem.active').index() + 1;
