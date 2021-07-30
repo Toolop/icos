@@ -1,21 +1,27 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
 # Create your views here.
 
 from article.models import Article
 from article.forms import ARTICLEForm
 
 def regist(request):
-	form = ARTICLEForm(request.POST,request.FILES)
-
-	if request.method == 'POST':
-		print(form.is_valid)
-		if form.is_valid():
-			form.save()
-
-	context = {'form': form}
-
-	return render(request,'article/form.html',context)
+    berhasil = False
+    if request.method == "POST":
+        form = ARTICLEForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect("/article/registration")            
+    else:
+        form = ARTICLEForm
+        if 'berhasil' in request.GET:
+            berhasil=True
+    context = {
+    'Article':Article,
+    'form':form,
+    'berhasil':berhasil
+    }
+    return render(request,'article/form.html',context)
 
 import xlwt
 

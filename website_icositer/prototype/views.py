@@ -1,21 +1,27 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
 # Create your views here.
 
 from prototype.models import Prototype
 from prototype.forms import PROTOTYPEForm
 
 def regist(request):
-	form = PROTOTYPEForm(request.POST,request.FILES)
-
-	if request.method == 'POST':
-		print(form.is_valid)
-		if form.is_valid():
-			form.save()
-
-	context = {'form': form}
-
-	return render(request,'prototype/form.html',context)
+    berhasil = False
+    if request.method == "POST":
+        form = PROTOTYPEForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect("/prototype/registration")            
+    else:
+        form = PROTOTYPEForm
+        if 'berhasil' in request.GET:
+            berhasil=True
+    context = {
+    'Prototype':Prototype,
+    'form':form,
+    'berhasil':berhasil
+    }
+    return render(request,'prototype/form.html',context)
 
 import xlwt
 
