@@ -50,6 +50,9 @@
 	            <li class="nav-item active">
 	              <a class="nav-link home" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
 	            </li>
+				<li class="nav-item">
+					<a class="nav-link about" href="">News</a>
+				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link event dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  Event
@@ -58,12 +61,11 @@
 						<a class="nav-link" href="{% url 'competition' %}">Competition</a>
 						<a class="nav-link" href="{% url 'conference' %}">Conference</a>
 						<a class="nav-link" href="#">Cultural Night</a>
-						<a class="nav-link" href="#">Virtual Exibition</a>
+						<a class="nav-link" href="{% url 'virtualex' %}">Virtual Exibition</a>
 					</div>
-				<li class="nav-item">
-					<a class="nav-link about" href="{% url 'about' %}">About</a>
-
-				</li>
+					<li class="nav-item">
+						<a class="nav-link about" href="{% url 'about' %}">About</a>
+					</li>
 				</li>
 	          </ul>
 	        </div>
@@ -107,28 +109,23 @@
 				<i class="far fa-envelope"> icositer2021@gmail.com</i>
 				<ul class="list-unstyled list-inline sosmedfooter">
 				  <li class="list-inline-item">
-					<a class="btn-floating btn-fb mx-1">
-					  <i class="fab fa-facebook-square"></i>
+					<a class="btn-floating btn-ig mx-1" href="https://www.instagram.com/icositeritera/?hl=en" target="_blank">
+					  <i class="fab fa-instagram"></i>
 					</a>
 				  </li>
 				  <li class="list-inline-item">
-					<a class="btn-floating btn-tw mx-1">
+					<a class="btn-floating btn-tw mx-1" href="https://twitter.com/icositeritera?lang=en" target="_blank">
 					  <i class="fab fa-twitter"> </i>
 					</a>
 				  </li>
 				  <li class="list-inline-item">
-					<a class="btn-floating btn-gplus mx-1">
-					  <i class="fab fa-google-plus-g"> </i>
+					<a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/ICoSITeR2020/" target="_blank">
+					  <i class="fab fa-facebook-square"> </i>
 					</a>
 				  </li>
 				  <li class="list-inline-item">
-					<a class="btn-floating btn-li mx-1">
-					  <i class="fab fa-linkedin-in"> </i>
-					</a>
-				  </li>
-				  <li class="list-inline-item">
-					<a class="btn-floating btn-dribbble mx-1">
-					  <i class="fab fa-dribbble"> </i>
+					<a class="btn-floating btn-yt mx-1" href="https://www.youtube.com/channel/UCvv6nWsRyN7f24z3O3GwSnw" target="_blank">
+					  <i class="fab fa-youtube"> </i>
 					</a>
 				  </li>
 				</ul>

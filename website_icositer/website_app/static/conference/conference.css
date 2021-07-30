@@ -27,7 +27,7 @@ h6{
 }
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     color: white;
 }
 
@@ -62,7 +62,6 @@ p{
 .judul{
     width: 90%;
     margin-top: 210px;
-    margin-bottom: 110px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -75,37 +74,86 @@ p{
 .garisbawah{
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 30%;
+    width: 60%;
     height: 3px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10vw;
+    background-color: #FF0411;
+}
+.garing1{
+    width: 3px;
+    height: 70px;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -31px;
+    transform: rotate(60deg);
+    background-color: #FF0411;
+}
+.lurus1{
+    position: absolute;
+    width: 3px;
+    margin-left: -60px;
+    margin-top: 36px;
+    height: 100px;
+    background-color: #FF0411;
+}
+.garing2{
+    width: 3px;
+    height: 200px;
+    position: absolute;
+    margin-top: 93px;
+    margin-left: 26px;
+    transform: rotate(-15deg);
+    background-color: #FF0411;
+}
+.lurus2{
+    width: calc(60px + 70vw);
+    height: 3px;
+    margin-top: 290px;
+    margin-left: 52px;
     background-color: #FF0411;
 }
 
 .judul p{
     text-align: left;
     width: 80%;
+    height: 300px;
     margin: auto;
 }
 
 .speakertime{
     width: 80%;
     height: 100%;
-    margin: 100px auto;
+    margin: calc(95px - 2vw) auto;
 }
 
 .speakertime-list{
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 }
 
 .speakertime-list li{
     margin-top: 10px;
     display: block;
-    width: 80%;
+    width: 90%;
     text-align: left;
     color: white;
     margin-left: 30px;
+}
+.bulet{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 3px solid #FF0411;
+    margin: auto auto 20px auto;
+    background-color: none;
+}
+.garing{
+    width: 3px;
+    height: 115px;
+    margin-left: 45px;
+    margin-top:-95px;
+    transform: rotate(45deg);
+    background-color: #FF0411;
 }
 .okupasi{
     width: 90%;
@@ -116,7 +164,6 @@ p{
 .okupasi-isi{
     width: 100%;
     height: 100%;
-    margin-top: 5%;
     margin-bottom: 5%;
 
 }
@@ -167,28 +214,36 @@ p{
 
 .kartu{
     width: 90%;
-    margin: 100px auto 250px auto;
+    margin: 100px auto 100px auto;
 }
 .kartu-speaker{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+   justify-content: center;
 }
 .kartu-speaker-isi{
     background-color: #FF0411;
     width: 300px;
-    height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 450px;
     margin-top: 50px;
     border-radius: 20px;
     text-align: center;
 }
 
 .kartu-speaker-isi-gambar{
-    background-color: white;
     border-radius: 20px;
     width: 200px;
     height: 200px;
     margin: 20px auto;
+}
+.kartu-speaker-isi-gambar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .kartu-speaker-isi p{
     width: 200px;
@@ -202,6 +257,7 @@ p{
    border-radius: 10px;
    margin-bottom: 10px;
    background-color: white;
+   color: black;
 }
 
 
@@ -245,6 +301,26 @@ p{
         width:300px;
         margin-left: 0px;
     }
+}
+.register{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 250px;
+}
+.register a{
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: white;
+    color: #12006B ;
+}
+.register a:hover{
+    text-decoration: none;
+}
+.register:hover{
+    transform: scale(1.1);
 }
 
 @media(min-width:1500px){

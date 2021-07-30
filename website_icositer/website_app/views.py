@@ -12,3 +12,6 @@ def competition (request):
 
 def conference (request):
 	return render(request,'conference/conference.html')
+
+def virtualex (request):
+	return render(request,'virtualexhibition/virtualexhibition.html')

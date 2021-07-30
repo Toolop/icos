@@ -1,0 +1,146 @@
+.nav-item .event{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+
+.judul{
+    width: 90%;
+    margin-top: 210px;
+    margin-bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.judul h1{
+    color: white;
+    font-size: calc(35px + 3vw);
+}
+
+.garisbawah{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 60%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FF0411;
+}
+.judul p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.competition h1{
+    color: white;
+    font-size: calc(10px + 3vw);
+}
+.leftline{
+    display: flex;
+    z-index: -1;
+    height: 100vh;
+    width: fit-content;
+    top: 90px;
+    position: absolute;
+    left: 10px;
+}
+.rightline{
+    display: flex;
+    z-index: -1;
+    height: 100vh;
+    top: 90px;
+    width: fit-content;
+    position: absolute;
+    right: 20px;
+}
+.line{
+    width: 3px;
+    margin-left: 10px;
+    height: 100%;
+    background-color: #FF0411;
+}
+@media(max-width:999px){
+    .gariskanan{
+        display: none;
+    }
+    .gariskiri{
+        display: none;
+    }
+    .judul p{
+        margin-top: 0px;
+    }
+    
+    .competition h1{
+        text-align: center;
+    }
+    .cabangcompetition{
+        text-align: center;
+    }
+    .cabangcompetition h2{
+        text-align: center;
+    }
+    .cabangcompetition p{
+        margin-top: 10px;
+    }
+    .isi{
+        display: block;
+    }
+}
+@media(max-width:600px){
+    .line{
+        display: none;
+    }
+}
+
+.kotak{
+    width:  150vh;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.897);
+    border: 3px solid red;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+@media screen and (max-width: 550px) {
+    .kotak{
+        width: 50%;
+        height: 300px;
+    }
+    .viwes{
+        width:10%;
+    }
+ }
+
+.datang{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.isi .viwes{
+    flex: 2;
+}
+.viwes{
+    float: right;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+.tombol{
+    color: white;
+    background-color: #FF0411;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+    font-size: 29px;
+}
+.tombol:hover{
+    color: white;
+    text-decoration: none;
+}

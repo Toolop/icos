@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'website_app',
     'poster',
     'prototype',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

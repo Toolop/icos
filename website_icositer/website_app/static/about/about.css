@@ -22,7 +22,7 @@ h2{
 }
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 /* garis */
@@ -177,6 +177,14 @@ p{
 }
 
 @media(max-width:1000px){
+    .circuit5{
+        display: none;
+    }
+}
+@media(max-width:700px){
+    .line{
+        display: none;
+    }
     .circuit5{
         display: none;
     }

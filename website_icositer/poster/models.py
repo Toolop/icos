@@ -13,7 +13,8 @@ class Poster(models.Model):
 	subtema				= models.CharField(max_length=100)
 
 	def __str__(self):
-		return "{}".format(self.subtema)
+		return str(self.nama_ketua)
 
 	class Meta:
+		verbose_name_plural = 'Poster'
 		db_table = "Poster"

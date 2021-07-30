@@ -10,7 +10,7 @@ body{
 }
 
 .navbar-toggler{
-    margin-top: 0%;
+    margin-top: -20px;
     border:1px solid white;
     cursor: pointer;
     width: 1.83em;
@@ -46,14 +46,14 @@ body{
     z-index: 5;
     top: 3px;
     position: absolute;
-    width: 100%;
+    width: fit-content;
     max-width: 70vw;
-    left: 100px;
+    left: 130px;
     height: fit-content;
 }
 
 .garis1{
-    width: 60vw;
+    width: 52vw;
     height: 3px;
     margin-top: 10px;
     background-image: linear-gradient(to left, #FF0411 70%, #12006B);
@@ -70,9 +70,9 @@ body{
     position: relative;
 }
 .navbar-brand img{
-    margin-right: 10px;
     width: 70%;
     height: 70%;
+    margin-left: 30px;
 }
 
 .nav-item{
@@ -80,7 +80,7 @@ body{
 }
 .nav-item > a{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -144,15 +144,17 @@ body{
         background: rgba(0, 17, 86, 0.6);
     }
     .navbar-brand img{
+        margin-left: 10px;
         margin-right: 10px;
         margin-top: -10%;
         width: 70%;
         height: 70%;
     }
-    ..nav-item > a{
-        color: #12006B;
+    .nav-item > a{
+        color: white;
         font-size: 25px;
-        background-color: white;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%;
     }
     
 }
@@ -172,12 +174,12 @@ body{
 
 @media (min-width:1500px){
     .garis1{
-        width: 70vw;
+        width: 62vw;
     }
 }
 @media (max-width:1150px){
     .garis1{
-        width: 55vw;
+        width: 42vw;
     }
 }
 @media (max-width:370px){
@@ -187,18 +189,20 @@ body{
 }
 @media (max-width:991px){
     .nav-item > a{
-        color: #12006B;
+        color: white;
         margin-left: 10px;
     }
     .nav-item{
-        background-color: white;
+        background: rgba(0, 0, 0, 0.3);
+        width: 1500px;
+        margin-left: -20px;
     }
     .dropdown-menu a{
         margin-left: 20px;
         color: white;
     }
     .dropdown-menu{
-        background-color: #12006B;
+        background: rgba(0, 0, 0, 0.3);
     }
 }
 
