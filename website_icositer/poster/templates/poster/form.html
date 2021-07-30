@@ -104,8 +104,23 @@
 
               </div> -->
               <div class="form-row-last">
-                <input type="submit" class="regist" value="Register">
+                <input type="submit" class="regist" value="Register" href="#popup" class="
+                popup-link">
+
               </div>
+              <div class="popup-wrapper" id="popup">
+                <div class="popup-container">
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <br>
+                      Selamat Registrasi Berhasil!
+                    </div>
+                  </div>
+                  <a class="popup-close" href="#closed">X</a>
+                </div>
+              </div>
+            </div>
+   
             </form>
           </div>
         </div>
@@ -117,6 +132,7 @@
     const actualBtn = document.getElementById('actual-btn');
 
     const fileChosen = document.getElementById('file-chosen');
+    
 
     actualBtn.addEventListener('change', function(){
       fileChosen.textContent = this.files[0].name

@@ -11,7 +11,7 @@ def regist(request):
         form = POSTERForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect("/competition")            
+            return HttpResponseRedirect("/poster/registration")            
     else:
         form = POSTERForm
         if 'berhasil' in request.GET:
