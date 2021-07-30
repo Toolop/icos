@@ -31,7 +31,7 @@
               {% csrf_token %}
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" name='nama_ketua' required/>
+                    <input type="text" id="nama" name='nama_ketua' required/>
                     <label for="name" class="form-label">Name</label>
                 </div>
                 <div class="form-group form-input form-row">
@@ -104,8 +104,16 @@
 
               </div> -->
               <div class="form-row-last">
-                <input type="submit" class="regist" value="Register">
+                <input type="submit" class="regist" value="Register" id="register">
               </div>
+
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p style="color: black;">Registrasi Berhasil</p>
+                </div>
+              </div>
+
             </form>
           </div>
         </div>
@@ -114,6 +122,37 @@
   </div>
 
   <script type="text/javascript">
+   var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("register");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      var namanya = document.getElementById("nama").value;
+      if(namanya != " "){
+        modal.style.display = "block";
+      }
+      else{
+        alert("masukin oi");
+      }
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
     const actualBtn = document.getElementById('actual-btn');
 
     const fileChosen = document.getElementById('file-chosen');
