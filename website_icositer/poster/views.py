@@ -1,27 +1,21 @@
-from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 # Create your views here.
 
 from poster.models import Poster
 from poster.forms import POSTERForm
 
 def regist(request):
-    berhasil = False
-    if request.method == "POST":
-        form = POSTERForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect("/poster/registration")            
-    else:
-        form = POSTERForm
-        if 'berhasil' in request.GET:
-            berhasil=True
-    context = {
-    'Poster':Poster,
-    'form':form,
-    'berhasil':berhasil
-    }
-    return render(request,'poster/form.html',context)
+	form = POSTERForm(request.POST,request.FILES)
+
+	if request.method == 'POST':
+		print(form.is_valid)
+		if form.is_valid():
+			form.save()
+
+	context = {'form': form}
+
+	return render(request,'poster/form.html',context)
 
 import xlwt
 

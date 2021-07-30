@@ -31,11 +31,11 @@
               {% csrf_token %}
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="nama" name='nama_ketua' required/>
+                    <input type="text" name='nama_ketua' required/>
                     <label for="name" class="form-label">Name</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="email" name='email' required/>
+                    <input type="text" name='email' required/>
                     <label for="name" class="form-label">Email</label>
                 </div>
 
@@ -46,51 +46,51 @@
               
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="number" id="no_telepon" name="no_telepon" value="" required />
+                    <input type="number" name="no_telepon" value="" required />
                     <label for="phone" class="form-label">Phone Number</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="prodi" name='prodi_ketua' required/>
+                    <input type="text" name='prodi_ketua' required/>
                     <label for="name" class="form-label">Prodi Ketua</label>
                 </div>
               </div>
               
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="instansi" name='instansi' required/>
+                    <input type="text" name='instansi' required/>
                     <label for="name" class="form-label">Instansi</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="subtema" name='subtema' required/>
+                    <input type="text" name='subtema' required/>
                     <label for="name" class="form-label">Subtema</label>
                 </div>
               </div>
 
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="nama_anggota1" name='nama_anggota1' required/>
+                    <input type="text" name='nama_anggota1' required/>
                     <label for="name" class="form-label">Nama Anggota</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="prodi_anggota1" name='prodi_anggota1' required/>
+                    <input type="text" name='prodi_anggota1' required/>
                     <label for="name" class="form-label">Prodi Anggota</label>
                 </div>
               </div>
               
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="nama_anggota2" name='nama_anggota2' required/>
+                    <input type="text" name='nama_anggota2' required/>
                     <label for="name" class="form-label">Nama Anggota</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="prodi_anggota2" name='prodi_anggota2' required/>
+                    <input type="text" name='prodi_anggota2' required/>
                     <label for="name" class="form-label">Prodi Anggota</label>
                 </div>
               </div>
 
               <div class="upload-btn-wrapper form-row">
                     <button class="btn">Upload a file</button>
-                    <input type="file" id="actual-btn" name='file_pdf' required/>
+                    <input type="file" id="actual-btn" name='file_pdf' />
                     <label for="name" class="form-label">File PDF</label>
                     <span id="file-chosen">No file chosen</span>
                     <!-- {{ form.file_pdf }} -->
@@ -104,16 +104,8 @@
 
               </div> -->
               <div class="form-row-last">
-                <input type="submit" class="regist" value="Register" id="register">
+                <input type="submit" class="regist" value="Register">
               </div>
-
-              <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p style="color: black;">Registrasi Berhasil</p>
-                </div>
-              </div>
-
             </form>
           </div>
         </div>
@@ -122,55 +114,13 @@
   </div>
 
   <script type="text/javascript">
-   var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("register");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    
-    btn.onclick = function() {
-      var namanya = document.getElementById("nama").value;
-      var emailnya = document.getElementById("email").value;
-      var prodinya = document.getElementById("prodi").value;
-      var no_teleponnya = document.getElementById("no_telepon").value;
-      var instansinya = document.getElementById("instansi").value;
-      var subtemanya = document.getElementById("subtema").value;
-      var nama_anggota1nya = document.getElementById("nama_anggota1").value;
-      var nama_anggota2nya = document.getElementById("nama_anggota2").value;
-      var prodi_anggota1nya = document.getElementById("prodi_anggota1").value;
-      var prodi_anggota2nya = document.getElementById("prodi_anggota2").value;
-      var filenya = document.getElementById("actual-btn").value;
-      
-      if(namanya!= "" && emailnya!="" && prodinya!="" && no_teleponnya!="" && instansinya!="" && subtemanya!="" && nama_anggota1nya!="" && nama_anggota2nya!="" && prodi_anggota1nya!="" && prodi_anggota2nya!="" && filenya!="" ){
-        modal.style.display = "block";
-      }
-
-       
-    }
+    const actualBtn = document.getElementById('actual-btn');
 
     const fileChosen = document.getElementById('file-chosen');
-    const actualBtn = document.getElementById('actual-btn');
+
     actualBtn.addEventListener('change', function(){
       fileChosen.textContent = this.files[0].name
     })
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-
   </script>
 {% endblock isi %}
 </body>
