@@ -1,3 +1,7 @@
+.main-wrapper {
+    overflow-x: hidden;
+}
+
 /* font */
 .nav-item .about{
     text-decoration: underline;
@@ -290,6 +294,11 @@
     margin-bottom: 0;
 }
 
+.committee-tree-section-content {
+    display: flex;
+    justify-content: space-around;
+}
+
 .committee-info {
     display: flex;
     flex-direction: column;
@@ -322,35 +331,6 @@
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-
-    .circuits {
-        display: none;
-    }
-
-    .committee-main, .committee-main.reversed {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .committee-main>h1{
-        text-align: center;
-    }
-
-    .committee-main-info {
-        margin-top: 150px;
-    }
-
-    .popup {
-        height: auto;
-        overflow: auto;
-    }
-
-    .popup-main {
-        flex-direction: column;
-    }
-}
-
 /* Popup Styling */
 
 .flex-divisor {
@@ -371,12 +351,13 @@
 
 .popup.expand {
     height: 100%;
+    overflow: auto;
 }
 
 .popup-main {
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 .popup-alt, .popup-single {
@@ -392,6 +373,7 @@
 }
 
 .popup-body {
+    padding-top: 80px;
     position: relative;
 }
 
@@ -399,7 +381,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 400px;
+    min-width: 128px;
+    margin-bottom: 80px;
+    max-width: 450px;
 }
 
 .popup-info-head {
@@ -451,7 +435,74 @@
 }
 
 .popup-close {
-    position: absolute;
-    bottom: 4%;
-    right: 4%;
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+    justify-content: center;
+}
+
+.expand .popup-close {
+    display: flex;
+}
+
+/* Screen width media quarries */
+
+@media (max-width: 500px) {
+
+    /* Circuit */
+    .circuits {
+        display: none;
+    }
+
+    /* Committees */
+    .committee-main, .committee-main.reversed {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 160px;
+    }
+
+    .committee-main>h1{
+        text-align: center;
+    }
+
+    .committee-main-info {
+        margin-top: 80px;
+    }
+
+    .committee-tree {
+        margin-bottom: 0;
+    }
+
+    .committee-section {
+        margin-bottom: 0;
+    }
+
+    .committee-tree-section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Popups */
+    .popup {
+        overflow: auto;
+
+    }
+
+    .popup-alt {
+        margin-top: 80px;
+    }
+
+    .popup-alt .popup-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-main {
+        flex-direction: column;
+    }
+    .popup-close {
+        right: 10px;
+        bottom: 8px;
+    }
 }
