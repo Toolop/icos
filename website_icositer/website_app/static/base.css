@@ -87,8 +87,20 @@ body{
 .navbar{
     z-index: 100;
     height: calc(60px + 1vw);
-
     background: rgba(0, 17, 86, 0.6);
+}
+
+.close-navbar-toggler{
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      z-index:99;
+      cursor:pointer;
+}
+.close-navbar-toggler.collapsed{
+    z-index:-1;
 }
 
 .navbar-brand{

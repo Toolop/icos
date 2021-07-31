@@ -38,6 +38,9 @@
 			<div class="garis1"></div>
 			<div class="garis1"></div>
 		  </div>
+
+		  <a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  </a>
 	      <nav class="navbar navbar-expand-lg fixed-top">
 	        <a class="navbar-brand" href= "{% url 'home' %}" >
 				<img src="{% static 'home/asset/logowhite.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -45,7 +48,7 @@
 	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	          <div class="navbar-toggler-inner"></div>
 	        </button>
-	        <div class="collapse navbar-collapse" id="navbarNav">
+	        <div class="collapse navbar-collapse overlay" id="navbarNav">
 	          <ul class="navbar-nav ml-auto mr-5">
 	            <li class="nav-item active">
 	              <a class="nav-link home" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
