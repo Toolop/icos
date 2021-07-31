@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Poster',
+            name='Article',
             fields=[
                 ('id_pendaftaran', models.AutoField(primary_key=True, serialize=False)),
                 ('nama_ketua', models.CharField(max_length=100)),
@@ -25,11 +25,11 @@ class Migration(migrations.Migration):
                 ('nama_anggota2', models.CharField(max_length=100, null=True)),
                 ('prodi_anggota2', models.CharField(max_length=100, null=True)),
                 ('subtema', models.CharField(max_length=100)),
-                ('file_pdf', models.FileField(upload_to='poster/file_lomba')),
+                ('file_pdf', models.FileField(upload_to='article/file_lomba')),
             ],
             options={
-                'verbose_name_plural': 'Poster',
-                'db_table': 'Poster',
+                'verbose_name_plural': 'Article',
+                'db_table': 'Article',
             },
         ),
     ]

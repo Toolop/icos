@@ -2,35 +2,35 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 # Create your views here.
 
-from prototype.models import Prototype
-from prototype.forms import PROTOTYPEForm
+from article.models import Article
+from article.forms import ARTICLEForm
 
 def regist(request):
     berhasil = False
     if request.method == "POST":
-        form = PROTOTYPEForm(request.POST, request.FILES)
+        form = ARTICLEForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect("/prototype/registration")            
+            return HttpResponseRedirect("/article/registration")            
     else:
-        form = PROTOTYPEForm
+        form = ARTICLEForm
         if 'berhasil' in request.GET:
             berhasil=True
     context = {
-    'Prototype':Prototype,
+    'Article':Article,
     'form':form,
     'berhasil':berhasil
     }
-    return render(request,'prototype/form.html',context)
+    return render(request,'article/form.html',context)
 
 import xlwt
 
-def export_prototype_xls(request):
+def export_article_xls(request):
     response = HttpResponse(content_type='application/ms-excel')
-    response['Content-Disposition'] = 'attachment; filename="prototype.xls"'
+    response['Content-Disposition'] = 'attachment; filename="science article.xls"'
  
     wb = xlwt.Workbook(encoding='utf-8')
-    ws = wb.add_sheet('PROTOTYPE')
+    ws = wb.add_sheet('ARTICLE')
  
     # Sheet header, first row
     row_num = 1
@@ -55,7 +55,7 @@ def export_prototype_xls(request):
     # Sheet body, remaining rows
     font_style = xlwt.XFStyle()
  
-    rows = Prototype.objects.all().values_list('nama_ketua',
+    rows = Article.objects.all().values_list('nama_ketua',
     										   'email',
     										   'no_telepon',
     										   'instansi',
