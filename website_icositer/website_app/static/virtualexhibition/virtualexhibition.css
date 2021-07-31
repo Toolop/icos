@@ -44,22 +44,10 @@ p{
     font-size: calc(10px + 3vw);
 }
 .leftline{
-    display: flex;
-    z-index: -1;
-    height: 100vh;
-    width: fit-content;
-    top: 90px;
-    position: absolute;
-    left: 10px;
+    height: calc(400px + 100vh);
 }
 .rightline{
-    display: flex;
-    z-index: -1;
-    height: 100vh;
-    top: 90px;
-    width: fit-content;
-    position: absolute;
-    right: 20px;
+    height: calc(400px + 100vh);
 }
 .line{
     width: 3px;

@@ -208,10 +208,10 @@ h1{
 
 .webicostahunlalu{
     width: 100%;
-    height: 100%;
+    margin-top: 0px;
 }
-.recent h1{
-    margin-top: 150px;
+.recent{
+    margin-top: 10%;
 }
 .kartu a:hover{
     text-decoration: none;
@@ -227,19 +227,19 @@ h1{
     justify-content: center;
 }
 .kartu-speaker-isi{
+    box-shadow: 10px 10px 5px black;
     background-color: #FF0411;
     width: 300px;
     margin-left: 10px;
     margin-right: 10px;
     height: 450px;
-    margin-top: 50px;
     border-radius: 20px;
     text-align: center;
 }
 
 .kartu-speaker-isi-gambar{
     border-radius: 20px;
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
 }
 .kartu-speaker-isi-gambar img{
@@ -254,13 +254,7 @@ h1{
     margin: 10px auto 40px auto;
 
 }
-.kartu-speaker-isi a{
-   padding:10px 20% 10px 20%;
-   border-radius: 10px;
-   margin-bottom: 10px;
-   background-color: white;
-   color: black;
-}
+
 
 
 /* media */
@@ -341,8 +335,43 @@ h1{
         margin-left: 10px;
         text-align: center;
     }
+    .kartu-speaker-isi p{
+        font-size: 12px;
+    }
+    .kartu-speaker-isi h5{
+        font-size: 15px;
+    }
+    .kartu-speaker-isi{
+        height: 450px;
+    }
     
 }
+@media(max-width:500px){
+    .kartu-speaker-isi p{
+        font-size: 5px;
+    }
+    .kartu-speaker-isi h5{
+        font-size: 8px;
+        width: 80%;
+        margin: auto;
+    }
+    .kartu-speaker-isi{
+        height: 300px;
+    }
+}
+@media(max-width:320px){
+    .sidebarsatu h1{
+        font-size: 50px;
+        margin-left: -40px;
+    }
+    .sidebarsatu p {
+        margin-left: -10px;
+    }
+    .viewicos{
+        margin-left: -50px;
+    }
+}
+
 
 
 /* Berita Icositer */
@@ -550,6 +579,15 @@ h1{
 
 
 /*apri */
+.gallery{
+    margin-top: 5%;
+}
+.gallery h1{
+    width: 300px;
+    border-radius: 50px;
+    background-color: #FF0411;
+    margin: auto;
+}
 
 .xcontainer {
     width: 800px;
@@ -820,13 +858,13 @@ h1{
 
 @media(max-width:1200px){
     .lurus7{
-        height: calc(900px - 1vw);
+        height: calc(1200px - 1vw);
     }
     .lurus9{
-        height: calc(230px + 35vw);
+        height: calc(330px + 35vw);
     }
     .lurus9 img{
-        height: calc(230px + 35vw);
+        height: calc(330px + 35vw);
     }
     .lurus10{
         position: absolute;
@@ -849,17 +887,17 @@ h1{
 
 @media(max-width:999px){
     .lurus{
-        height: 85vw;
+        height: calc(40px + 70vw);
     }
     .lurus4{
-        height:calc(1000px - 1vw);
+        height:calc(800px - 1vw);
     }
     .lurus7{
-        height:calc(850px - 0.5vw);
+        height:calc(800px - 0.5vw);
     }
     .lurus9{
         width: 3px;
-        height:30vw;
+        height:calc(950px + 10vw);
         position: absolute;
         right: -42px;
         top: 42px;
@@ -870,27 +908,25 @@ h1{
     }
     .lurus10{
         position: absolute;
-        width: 31vw;
-        height: fit-content;
-        right: 105px;
-        bottom: 0px;
+        width: calc(50px + 31vw);
+        height: 3px;
+        right: 42px;
+        bottom: -42px;
         background-color: #FF0411;
     }
     .garing10{
-        display: none;
         right: 20px;
         bottom: -50px;
     }
     .lurus10 img{
-
         display: none;
         position: absolute;
         width: 100%;
         height: 60px;
     }
     .lurus11{
-        display: none;
-        height: calc(300px + 10vw);
+        height: calc(100px + 5vw);
+        top: 0px;
     }
     .linehorizontalleft{
         display: none;
@@ -918,8 +954,34 @@ h1{
 
 @media(max-width:500px){
     .lurus2{
-        width: 76vw;
+        width: 70vw;
     }
+    .lurus4{
+        height: calc(550px + 10vw);
+    }
+    .lurus5{
+        width: 70vw;
+    }
+    .lurus7{
+        height:calc(600px - 1vw);
+    }
+    .lurus10{
+        position: absolute;
+        width: calc(10px + 31vw);
+        height: 3px;
+        right: 42px;
+        bottom: -42px;
+        background-color: #FF0411;
+    }
+    .lurus9{
+        width: 3px;
+        height:calc(1050px + 10vw);
+        position: absolute;
+        right: -42px;
+        top: 42px;
+        background-color: #FF0411;
+    }
+
 
 }
 @media(max-width:400px){

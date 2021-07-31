@@ -94,3 +94,9 @@ $(".prev").click(function () {
     minusnews();
     timer.reset(5000);
 });
+
+$(document).ready(function () { 
+    $(document).click(function () {
+         $('.navbar-collapse').collapse('hide');
+    });
+  });
