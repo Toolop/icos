@@ -332,4 +332,8 @@
     .line{
         display: none;
     }
+    .competition h1{
+        font-size: calc(30px + 2vw);
+        text-align: center;
+    }
 }
