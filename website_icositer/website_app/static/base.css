@@ -22,11 +22,12 @@ body{
     margin: -0px auto;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .leftline{
     display: flex;
     z-index: -1;
-    height: 3100px;
+    height: 3900px;
     width: fit-content;
     top: -200px;
     position: absolute;
@@ -35,7 +36,7 @@ body{
 .rightline{
     display: flex;
     z-index: -1;
-    height: 3100px;
+    height: 3900px;
     top: -200px;
     width: fit-content;
     position: absolute;
@@ -89,20 +90,6 @@ body{
     height: calc(60px + 1vw);
     background: rgba(0, 17, 86, 0.6);
 }
-
-.close-navbar-toggler{
-      position:absolute;
-      top:0;
-      left:0;
-      height:100%;
-      width:100%;
-      z-index:99;
-      cursor:pointer;
-}
-.close-navbar-toggler.collapsed{
-    z-index:-1;
-}
-
 .navbar-brand{
     z-index: 1000;
     position: relative;
@@ -177,9 +164,7 @@ body{
 
 @media(max-width:999px){
     .navbar{
-        z-index: 3;
         height: calc(70px + 1vw);
-        background: rgba(0, 17, 86, 0.6);
     }
     .navbar-brand img{
         margin-left: 10px;
