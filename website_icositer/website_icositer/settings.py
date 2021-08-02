@@ -25,7 +25,7 @@ SECRET_KEY = '=5z75a#-dhrq#w58!jx7c0!w5u!jned$_n*coly79b$duuz(ba'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','icositer2021.com', 'www.icositer2021.com']
 
 
 # Application definition
@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'website_icositer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'icos',
-        'USER' : 'root',
-        'PASSWORD': '',
+        'NAME': 'icositer_icos',
+        'USER' : 'icositer_icos',
+        'PASSWORD': 'k_QUSz)fqs90',
         'HOST': 'localhost',
         'PORT':'3306',
     }
@@ -129,14 +129,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
-MEDIA_URL = '/files/'
+MEDIA_URL = 'repositories/icos/website_icositer/files/'
 
-STATIC_URL = '/static/'
+STATIC_URL = '../../../assets/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),    
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, '../../assets/')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
