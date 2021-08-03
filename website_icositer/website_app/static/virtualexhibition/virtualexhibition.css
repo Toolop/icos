@@ -13,6 +13,10 @@ p{
     color: white;
 }
 
+.blockisi{
+    overflow-y: hidden;
+}
+
 .judul{
     width: 90%;
     margin-top: 210px;
@@ -44,10 +48,10 @@ p{
     font-size: calc(10px + 3vw);
 }
 .leftline{
-    height: calc(400px + 100vh);
+    height: calc(800px + 100vh);
 }
 .rightline{
-    height: calc(400px + 100vh);
+    height: calc(800px + 100vh);
 }
 .line{
     width: 3px;
