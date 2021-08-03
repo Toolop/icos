@@ -131,7 +131,7 @@ USE_TZ = True
 MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
 MEDIA_URL = 'repositories/icos/website_icositer/files/'
 
-STATIC_URL = '/../../../assets/'
+STATIC_URL = '../../../assets/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),    
