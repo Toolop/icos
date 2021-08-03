@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'website_icositer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'icositer_icos',
-        'USER' : 'icositer_icos',
-        'PASSWORD': 'k_QUSz)fqs90',
+        'NAME': 'icos',
+        'USER' : 'root',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT':'3306',
     }
@@ -131,7 +131,7 @@ USE_TZ = True
 MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
 MEDIA_URL = 'repositories/icos/website_icositer/files/'
 
-STATIC_URL = '../../../assets/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),    
