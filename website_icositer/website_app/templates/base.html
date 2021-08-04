@@ -55,6 +55,17 @@
 	            <li class="nav-item active">
 	              <a class="nav-link home" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
 	            </li>
+				<li class="nav-item dropdown">
+					<a class="nav-link conference dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Conference
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="nav-link" href="{% url 'poster' %}">Call for Papers</a>
+						<a class="nav-link" href="{% url 'conference' %}">Speaker</a>
+						<a class="nav-link" href="{% url 'regisconference' %}">Registration</a>
+						<a class="nav-link" href="{% url 'previus' %}">Previous Icositer</a>
+					</div>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="">News</a>
 				</li>
@@ -64,13 +75,12 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="nav-link" href="{% url 'competition' %}">Competition</a>
-						<a class="nav-link" href="{% url 'conference' %}">Conference</a>
 						<a class="nav-link" href="#">Cultural Night</a>
 						<a class="nav-link" href="{% url 'virtualex' %}">Virtual Exibition</a>
 					</div>
-					<li class="nav-item">
-						<a class="nav-link about" href="{% url 'about' %}">More Info</a>
-					</li>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link about" href="{% url 'about' %}">More Info</a>
 				</li>
 	          </ul>
 	        </div>

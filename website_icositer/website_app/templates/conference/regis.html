@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Call for Paper{% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'conference/regis.css' %}">{% endblock style %}
+
+
+<body>
+{% block isi %}
+<div class="leftline">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+<div class="rightline">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
+  <div class="judul">
+    <h1>Conference</h1>
+    </div>
+
+    <div class="timeline">
+      <div class="lurus">
+        <div class="isi1 right">
+
+          <div class="text">
+            <div class="garisatas">
+              <div class="bulet"></div>
+            </div>
+            <p><b>Notification Acceptance</b> <br>Sep. 16, 2021</p>
+          </div>
+
+          <div class="text">
+            <div class="garisatas">
+              <div class="bulet"></div>
+            </div>
+            <p><b>Notification Acceptance</b> <br>Sep. 16, 2021</p>
+          </div>
+
+          <div class="text">
+            <div class="garisatas">
+              <div class="bulet"></div>
+            </div>
+            <p><b>Notification Acceptance</b> <br>Sep. 16, 2021</p>
+          </div>
+        </div>
+
+        <div class="luruskanan">
+        </div>
+
+      <div class="lurus2">
+        <div class="isi1">
+          <div class="text">
+            <div class="garisatas left">
+              <div class="bulet"></div>
+            </div>
+            <p><b>Notification Acceptance</b> <br>Sep. 16, 2021</p>
+            </div>
+            <div class="text">
+              <div class="garisatas left">
+                <div class="bulet"></div>
+              </div>
+              <p><b>Notification Acceptance</b> <br>Sep. 16, 2021</p>
+            </div>
+            <div class="text">
+              <div class="garisatas left">
+                <div class="bulet"></div>
+              </div>
+              <p><b>Notification Acceptance</b> <br>Sep. 16, 2021</p>
+            </div>
+        </div>
+          <div class="luruskiri">
+  
+          </div>
+          <div class="lurus2">
+        
+          </div>
+      </div>
+        <!--
+          \<p>Abstract <br>Sep. 15, 2021</p></li>
+        <li class="kanan"><div class="bulet"><div class="garing"></div></div></li>
+        <li><div class="bulet"><div class="garing"></div></div>Payment (Early) <br> Sep. 18, 2021</li>
+        <li class="kanan"><div class="bulet"><div class="garing"></div></div>Payment(Regular) <br>Sep. 26,2021</li>
+        <li><div class="bulet"><div class="garing"></div></div>Conference date <br> Oct. 1-2,2021</li>
+        <li class="kanan"><div class="bulet"><div class="garing"></div></div>Full Paper <br>Oct. 31, 2021</li>
+        -->
+      </div>
+  </div>
+
+
+  <div class="harga">
+    <h1>Conference fees</h1>
+    <img src="{% static 'conference/asset/harga.png' %}">
+  </div>
+
+  <h1>Submision</h1>
+  <div class="submision">
+    <div class="submision-isi">
+      <button type="button" class="btn regist">Regist</button>
+      <button type="button" class="btn abstrak">Abstract of Submit</button>
+    </div>
+    <button type="button" class="btn partisipan">List of Partisipant</button>
+  </div>
+  
+  
+{% endblock isi %}
+</body>

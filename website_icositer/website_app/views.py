@@ -16,5 +16,11 @@ def conference (request):
 def virtualex (request):
 	return render(request,'virtualexhibition/virtualexhibition.html')
 
-def regist(request):
-	return render(request, 'regist.html')
+def poster (request):
+	return render(request,'conference/poster.html')
+
+def previus (request):
+	return render(request,'conference/previus.html')
+
+def regisconference (request):
+	return render(request,'conference/regis.html')
