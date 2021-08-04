@@ -2,13 +2,12 @@
 {% load static %}
 
 
-{% block title %}Speakers{% endblock title %}
+{% block title %}Conference{% endblock title %}
 
 {% block style %}<link rel="stylesheet" href="{% static 'conference/conference.css' %}">{% endblock style %}
 
 
 <body>
-  <div class="main-wrapper">
 {% block isi %}
 <div class="leftline">
   <div class="line"></div>
@@ -24,29 +23,9 @@
 </div>
 
   <div class="judul">
-    <h1>Conference</h1>
-    <div class="garisbawah">
-      <div class="garing1"></div>
-        <div class="lurus1">
-        <div class="garing2"></div>
-        <div class="lurus2"></div>
-      </div>
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolore quia fugiat cupiditate aut iusto necessitatibus non asperiores officia dolores ullam eaque tenetur laudantium illum modi obcaecati, excepturi natus repellendus.
-      <br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio repellendus asperiores quae. Laboriosam assumenda eius sequi quam iste quae sint doloremque officiis eveniet optio blanditiis accusantium, impedit quibusdam totam?
-  </p>
-    <div class="speakertime">
-      <ul class="speakertime-list">
-        <li><div class="bulet"><div class="garing"></div></div>Abstract <br>Sep. 15, 2021</li>
-        <li><div class="bulet"><div class="garing"></div></div>Payment (Early) <br> Sep. 18, 2021</li>
-        <li><div class="bulet"><div class="garing"></div></div>Payment(Regular) <br>Sep. 26,2021</li>
-        <li><div class="bulet"><div class="garing"></div></div>Conference day <br> Oct. 1-2,2021</li>
-        <li><div class="bulet"><div class="garing"></div></div>Full Paper <br>Oct. 31, 2021</li>
-      </ul>
-    </div>
+    <h1>Speakers</h1>
+    <div class="garisbawah"></div>
   </div>
-
 
   <div class="okupasi">
     <svg width="0" height="0" viewBox="0 0 228 201">
@@ -173,6 +152,8 @@
   </div>
 
   <div class="kartu">
+    <h1>Topics</h1>
+    <div class="garisbawah" style="width: 20%;"></div>
     <div class="kartu-speaker">
       <div class="kartu-speaker-isi">
         <div class="kartu-speaker-isi-gambar">
@@ -203,7 +184,7 @@
       </div>
       <div class="kartu-speaker-isi">
         <div class="kartu-speaker-isi-gambar">
-          <img src="{% static 'conference/asset/daktau.jpeg' %}">
+          <img src="{% static 'conference/asset/speaker.jpg' %}">
         </div>
         <h5 style="color: white;">Earth & Space Science and Engineering</h5>
         <p>
@@ -229,17 +210,5 @@
         </p>
       </div>
     </div>
-
-  </div>
-  <div class="register">
-    <a href="">Regist</a>
-  </div>
-
-  <div class="harga">
-    <h1>Conference fees</h1>
-    <img src="{% static 'conference/asset/harga.png' %}">
-  </div>
-  
-  
 {% endblock isi %}
 </body>

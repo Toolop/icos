@@ -75,7 +75,7 @@
           </div>
              
           <div class="viewicos">
-              <a href="#">view</a>
+              <a href="{% url 'about' %}">view</a>
           </div>
       </div>
       <div class="sidebardua">
@@ -116,7 +116,7 @@
       </div>
       <div class="kartu">
         <div class="kartu-speaker">
-          <a class="kartu-speaker-isi" href="">
+          <a class="kartu-speaker-isi" href="{% url 'conference' %}">
               <div class="kartu-speaker-isi-gambar">
                 <img src="{% static 'conference/asset/speaker.jpg' %}">
               </div>
@@ -125,7 +125,7 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi neque nam voluptatem aliquid quibusdam quod quaerat sapiente deleniti
               </p>
             </a>
-          <a class="kartu-speaker-isi" href="">
+          <a class="kartu-speaker-isi" href="{% url 'competition' %}">
             <div class="kartu-speaker-isi-gambar">
               <img src="{% static 'conference/asset/speaker.jpg' %}">
             </div>
@@ -143,7 +143,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi neque nam voluptatem aliquid quibusdam quod quaerat sapiente deleniti
             </p>
           </a>
-          <a class="kartu-speaker-isi" href="">
+          <a class="kartu-speaker-isi" href="{% url 'virtualex' %}">
             <div class="kartu-speaker-isi-gambar">
               <img src="{% static 'conference/asset/speaker.jpg' %}">
             </div>

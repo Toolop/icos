@@ -1,0 +1,98 @@
+.previus{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+h1{
+    font-size: 57px;
+}
+.line{
+    width: 3px;
+    margin-left: 10px;
+    height: 100%;
+    background-color: #FF0411;
+}
+
+.previus-main{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+.previus-main-isi{
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.previus-main-isi h2{
+    font-size: 40px;
+}
+
+.jurnal{
+    margin-top: 50px;
+    text-align: center;
+}
+.jurnal a{
+    padding: 20px 80px 20px 80px;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    white-space: nowrap;
+    background-color: #FF0411;
+}
+.jurnal a:hover{
+    text-decoration: none;
+}
+.jurnal:hover{
+    transform: scale(1.1);
+}
+.gambar{
+    margin-top: 50px;
+    width: 100%;
+    color: black;
+}
+.gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:1000px){
+    .leftline{
+        display: none;
+    }
+    .rightline{
+        display: none;
+    }
+}
+
+
+@media(max-width:700px){
+    .leftline{
+        display: none;
+    }
+    .rightline{
+        display: none;
+    }
+}
+@media(min-width:680px){
+    .gambar{
+        height: 700px;
+    }
+    .previus-main-isi{
+        height: 1000px;
+    }
+}
+@media(max-width:679px){
+    .previus-main-isi{
+        margin-top: 150px;
+    }
+}
+
+@media(max-width:630px){
+    .jurnal a{
+        padding: 20px 20px 20px 20px;
+        font-size: 20px;
+    }
+}
