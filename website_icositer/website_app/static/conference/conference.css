@@ -14,7 +14,7 @@
 /* judul */
 .judul{
     width: 90%;
-    margin-top: 210px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -36,7 +36,7 @@
     width: 3px;
     height: 70px;
     position: absolute;
-    margin-top: -15px;
+    margin-top: -16px;
     margin-left: -31px;
     transform: rotate(60deg);
     background-color: #FF0411;
@@ -53,7 +53,7 @@
     width: 3px;
     height: 200px;
     position: absolute;
-    margin-top: 93px;
+    margin-top: 95px;
     margin-left: 26px;
     transform: rotate(-15deg);
     background-color: #FF0411;
@@ -99,14 +99,14 @@
     height: 15px;
     border-radius: 100%;
     border: 3px solid #FF0411;
-    margin: auto auto 20px auto;
+    margin: auto auto 10px 30px;
     background-color: none;
 }
 .garing{
     width: 3px;
     height: 115px;
     margin-left: 45px;
-    margin-top:-95px;
+    margin-top:-98px;
     transform: rotate(45deg);
     background-color: #FF0411;
 }
@@ -114,7 +114,7 @@
     width: 90%;
     height: 100%;
     margin: auto;
-    margin-bottom: 250px;
+    margin-bottom: 20px;
 }
 .okupasi-isi{
     width: 100%;
