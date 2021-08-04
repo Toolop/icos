@@ -8,5 +8,6 @@ db.sqlite3
 media
 staticfiles/
 404.html
+settings.py
 # Env
 .env

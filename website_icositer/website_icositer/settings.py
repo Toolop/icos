@@ -25,7 +25,7 @@ SECRET_KEY = '=5z75a#-dhrq#w58!jx7c0!w5u!jned$_n*coly79b$duuz(ba'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','icositer2021.com', 'www.icositer2021.com']
 
 
 # Application definition
