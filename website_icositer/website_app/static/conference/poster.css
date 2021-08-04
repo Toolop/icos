@@ -1,0 +1,32 @@
+.nav-item .conference{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 57px;
+}
+.postericos{    
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.line{
+    width: 3px;
+    margin-left: 10px;
+    height: 100%;
+    background-color: #FF0411;
+}
+
+.postericos img{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+@media(max-width:700px){
+    .leftline{
+        display: none;
+    }
+    .rightline{
+        display: none;
+    }
+}

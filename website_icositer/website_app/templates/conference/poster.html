@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Call for Paper{% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'conference/poster.css' %}">{% endblock style %}
+
+
+<body>
+{% block isi %}
+<div class="leftline">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="rightline">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+    <div class="postericos">
+        <h1>Call for Paper</h1>
+        <img src="{% static 'conference/asset/poster.png' %}">
+    </div>
+
+{% endblock isi %}
+</body>
