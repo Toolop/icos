@@ -14,8 +14,8 @@
 /* judul */
 .judul{
     width: 90%;
-    margin-top: 210px;
-    margin-bottom: 110px;
+    margin-top: 100px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -203,7 +203,7 @@
     display: flex;
 }
 .isi p{
-    flex: 1;
+    flex: 2;
 }
 .isi .registerlomba{
     flex: 2;
@@ -212,7 +212,7 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 .tombol{
     color: white;
@@ -249,22 +249,22 @@
     width: 90%;
     text-align: left;
     color: white;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 .bulet{
     width: 15px;
     height: 15px;
     border-radius: 100%;
     border: 3px solid #FF0411;
-    margin: auto auto 20px auto;
+    margin: auto auto 10px 60px;
     background-color: none;
 }
 .ujungkeujung{
     width: calc(80vw);
     height: 3px;
-    margin-left: 40px;
+    margin-left: 3px;
     position: absolute;
-    margin-top: -68px;
+    margin-top: -70px;
     max-width: 1600px;
     background-color: #FF0411;
 }
@@ -272,7 +272,7 @@
     width: 3px;
     height: 115px;
     margin-left: 45px;
-    margin-top:-95px;
+    margin-top:-99px;
     transform: rotate(45deg);
     background-color: #FF0411;
 }
