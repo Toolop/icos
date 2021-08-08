@@ -7,9 +7,9 @@ var time = 5000;
 var play = true;
 var reset = false;
 
-var berita1 = "A press on a button translates all images in the respective direction along the x-axis. An image on the edge, is set transparent outerImg.style.opacity = '0'; and translated to the other side. You can add or remove image elements in HTML and it still works.";
-var berita2 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.";
-var berita3 = "berita3";
+var berita1 = "This section is under construction!!!";
+var berita2 = "This section is under construction!!!";
+var berita3 = "This section is under construction!!!";
 
 $('#beritateks').html(berita1);
 

@@ -240,6 +240,11 @@
     left: -32%;
 }
 
+.dosen {
+    width: 140px; 
+    height: 127px;
+}
+
 .committee-main>h1 {
     margin-top: 3%;
     width: 480px;
