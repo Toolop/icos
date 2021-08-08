@@ -1,0 +1,146 @@
+.main-news{
+    width:90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.news-isi{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 329px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+.news-isi:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.news-isi-gambar{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background: #3D2C8B;
+}
+.news-isi-gambar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.news-isi-tulisan-tanggal{
+    line-height: 120%;
+}
+.news-isi-tulisan-judul{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-weight: medium;
+    line-height: 120%;
+}
+
+.news-isi-tulisan-thumbnail{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    line-height: 120%;
+}
+
+@media(min-width:800px){
+    .main-news{
+        max-width: 1200px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .news-isi.satu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-isi.satu .news-isi-tulisan{
+        width: 739px;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: table-cell;
+        vertical-align: middle
+    }
+    .news-isi.satu .news-isi-gambar{
+        width: 739px;
+        height: 495px;
+        background: #3D2C8B;
+        border-radius: 65px;
+    }
+    .news-isi.satu .news-isi-tulisan-judul{
+        font-size: 96px;
+        font-weight: normal;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+    .news-isi-tulisan-tanggal{
+        font-size: 20px;
+    }
+    .news-isi-tulisan-judul{
+        font-size: 48px;
+        font-weight: medium;
+    }
+    .news-isi-tulisan-thumbnail{
+        font-size: 24px;
+        font-weight: 24px;
+    }
+    .news-isi-gambar{
+        width: 329px;
+        border-radius: 20px;
+        height: 255px;
+        background: #3D2C8B;
+    }
+    .news-isi-gambar img{
+        border-radius: 20px;
+    }
+
+}
+@media(min-width:1270px) {
+    .news-isi.satu{
+        justify-content: space-between;
+    }
+    .news-isi.satu .news-isi-tulisan{
+        width: 382px;
+    }
+}
+@media(max-width:799px){
+    .news-isi-gambar{
+        width: 320px;
+        height: 180px;
+
+    }
+    .news-isi{
+        position: relative;
+    }
+    .news-isi-tulisan{
+        width: 320px;
+        height: 75px;
+        position: absolute;
+        bottom: 30px;
+        background: linear-gradient(90deg, rgba(255, 0, 0, 0.7) 44.1%, rgba(23, 17, 50, 0) 90.16%);
+        border-radius: 0px 0px 30px 30px;
+    }
+    .news-isi-tulisan-tanggal{
+        margin-top: 14px;
+        font-size: 6px;
+        margin-left: 30px;
+    }
+    .news-isi-tulisan-judul{
+        margin-top: -10px;
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    
+    .news-isi-tulisan-thumbnail{
+        font-size: 6px;
+        margin-left: 30px;
+    }
+}
