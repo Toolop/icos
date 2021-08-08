@@ -12,6 +12,7 @@ urlpatterns = [
     path('virtualex', virtualex, name='virtualex'),
     path('poster', poster, name='poster'),
     path('previus', previus, name='previus'),
+    path('news', news, name='news'),
     path('registration', regisconference, name='regisconference'),
     url(r'^article/', include('article.urls',namespace='article')),
     url(r'^poster/', include('poster.urls',namespace='poster')),

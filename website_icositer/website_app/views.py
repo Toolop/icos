@@ -24,3 +24,6 @@ def previus (request):
 
 def regisconference (request):
 	return render(request,'conference/regis.html')
+
+def news (request):
+	return render(request,'news/news.html')
