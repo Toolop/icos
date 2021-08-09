@@ -17,6 +17,6 @@ Including another URLconf
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^super-secret/', admin.site.urls),
     url(r'^', include('website_app.urls') ),
 ]
