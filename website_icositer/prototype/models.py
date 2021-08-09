@@ -13,8 +13,12 @@ class Prototype(models.Model):
 	prodi_anggota1		= models.CharField(max_length=100, null = True)
 	nama_anggota2		= models.CharField(max_length=100, null = True)
 	prodi_anggota2		= models.CharField(max_length=100, null = True)
+	nama_anggota3		= models.CharField(max_length=100, null = True)
+	prodi_anggota3		= models.CharField(max_length=100, null = True)
 	subtema				= models.CharField(max_length=100)
-	file_pdf			= models.FileField(upload_to='prototype/file_lomba')
+	file_abstrak		= models.FileField(upload_to='prototype/file_lomba')
+	file_ktm			= models.FileField(upload_to='prototype/ktm')
+	file_foltwib		= models.FileField(upload_to='prototype/followtwib')
 
 	def __str__(self):
 		return str(self.nama_ketua)

@@ -15,6 +15,10 @@ class PROTOTYPEForm(forms.ModelForm):
 			'prodi_anggota1',
 			'nama_anggota2',
 			'prodi_anggota2',
+			'nama_anggota3',
+			'prodi_anggota3',
 			'subtema',
-			'file_pdf',
+			'file_abstrak',
+			'file_ktm',
+			'file_foltwib'
 		]

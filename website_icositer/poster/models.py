@@ -14,7 +14,9 @@ class Poster(models.Model):
 	nama_anggota2		= models.CharField(max_length=100, null = True)
 	prodi_anggota2		= models.CharField(max_length=100, null = True)
 	subtema				= models.CharField(max_length=100)
-	file_pdf			= models.FileField(upload_to='poster/file_lomba')
+	file_abstrak		= models.FileField(upload_to='poster/file_lomba')
+	file_ktm			= models.FileField(upload_to='poster/ktm')
+	file_foltwib		= models.FileField(upload_to='poster/followtwib')
 
 	def __str__(self):
 		return str(self.nama_ketua)
