@@ -17,6 +17,8 @@ class PROTOTYPEForm(forms.ModelForm):
 			'prodi_anggota2',
 			'nama_anggota3',
 			'prodi_anggota3',
+			'nama_anggota4',
+			'prodi_anggota4',
 			'subtema',
 			'file_abstrak',
 			'file_ktm',

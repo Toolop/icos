@@ -15,6 +15,8 @@ class Prototype(models.Model):
 	prodi_anggota2		= models.CharField(max_length=100, null = True)
 	nama_anggota3		= models.CharField(max_length=100, null = True)
 	prodi_anggota3		= models.CharField(max_length=100, null = True)
+	nama_anggota4		= models.CharField(max_length=100, null = True)
+	prodi_anggota4		= models.CharField(max_length=100, null = True)
 	subtema				= models.CharField(max_length=100)
 	file_abstrak		= models.FileField(upload_to='prototype/file_lomba')
 	file_ktm			= models.FileField(upload_to='prototype/ktm')
