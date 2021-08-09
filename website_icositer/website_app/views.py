@@ -27,3 +27,9 @@ def regisconference (request):
 
 def news (request):
 	return render(request,'news/news.html')
+
+def detail_news1 (request):
+	return render(request,'news/detail_news1.html')
+
+def detail_news2 (request):
+	return render(request,'news/detail_news2.html')
