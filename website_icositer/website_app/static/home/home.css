@@ -223,7 +223,6 @@ h1{
 }
 .kartu-speaker{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .kartu-speaker-isi{
@@ -335,7 +334,12 @@ h1{
         margin-left: 10px;
         text-align: center;
     }
-    
+    .kartu-speaker{
+        flex-wrap: wrap;
+    }
+    .kartu{
+        max-width: 800px;
+    }
 }
 
 @media(max-width:320px){
@@ -827,15 +831,6 @@ h1{
     bottom: -50px;
     transform: rotate(45deg);
     background: #FF0411;
-}
-
-@media(max-width:1289px){
-    .kartu{
-        max-width: 800px;
-    }
-    .lurus4{
-        height: calc(1100px + 10vw);
-    }
 }
 
 
