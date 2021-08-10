@@ -218,20 +218,20 @@ h1{
     transform: scale(1.1);
 }
 .kartu{
-    width: 80%;
+    width: 90%;
     margin: 100px auto 100px auto;
 }
 .kartu-speaker{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .kartu-speaker-isi{
     box-shadow: 10px 10px 5px black;
     background-color: #FF0411;
-    width: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 250px;
+    height: 500px;
+    margin: 20px;
     height: 450px;
     border-radius: 20px;
     text-align: center;
@@ -335,30 +335,9 @@ h1{
         margin-left: 10px;
         text-align: center;
     }
-    .kartu-speaker-isi p{
-        font-size: 12px;
-    }
-    .kartu-speaker-isi h5{
-        font-size: 15px;
-    }
-    .kartu-speaker-isi{
-        height: 450px;
-    }
     
 }
-@media(max-width:500px){
-    .kartu-speaker-isi p{
-        font-size: 5px;
-    }
-    .kartu-speaker-isi h5{
-        font-size: 8px;
-        width: 80%;
-        margin: auto;
-    }
-    .kartu-speaker-isi{
-        height: 300px;
-    }
-}
+
 @media(max-width:320px){
     .sidebarsatu h1{
         font-size: 50px;
@@ -798,22 +777,19 @@ h1{
     background: #FF0411;
 }
 .lurus9{
-    width: 65px;
-    height: calc(320px + 25vw);
+    width: 3px;
+    height: calc(650px + 5vw);
     position: absolute;
-    right: -105px;
+    right: -42px;
     top: 42px;
+    background-color: #FF0411;
 }
-.lurus9 img{
-    width: 65px;
-    height: calc(320px + 25vw);
-    position: absolute;
-}
+
 .garing10{
     position: absolute;
     width: 3px;
     height: 60px;
-    right: 85px;
+    right: 20px;
     bottom: -50px;
     transform: rotate(45deg);
     background: #FF0411;
@@ -821,21 +797,17 @@ h1{
 .lurus10{
     position: absolute;
     width: 37.5vw;
-    height: fit-content;
-    right: 105px;
+    height: 3px;
+    right: 42px;
     bottom: -42px;
+    background-color: #FF0411;
 }
-.lurus10 img{
-    position: absolute;
-    width: 100%;
-    height: 60px;
-}
+
 .lurus11{
     width: 3px;
     height: 10vw;
     position: absolute;
     left: 0px;
-    top: 42px;
     background-color: #FF0411;
 }
 .kumpulangaringspeaker{
@@ -844,8 +816,9 @@ h1{
     box-sizing: border-box;
     align-items: center;
     width: 60%;
+    max-width: 700px;
     margin-top: -5px;
-    margin-left: 190px;
+    margin-left: auto;
     margin-right: auto;
 }
 .garingspeaker{
@@ -856,27 +829,19 @@ h1{
     background: #FF0411;
 }
 
+@media(max-width:1289px){
+    .kartu{
+        max-width: 800px;
+    }
+    .lurus4{
+        height: calc(1100px + 10vw);
+    }
+}
+
+
 @media(max-width:1200px){
     .lurus7{
-        height: calc(1200px - 1vw);
-    }
-    .lurus9{
-        height: calc(330px + 35vw);
-    }
-    .lurus9 img{
-        height: calc(330px + 35vw);
-    }
-    .lurus10{
-        position: absolute;
-        width: 37.5vw;
-        height: fit-content;
-        right: 105px;
-        bottom: -42px;
-    }
-    .lurus10 img{
-        position: absolute;
-        width: 100%;
-        height: 60px;
+        height: calc(800px - 1vw);
     }
     .lurus11{
         height: 8vw;
@@ -890,7 +855,10 @@ h1{
         height: calc(40px + 70vw);
     }
     .lurus4{
-        height:calc(800px - 1vw);
+        height:calc(1200px - 1vw);
+    }
+    .lurus8{
+        width: 75vw;
     }
     .lurus7{
         height:calc(800px - 0.5vw);
@@ -952,12 +920,12 @@ h1{
 
 }
 
-@media(max-width:500px){
+@media(max-width:639px){
     .lurus2{
         width: 70vw;
     }
     .lurus4{
-        height: calc(550px + 10vw);
+        height: calc(2250px + 10vw);
     }
     .lurus5{
         width: 70vw;
@@ -1120,7 +1088,7 @@ a.popup-link {
             font-size:10px;
 		}
 }
-@media (min-width:1000px){
+@media (min-width:1290px){
     .lurus{
         max-height: 300px;
         max-width: 3px;
@@ -1147,9 +1115,6 @@ a.popup-link {
     .lurus9{
         max-height: 900px;
 
-    }
-    .lurus9 img{
-        max-height: 900px;
     }
     .lurus10{
         max-width: 760px;

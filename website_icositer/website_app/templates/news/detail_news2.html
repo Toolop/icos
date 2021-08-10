@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Detail News 2{% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'news/detail_news.css' %}">{% endblock style %}
+
+
+<body>
+{% block isi %}
+<!-- Swiper -->
+<div class="xcontainer">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="//files.icositer2021.com/static/home/asset/carausel-news/1.jpg" class="d-block w-100" alt="gambar">
+        </div>
+        <div class="carousel-item">
+        <img src="//files.icositer2021.com/static/home/asset/carausel-news/2.jpg" class="d-block w-100" alt="gambar">
+        </div>
+        <div class="carousel-item">
+        <img src="//files.icositer2021.com/static/home/asset/carausel-news/3.jpg" class="d-block w-100" alt="gambar">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="swiper-button-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="swiper-button-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
+<br>
+
+<div class="container">
+  <p class="news-isi-tulisan-tanggal">tanggal</p>
+  <h1 class="news-isi-tulisan-judul">Judul berita kedua</h1>
+  <p class="new-isi-berita">tanggal beritanya reguler 20px
+    Ini Judul Berita Kesatu bold 48px
+    Semuanya font Montserrat , untuk Body Medium 20px deserunt laboris exercitation. Laboris ad id officia elit proident ex nulla mollit.<br> Quis Lorem culpa ut tempor ea deserunt aliquip reprehenderit. Labore commodo culpa cupidatat id occaecat proident cillum culpa.
+    <br>Dolore ut eu laborum amet dolore. Mollit minim Lorem amet anim voluptate esse aliquip anim sunt duis aliqua quis amet reprehenderit. Voluptate ipsum mollit aliqua aliquip proident duis sint qui cillum veniam. Pariatur cupidatat sint culpa sint ea nulla commodo et minim. Magna proident quis Lorem ullamco velit culpa ad. Consectetur pariatur sint occaecat exercitation officia reprehenderit non magna exercitation sunt adipisicing adipisicing magna incididunt.
+    Cillum pariatur et enim nulla adipisicing aliquip ut consectetur officia ex ex sint. Aute anim aute ipsum ut excepteur veniam proident cupidatat irure officia voluptate deserunt laboris exercitation. Laboris ad id officia elit proident ex nulla mollit. Quis Lorem culpa ut tempor ea deserunt aliquip reprehenderit. Labore commodo culpa cupidatat id occaecat proident cillum culpa.
+    Dolore ut eu laborum amet dolore. Mollit minim Lorem amet anim voluptate esse aliquip anim sunt duis aliqua quis amet reprehenderit. Voluptate ipsum mollit aliqua aliquip proident duis sint qui cillum veniam. Pariatur cupidatat sint culpa sint ea nulla commodo et minim. Magna proident quis Lorem ullamco velit culpa ad. Ullamco voluptate aliqua eiusmod magna amet occaecat sint laborum sunt nulla. Consectetur pariatur sint occaecat exercitation officia reprehenderit non magna exercitation sunt adipisicing adipisicing magna incididunt.
+  </p>
+  <br>
+  <div class="row">
+    <div class="col-6 ini-prev">
+      <a href="#">
+         <p>
+          <i class="far fa-arrow-alt-circle-left"></i> Previous News
+         </p> 
+      </a>
+    </div>
+    <div class="col-6 ini-next">
+      <a href="#">
+        <p>
+          Next News <i class="far fa-arrow-alt-circle-right"></i>
+        </p> 
+     </a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="main-news">
+  <a class="news-isi" href="">
+    <div class="news-isi-gambar"></div>
+    <div class="news-isi-tulisan">
+        <p class="news-isi-tulisan-tanggal">tanggal</p>
+        <h1 class="news-isi-tulisan-judul">Judul berita kedua</h1>
+        <p class="news-isi-tulisan-thumbnail">thumbnail</p>
+    </div>
+  </a>
+  <a class="news-isi" href="">
+    <div class="news-isi-gambar"></div>
+    <div class="news-isi-tulisan">
+        <p class="news-isi-tulisan-tanggal">tanggal</p>
+        <h1 class="news-isi-tulisan-judul">Judul berita kedua</h1>
+        <p class="news-isi-tulisan-thumbnail">thumbnail</p>
+    </div>
+  </a>
+  <a class="news-isi" href="">
+    <div class="news-isi-gambar"></div>
+    <div class="news-isi-tulisan">
+        <p class="news-isi-tulisan-tanggal">tanggal</p>
+        <h1 class="news-isi-tulisan-judul">Judul berita kedua</h1>
+        <p class="news-isi-tulisan-thumbnail">thumbnail</p>
+    </div>
+  </a>
+</div>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+{% endblock isi %}
+</body>
