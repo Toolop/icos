@@ -172,7 +172,10 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 60px;
+    margin-left: 100px;
+}
+.registerlomba a {
+    pointer-events: none;
 }
 .tombol{
     color: white;
@@ -205,15 +208,7 @@
 .isi p{
     flex: 2;
 }
-.isi .registerlomba{
-    flex: 2;
-}
-.registerlomba{
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 100px;
-}
+
 .tombol{
     color: white;
     background-color: #FF0411;
@@ -252,6 +247,11 @@
     color: white;
     margin-left: 5px;
 }
+
+.timeline-list b {
+    color: #ff0411;
+}
+
 .bulet{
     width: 15px;
     height: 15px;

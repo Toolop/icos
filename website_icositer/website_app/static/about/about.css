@@ -160,6 +160,7 @@
     width: 100%;
     margin-bottom: 125px;
 }
+
 .circuit4 img{
     width: 50vw;
     max-width: 800px;
@@ -241,8 +242,8 @@
 }
 
 .dosen {
-    width: 140px; 
-    height: 127px;
+    width: 133px; 
+    height: 118px;
 }
 
 .committee-main>h1 {
@@ -280,6 +281,10 @@
 
 .committee-main-info-text>* {
     font-size: 1.5rem;
+}
+
+.committee-main-info-text h3 {
+    color: white;
 }
 
 .committee-tree {
