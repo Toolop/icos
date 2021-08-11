@@ -174,9 +174,7 @@
     margin-bottom: auto;
     margin-left: 100px;
 }
-.registerlomba a {
-    pointer-events: none;
-}
+
 .tombol{
     color: white;
     background-color: #FF0411;
@@ -288,6 +286,9 @@
 }
 
 @media(max-width:999px){
+    .download{
+        margin-top: 250px;
+    }
     .gariskanan{
         display: none;
     }

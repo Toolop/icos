@@ -110,28 +110,25 @@
                 </div>
               </div>
 
-              <div class="upload-btn-wrapper form-row">
+              <div class="upload-btn-wrapper">
+                    <label for="name" class="tombol_up">File Abstract</label>
                     <button class="btn">Upload a file</button>
-                    <input type="file" id="actual-btn" name='file_abstrak' required/>
-                    <label for="name" class="form-label">File Abstract</label>
-                    <span id="file-chosen">No file chosen</span>
-                    <!-- {{ form.file_pdf }} -->
+                    <input type="file" id="file_abstrak" name='file_abstrak' required/>
+                    <span id="abstrak_chosen">No file chosen</span>
               </div>
 
-              <div class="upload-btn-wrapper form-row">
+              <div class="upload-btn-wrapper">
+                    <label for="name" class="tombol_up">Student ID Card</label>
                     <button class="btn">Upload a file</button>
-                    <input type="file" id="actual-btn" name='file_ktm' required/>
-                    <label for="name" class="form-label">Student ID Card</label>
-                    <span id="file-chosen">No file chosen</span>
-                    <!-- {{ form.file_pdf }} -->
+                    <input type="file" id="file_ktm" name='file_ktm' required/>
+                    <span id="ktm_chosen">No file chosen</span>
               </div>
 
-              <div class="upload-btn-wrapper form-row">
+              <div class="upload-btn-wrapper">
+                    <label for="name" class="tombol_up">Screenshot Twibbon & Follow</label>
                     <button class="btn">Upload a file</button>
-                    <input type="file" id="actual-btn" name='file_foltwib' required/>
-                    <label for="name" class="form-label">Screenshot Twibbon & Follow</label>
-                    <span id="file-chosen">No file chosen</span>
-                    <!-- {{ form.file_pdf }} -->
+                    <input type="file" id="file_foltwib" name='file_foltwib' required/>
+                    <span id="foltwib_chosen">No file chosen</span>
               </div>
 
               <!-- <div class="form-group">
@@ -178,21 +175,37 @@
       var subtemanya = document.getElementById("subtema").value;
       var nama_anggota1nya = document.getElementById("nama_anggota1").value;
       var nama_anggota2nya = document.getElementById("nama_anggota2").value;
+      var nama_anggota3nya = document.getElementById("nama_anggota3").value;
+      var nama_anggota4nya = document.getElementById("nama_anggota4").value;
       var prodi_anggota1nya = document.getElementById("prodi_anggota1").value;
       var prodi_anggota2nya = document.getElementById("prodi_anggota2").value;
-      var filenya = document.getElementById("actual-btn").value;
+      var prodi_anggota3nya = document.getElementById("prodi_anggota3").value;
+      var prodi_anggota4nya = document.getElementById("prodi_anggota4").value;
+      var file_abs = document.getElementById("file_abstrak").value;
+      var file_kt = document.getElementById("file_ktm").value;
+      var file_fol = document.getElementById("file_foltwib").value;
       
-      if(namanya!= "" && emailnya!="" && prodinya!="" && no_teleponnya!="" && instansinya!="" && subtemanya!="" && nama_anggota1nya!="" && nama_anggota2nya!="" && prodi_anggota1nya!="" && prodi_anggota2nya!="" && filenya!="" ){
+      if(namanya!= "" && emailnya!="" && prodinya!="" && no_teleponnya!="" && instansinya!="" && subtemanya!="" && nama_anggota1nya!="" && nama_anggota2nya!="" && nama_anggota3nya!="" && nama_anggota4nya!="" && prodi_anggota1nya!="" && prodi_anggota2nya!="" && prodi_anggota3nya!="" && prodi_anggota4nya!="" && file_abs!="" && file_kt!="" && filefol!=""){
         modal.style.display = "block";
       }
-
-       
     }
 
-    const fileChosen = document.getElementById('file-chosen');
-    const actualBtn = document.getElementById('actual-btn');
-    actualBtn.addEventListener('change', function(){
-      fileChosen.textContent = this.files[0].name
+    const abstrakChosen = document.getElementById('abstrak_chosen');
+    const actualAbstrak = document.getElementById('file_abstrak');
+    actualAbstrak.addEventListener('change', function(){
+      abstrakChosen.textContent = this.files[0].name
+    })
+
+    const ktmChosen = document.getElementById('ktm_chosen');
+    const actualKtm = document.getElementById('file_ktm');
+    actualKtm.addEventListener('change', function(){
+      ktmChosen.textContent = this.files[0].name
+    })
+    
+    const foltwibChosen = document.getElementById('foltwib_chosen');
+    const actualFoltwib = document.getElementById('file_foltwib');
+    actualFoltwib.addEventListener('change', function(){
+      foltwibChosen.textContent = this.files[0].name
     })
 
     // When the user clicks on <span> (x), close the modal
