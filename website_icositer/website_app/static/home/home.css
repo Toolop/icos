@@ -33,10 +33,10 @@ h1{
 
 }
 .lineleft1{
-    height: 800px;
+    height: 640px;
     width: 3%;
     z-index: -1;
-    margin-top: -2vw;
+    margin-top: -3vw;
     margin-left: 11%;
     background-image: linear-gradient(to top, #FF0411 70%, #12006B);
 }
@@ -229,7 +229,6 @@ h1{
     box-shadow: 10px 10px 5px black;
     background-color: #FF0411;
     width: 250px;
-    height: 500px;
     margin: 20px;
     height: 450px;
     border-radius: 20px;
@@ -406,7 +405,7 @@ h1{
     flex: 1;
     min-width: none;
     max-width: 1920px;
-    margin: -5% 0% 10% 9%;
+    margin: -7% 0% -4% 9%;
     padding: 20px;
 }
 
@@ -563,7 +562,7 @@ h1{
 
 /*apri */
 .gallery{
-    margin-top: 5%;
+    margin-top: 4%;
 }
 .gallery h1{
     width: 300px;
@@ -782,7 +781,7 @@ h1{
 }
 .lurus9{
     width: 3px;
-    height: calc(650px + 5vw);
+    height: calc(530px + 5vw);
     position: absolute;
     right: -42px;
     top: 42px;
@@ -809,7 +808,7 @@ h1{
 
 .lurus11{
     width: 3px;
-    height: 10vw;
+    height: 5vw;
     position: absolute;
     left: 0px;
     background-color: #FF0411;
@@ -836,16 +835,36 @@ h1{
 
 @media(max-width:1200px){
     .lurus7{
-        height: calc(800px - 1vw);
+        height: calc(700px - 1vw);
+    }
+    .kumpulangaringspeaker{
+        display: none;
+    }
+    .speakers-content{
+        margin: 130px auto 80px;
+    }
+    .lineleft1{
+        height: 800px;
+    }
+    .newsicos{
+        margin: 1% auto 1% 10%;
+    }
+    .lurus8{
+        width: 80vw;
+    }
+    .lurus10{
+        width: 42vw;
     }
     .lurus11{
-        height: 8vw;
-    }   
-
+        height: 4vw;
+    }
 }
 
 
 @media(max-width:999px){
+    .speakers-content{
+        margin: 11% auto 4vw auto;
+    }
     .lurus{
         height: calc(40px + 70vw);
     }
@@ -853,14 +872,13 @@ h1{
         height:calc(1200px - 1vw);
     }
     .lurus8{
-        width: 75vw;
+        width: 80vw;
     }
     .lurus7{
-        height:calc(800px - 0.5vw);
+        height:calc(600px - 0.5vw);
     }
     .lurus9{
-        width: 3px;
-        height:calc(950px + 10vw);
+        height:calc(830px + 11vw);
         position: absolute;
         right: -42px;
         top: 42px;
@@ -869,14 +887,14 @@ h1{
     .lurus9 img{
         display: none;
     }
-    .lurus10{
+    /*.lurus10{
         position: absolute;
-        width: calc(50px + 31vw);
+        width: calc(90px + 31vw);
         height: 3px;
         right: 42px;
         bottom: -42px;
         background-color: #FF0411;
-    }
+    }*/
     .garing10{
         right: 20px;
         bottom: -50px;
@@ -888,7 +906,7 @@ h1{
         height: 60px;
     }
     .lurus11{
-        height: calc(100px + 5vw);
+        height: calc(10px + 5vw);
         top: 0px;
     }
     .linehorizontalleft{
@@ -912,15 +930,21 @@ h1{
     .garingspeaker5{
         display: none;
     }
-
+    .newsicos{
+        margin: 14% auto -13vw auto;
+        padding: 20px;
+    }
+    .gallery{
+        margin-top: 7%;
+    }
 }
 
 @media(max-width:639px){
     .lurus2{
-        width: 70vw;
+        width: 80vw;
     }
     .lurus4{
-        height: calc(2250px + 10vw);
+        height: calc(2100px + 10vw);
     }
     .lurus5{
         width: 70vw;
@@ -928,9 +952,12 @@ h1{
     .lurus7{
         height:calc(600px - 1vw);
     }
+    .lurus8{
+        width: 70vw;
+    }
     .lurus10{
         position: absolute;
-        width: calc(10px + 31vw);
+        width: calc(20px + 35vw);
         height: 3px;
         right: 42px;
         bottom: -42px;
@@ -938,18 +965,23 @@ h1{
     }
     .lurus9{
         width: 3px;
-        height:calc(1050px + 10vw);
+        height:calc(800px + 10vw);
         position: absolute;
         right: -42px;
         top: 42px;
         background-color: #FF0411;
     }
-
-
+    .newsicos{
+        margin: 60px auto -100px ;
+    }
 }
+
 @media(max-width:400px){
     .lurus2{
-        width: 70vw;
+        width: 80vw;
+    }
+    .newsicos{
+        margin-top: 30vw;
     }
 
 }

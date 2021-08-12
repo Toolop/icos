@@ -9,63 +9,29 @@
 
 <body>
 {% block isi %}
+
+{% if berita_utama%}
 <div class="main-news">
-    <a class="news-isi satu" href="{% url 'detail_news1' %}">
-        <div class="news-isi-gambar"></div>
+    <a class="news-isi satu" href="{% url 'detail_news' %}">
+        <div class="news-isi-gambar"><img src="{{berita_utama.gambar.url}}" ></div>
         <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita kesatu</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
+            <p class="news-isi-tulisan-tanggal">{{berita_utama.tanggal}}</p>
+            <h1 class="news-isi-tulisan-judul">{{berita_utama.judul}}</h1>
+            <p class="news-isi-tulisan-thumbnail">{{berita_utama.isi|safe}}</p>
         </div>
     </a>
-    <a class="news-isi" href="{% url 'detail_news2' %}">
-        <div class="news-isi-gambar"></div>
+{% endif %}
+ 
+{% for News in berita %}
+        <a class="news-isi" href="{% url 'detail_news' %}">
+        <div class="news-isi-gambar"><img src="{{News.gambar.url}}" ></div>
         <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita kedua</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
+            <p class="news-isi-tulisan-tanggal">{{News.tanggal}}</p>
+            <h1 class="news-isi-tulisan-judul">{{News.judul}}</h1>
+            <p class="news-isi-tulisan-thumbnail">{{News.isi|safe}}</p>
         </div>
     </a>
-    <a class="news-isi" href="">
-        <div class="news-isi-gambar"></div>
-        <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita ketiga</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
-        </div>
-    </a>
-    <a class="news-isi" href="">
-        <div class="news-isi-gambar"></div>
-        <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita keempat</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
-        </div>
-    </a>
-    <a class="news-isi" href="">
-        <div class="news-isi-gambar"></div>
-        <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita kelima</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
-        </div>
-    </a>
-    <a class="news-isi" href="">
-        <div class="news-isi-gambar"></div>
-        <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita keenam</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
-        </div>
-    </a>
-    <a class="news-isi" href="">
-        <div class="news-isi-gambar"></div>
-        <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">tanggal</p>
-            <h1 class="news-isi-tulisan-judul">Judul berita ketuju</h1>
-            <p class="news-isi-tulisan-thumbnail">thumbnail</p>
-        </div>
-    </a>
+{% endfor %}
 </div>
 
 {% endblock isi %}

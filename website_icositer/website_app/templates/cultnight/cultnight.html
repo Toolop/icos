@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}ICoSITeR 2021{% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'cultnight/cultnight.css' %}">{% endblock style %}
+
+<body>
+    {% block isi %}
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="tophead container-xl">
+            <img class="tophead-img col-xl-6" src="{% static 'cultnight/asset/vr0.svg' %}">
+            <div class="tophead-info col-xl-5">
+                <div class="tophead-title text-white">
+                    <h1>
+                        Cultural Night  
+                    </h1>
+                    <h3>
+                        ICoSITeR 2021
+                    </h3>
+                </div>
+                <p class="tophead-description">
+                    Penjelasan sedikit tentang virtual exhibition pada event Icositer 2021 fontnya montserrat, bodynya medium 24px. Incididunt reprehenderit do amet cupidatat ex irure. pariatur enim occaecat Incididunt reprehenderit pariatur enim.
+                </p>
+            </div>
+        </div>
+        <div class="gallery">
+            <a class="photo-link-550 btn text-white">GO TO CULTURAL NIGHT</a>
+            <div id="photo-carousel" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#photo-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#photo-carousel" data-slide-to="1"></li>
+                    <li data-target="#photo-carousel" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'home/asset/carausel-news/1.jpg' %}">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'home/asset/carausel-news/2.jpg' %}">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'home/asset/carausel-news/3.jpg' %}">
+                    </div>
+                </div>
+                <a class="carousel-control carousel-control-prev" href="#photo-carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control carousel-control-next" href="#photo-carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="photo-highlight">
+                <img src="">
+            </div>
+            <div class="photo-grid">
+                <img class="grid-item item0">
+                <img class="grid-item item1">
+                <img class="grid-item item2">
+                <img class="grid-item item3">
+                <img class="grid-item item4">
+                <img class="grid-item item5">
+                <a class="photo-link btn text-white">GO TO CULTURAL NIGHT</a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content End -->
+
+    {% endblock isi %}
+</body>
