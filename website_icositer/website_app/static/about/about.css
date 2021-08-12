@@ -175,7 +175,7 @@
     width: 100%;
 }
 
-@media(max-width:1000px){
+@media(max-width:1200px){
     .circuit5{
         display: none;
     }
@@ -240,7 +240,7 @@
     left: -32%;
 }
 
-.committee-main>h1 {
+.committee-main h1 {
     margin-top: 3%;
     width: 480px;
     font-size: 4rem;
@@ -441,11 +441,7 @@
     display: flex;
 }
 
-
-/* Screen width media quarries */
-
-@media (max-width: 500px) {
-
+@media (max-width: 1000px) {
     /* Circuit */
     .circuits {
         display: none;
@@ -458,7 +454,7 @@
         margin-bottom: 160px;
     }
 
-    .committee-main>h1{
+    .committee-main h1{
         text-align: center;
     }
 
@@ -500,5 +496,15 @@
     .popup-close {
         right: 10px;
         bottom: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .committee-main h1{
+        font-size: 3rem;
+    }
+
+    .committee-info-text * {
+        font-size: 1rem;
     }
 }

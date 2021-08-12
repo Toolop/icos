@@ -13,6 +13,9 @@ def competition (request):
 def conference (request):
 	return render(request,'conference/conference.html')
 
+def cultnight (request):
+	return render(request,'cultnight/cultnight.html')
+
 def virtualex (request):
 	return render(request,'virtualexhibition/virtualexhibition.html')
 
