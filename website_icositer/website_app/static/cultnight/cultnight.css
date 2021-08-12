@@ -1,0 +1,213 @@
+.main-content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 30px;
+    min-height: 450px;
+}
+
+.tophead-img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.tophead-info {
+    height: 100%;
+}
+
+.tophead-title {
+    margin-bottom: 40px;
+}
+
+.tophead-title * {
+    line-height: 110%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.tophead-title h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.tophead-title h3 {
+    font-size: 24px;
+}
+
+.tophead-description {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.gallery {
+    margin: 50px 5%;
+}
+
+.photo-highlight {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 65px;
+    height: 480px;
+    width: 100%;
+    background-color: #3D2C8B;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border: 3px #3D2C8B solid;
+}
+
+.photo-highlight * {
+    /* Border radius pake atau ga? */
+    border-radius: 65px; 
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.photo-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23% 27% 30%;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.photo-grid img {
+    background-color: #3D2C8B;
+    border: 3px #3D2C8B solid;
+    border-radius: 65px;
+    width: 100%;
+    min-height: 330px;
+    height: 100%;
+}
+
+.item2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.item5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+#photo-carousel {
+    display: none;
+}
+
+.photo-link {
+    min-height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    background-color: #FF0000;
+    border-radius: 65px;
+}
+
+@media(max-width:1200px) {
+
+    .photo-grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media(max-width:550px) {
+
+    .photo-link-550 {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 10px;
+        height: 30px;
+        min-width: 200px;
+        width: 50%;
+        background-color: #FF0000;
+        border-radius: 65px;
+    }
+
+    .tophead {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 20px 10px 20px;
+    }
+
+    .tophead>* {
+        width: 100%;
+    }
+
+    .tophead-title {
+        margin-bottom: 10px;
+    }
+
+    .tophead-title h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .tophead-title h3 {
+        font-size: 17px;
+    }
+    
+    .tophead-description {
+        font-size: 13px;
+        line-height: 110%;
+    }
+
+    .gallery {
+        margin: 10px 20x;
+    }
+
+    .photo-highlight {
+        display: none;
+    }
+
+    .photo-grid {
+        display: none;
+    }
+
+    /* CAROUSEL */
+    #photo-carousel {
+        display: block;
+    }
+
+    #photo-carousel .carousel-inner {
+        height: 220px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .carousel-item img {
+        border-radius: 30px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 220px;
+        background-color: #3D2C8B;
+        border: 4px #3D2C8B solid;
+    }
+}

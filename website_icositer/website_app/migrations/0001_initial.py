@@ -15,9 +15,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='News',
             fields=[
-                ('judul', models.CharField(max_length=255, primary_key=True, serialize=False)),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('judul', models.CharField(max_length=255)),
                 ('isi', ckeditor.fields.RichTextField(blank=True, null=True)),
+                ('gambar', models.ImageField(upload_to='')),
                 ('tanggal', models.DateField(auto_now_add=True)),
+                ('is_published', models.BooleanField(default=True)),
             ],
             options={
                 'verbose_name_plural': 'News',
