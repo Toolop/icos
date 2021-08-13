@@ -316,6 +316,21 @@ input {
     font-size: 11px;
     color: #edb77d; }
 
+.upload-btn-wrapper{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.tombol_up{
+    left : 27px;
+    position: absolute;
+    font-size: 11px;
+    color: #edb77d;
+}
+/*.btn {
+  text-align: left;
+}*/
+
 input, select {
   box-sizing: border-box;
   width: 100%;

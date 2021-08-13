@@ -29,7 +29,7 @@
 /* judul */
 .judul{
     width: 90%;
-    margin-top: 210px;
+    margin-top: 100px;
     margin-bottom: 110px;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,7 @@
 }
 .judul h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(35px + 3vw);
+    font-size: calc(12px + 3vw);
 }
 
 .garisbawah{
@@ -160,6 +160,7 @@
     width: 100%;
     margin-bottom: 125px;
 }
+
 .circuit4 img{
     width: 50vw;
     max-width: 800px;
@@ -240,6 +241,11 @@
     left: -32%;
 }
 
+.dosen {
+    width: 133px; 
+    height: 118px;
+}
+
 .committee-main h1 {
     margin-top: 3%;
     width: 480px;
@@ -275,6 +281,10 @@
 
 .committee-main-info-text>* {
     font-size: 1.5rem;
+}
+
+.committee-main-info-text h3 {
+    color: white;
 }
 
 .committee-tree {

@@ -16,5 +16,7 @@ class POSTERForm(forms.ModelForm):
 			'nama_anggota2',
 			'prodi_anggota2',
 			'subtema',
-			'file_pdf',
+			'file_abstrak',
+			'file_ktm',
+			'file_foltwib'
 		]

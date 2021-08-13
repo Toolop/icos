@@ -15,7 +15,7 @@
 .judul{
     width: 90%;
     margin-top: 100px;
-    margin-bottom: 0px;
+    margin-bottom: -170px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -172,8 +172,9 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 60px;
+    margin-left: 100px;
 }
+
 .tombol{
     color: white;
     background-color: #FF0411;
@@ -189,7 +190,7 @@
     text-align: center;
     width: 80%;
     margin-top: 50px;
-    text-align: center;
+    font-size: 25px;
 }
 .cabangcompetition h2{
     margin-top: 50px;
@@ -205,15 +206,7 @@
 .isi p{
     flex: 2;
 }
-.isi .registerlomba{
-    flex: 2;
-}
-.registerlomba{
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 100px;
-}
+
 .tombol{
     color: white;
     background-color: #FF0411;
@@ -231,7 +224,8 @@
 .download a{
     color: #FF0411;
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .timeline{
     width: 100%;
@@ -251,6 +245,11 @@
     color: white;
     margin-left: 5px;
 }
+
+.timeline-list b {
+    color: #ff0411;
+}
+
 .bulet{
     width: 15px;
     height: 15px;
@@ -287,6 +286,9 @@
 }
 
 @media(max-width:999px){
+    .download{
+        margin-top: 250px;
+    }
     .gariskanan{
         display: none;
     }
