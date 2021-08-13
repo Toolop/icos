@@ -7,6 +7,7 @@ from article.models import Article
 
 class ListNews(admin.ModelAdmin):
 	list_display = ('judul', 'tanggal',)
+	prepopulated_fields = {'slug': ('judul',)}
 admin.site.register(News, ListNews)
 
 class ListPrototype(admin.ModelAdmin):
