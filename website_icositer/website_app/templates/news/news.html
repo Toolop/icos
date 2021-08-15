@@ -10,7 +10,7 @@
 <body>
 {% block isi %}
 
-{% if berita_utama%}
+<!-- {% if berita_utama %}
 <div class="main-news">
     <a class="news-isi satu" href="{% url 'detail_news' %}">
         <div class="news-isi-gambar"><img src="{{berita_utama.gambar.url}}" ></div>
@@ -20,10 +20,10 @@
             <p class="news-isi-tulisan-thumbnail">{{berita_utama.isi|safe}}</p>
         </div>
     </a>
-{% endif %}
+{% endif %} -->
  
-{% for News in berita %}
-        <a class="news-isi" href="{% url 'detail_news' %}">
+{% for News in object_list %}
+        <a class="news-isi" href="{{News.get_absolute_url}}">
         <div class="news-isi-gambar"><img src="{{News.gambar.url}}" ></div>
         <div class="news-isi-tulisan">
             <p class="news-isi-tulisan-tanggal">{{News.tanggal}}</p>

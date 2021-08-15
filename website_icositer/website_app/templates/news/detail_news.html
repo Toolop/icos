@@ -2,7 +2,7 @@
 {% load static %}
 
 
-{% block title %}Detail News 1{% endblock title %}
+{% block title %}{{object.judul}}{% endblock title %}
 
 {% block style %}<link rel="stylesheet" href="{% static 'news/detail_news.css' %}">{% endblock style %}
 
@@ -14,7 +14,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="//files.icositer2021.com/static/home/asset/carausel-news/1.jpg" class="d-block w-100" alt="gambar">
+        <img src="{{ MEDIA_URL }}{{ object.gambar.url }}" class="d-block w-100" alt="gambar">
         </div>
         <div class="carousel-item">
         <img src="//files.icositer2021.com/static/home/asset/carausel-news/2.jpg" class="d-block w-100" alt="gambar">
@@ -34,12 +34,12 @@
     </div>
 </div>
 <br>
-{% if berita_utama%}
+
 <div class="container">
-  <p class="news-isi-tulisan-tanggal">{{berita_utama.tanggal}}</p>
-  <h1 class="news-isi-tulisan-judul">{{berita_utama.judul}}</h1>
-  <p class="new-isi-berita">{{berita_utama.isi|safe}}</p>
-{%endif%}
+  <p class="news-isi-tulisan-tanggal">{{object.tanggal}}</p>
+  <h1 class="news-isi-tulisan-judul">{{object.judul}}</h1>
+  <p class="new-isi-berita">{{object.isi|safe}}</p>
+
   <div class="row">
     <div class="col-6 ini-prev">
       <a href="#">
