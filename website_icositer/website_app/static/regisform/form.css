@@ -220,6 +220,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     background: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 .form-v9-content .form-detail input:focus {
     border: 2px solid #999;
@@ -312,10 +313,16 @@ input {
   padding-top: 10px;
   -webkit-appearance: none;
 }
-input:focus + .form-label, input:valid + .form-label {
+input:focus + .form-label, input:not(.opsi):valid + .form-label{
     top: 1px;
     font-size: 11px;
     color: #edb77d; 
+}
+
+input:not(:placeholder-shown).opsi + .form-label{
+    top: 1px;
+    font-size: 11px;
+    color: #edb77d;
 }
 
 select {
@@ -401,7 +408,9 @@ input,  {
   -ms-transition: 0.25s ease;
   color: #bebebe;
   left: 27px;
-  top: 38px; }
+  top: 38px; 
+  z-index: -1;
+}
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -452,6 +461,7 @@ input:focus ~ label,
 input:not(:placeholder-shown) ~ label {
   z-index: -1;
 }
+
 
 .reg-button{
     color: white;

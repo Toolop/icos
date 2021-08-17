@@ -1,9 +1,13 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 from django.urls import reverse
+from django.core.files.storage import FileSystemStorage
+
+# image = models.ImageField(upload_to='/images', storage=upload_storage) 
 
 class News(models.Model):
-	judul = models.CharField(max_length = 255,)
+	# upload_storage = FileSystemStorage(location='../../DEPLOY', base_url='//files.icositer2021.com/gambar')
+	judul = models.CharField(max_length = 255)
 	isi = RichTextField(blank = True, null = True)
 	gambar = models.ImageField(null=False, blank=False, upload_to="gambar/")
 	tanggal = models.DateField(auto_now_add = True)
