@@ -349,8 +349,9 @@ select {
   transition: all 0.3s;
   justify-content: center;
   transform: rotate(90deg);
-  
 }
+
+
 
 select:focus + .form-label, select:valid + .form-label {
     top: 1px;
@@ -367,7 +368,7 @@ select:focus + .form-label, select:valid + .form-label {
 }
 
 .upload-btn-wrapper{
-  margin-top: 10px;
+  margin-top: 3px;
   width: 100%;
 }
 
@@ -376,6 +377,59 @@ select:focus + .form-label, select:valid + .form-label {
     position: absolute;
     font-size: 11px;
     color: #edb77d;
+}
+
+.bi-info-circle{
+    color: white;
+    margin-left: 10px;
+}
+
+.info-file {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+.dua {
+    z-index: 2;
+}
+
+.tiga{
+    z-index: 1;
+}
+
+.info-file .info-text{
+    visibility: hidden;
+    width: 150px;
+    height: 150px;
+    background-color: #040505;
+    text-align: center;
+    border-radius: 20px;
+    padding: 4px 0;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.info-file .info-text::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #040505 transparent;
+}
+
+.info-file:hover .info-text{
+    visibility: visible;
+}
+
+.label-info{
+    position: absolute;
+    width: 100%;
 }
 
 input,  {
