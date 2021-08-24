@@ -141,13 +141,13 @@ body {
     -webkit-align-items: center;
 }
 .form-v9-content  {
-    width: 975px;
+    width: 100%;
     border-radius: 15px;
     -o-border-radius: 15px;
     -ms-border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
-    margin: 18px 0;
+    margin: 18px auto;
     font-family: 'Nunito', sans-serif;
     color: #fff;
     font-weight: 700;
@@ -155,7 +155,7 @@ body {
     position: relative;
 }
 .form-v9-content .form-detail {
-    padding: 10px 135px 30px 100px;
+    padding: 10px 100px 30px 100px;
     position: relative;
 }
 .form-v9-content .form-detail h2 {
@@ -298,7 +298,20 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 @media screen and (max-width: 575px) {
     .form-v9-content .form-detail {
-        padding: 30px 45px 30px 10px;
+        padding: 30px 10px 30px 10px;
+    }
+    .leftline{
+        display: none;
+    }
+    .rightline{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+    .tiga .info-file .info-text{
+        width: 250px;
+        height: 20px;
+        padding: 7px;
     }
 }
 
@@ -398,18 +411,29 @@ select:focus + .form-label, select:valid + .form-label {
     z-index: 1;
 }
 
+.tiga .info-file .info-text{
+    height: 200px;
+    margin-left: -150px;
+}
 .info-file .info-text{
     visibility: hidden;
-    width: 150px;
+    width: 300px;
     height: 150px;
-    background-color: #040505;
-    text-align: center;
+    background-color: black;
+    text-align: left;
     border-radius: 20px;
-    padding: 4px 0;
+    padding: 7px;
     position: absolute;
     top: 105%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -120px;
+    color: white;
+    font-size: 12px;
+}
+
+.info-file .info-text h5{
+    font-size: 20px;
+    text-align: center;
 }
 
 .info-file .info-text::after{
@@ -528,3 +552,98 @@ input:not(:placeholder-shown) ~ label {
     display: block;
     margin: 0 auto;
 }
+
+/*###########################################*/
+
+#card {
+  position: relative;
+  width: 600px;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#card img{
+    width: 65px;
+}
+
+#card h3{
+    color: #8BEDFF;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#card p{
+    color: black;
+    margin-bottom: -50px;
+}
+
+
+
+#upper-side {
+  padding: 2em;
+  background-color: #8BEDFF;
+  display: block;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+
+#status {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+  margin-top: -.2em;
+  margin-bottom: 0;
+}
+
+#lower-side {
+  padding: 2em 2em 5em 2em;
+  background: #e7fbff;
+  /*display: block;*/
+  border-radius: 20px;
+
+}
+
+#message {
+  margin-top: -.5em;
+  color: #757575;
+  text-align: center;
+  
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+#contBtn {
+  position: relative;
+  top: 4em;
+  text-decoration: none;
+  background: #FF0411;
+  color: #fff;
+  margin: auto;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+}
+
+#contBtn:hover {
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+}
+
+

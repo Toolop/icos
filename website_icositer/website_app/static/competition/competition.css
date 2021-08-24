@@ -182,13 +182,10 @@
     border-radius: 30px;
     font-size: 28px;
 }
-.tombol:hover{
-    color: white;
-    text-decoration: none;
-}
+
 .download{
     text-align: center;
-    width: 80%;
+    width: 50%;
     margin-top: 50px;
     font-size: 25px;
 }

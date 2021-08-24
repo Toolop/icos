@@ -5,20 +5,29 @@ from django.http import HttpResponseRedirect
 from poster.models import Poster
 from poster.forms import POSTERForm
 
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+
 def regist(request):
     berhasil = False
     if request.method == "POST":
         form = POSTERForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect("/poster/registration")            
+            email_peserta = form.cleaned_data.get("email")
+            subject = 'Poster Registration Confirmation'
+            html_message = render_to_string('regisformconfir/confirmation.html', {'pendaftar': form.cleaned_data, 'lomba':'Poster'})
+            plain_message = strip_tags(html_message)
+            from_email = 'enrico-joe@icositer2021.com'
+            to = email_peserta
+            send_mail(subject, plain_message, from_email, [to], html_message=html_message)
+            return HttpResponseRedirect("/poster/registration?success")            
     else:
-        form = POSTERForm
-        if 'berhasil' in request.GET:
+        if 'success' in request.GET:
             berhasil=True
     context = {
     'Poster':Poster,
-    'form':form,
     'berhasil':berhasil
     }
     return render(request,'poster/form.html',context)
