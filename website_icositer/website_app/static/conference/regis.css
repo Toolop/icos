@@ -14,7 +14,7 @@
 /* judul */
 .judul{
     width: 90%;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,6 +45,10 @@
 .text{
     position: relative;
 }
+.text b{
+    color: #FF0411;
+}
+
 .bulet{
     width: 15px;
     height: 15px;
@@ -106,10 +110,49 @@
     width: 80%;
     height: 80%;
 }
-
-
-
+.harga h3, p{
+    text-align: left;
+    color: white;
+}
+.payment{
+    width: 70%;
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+.payment table{
+    width: 100%;
+}
+.container-payment{
+    display: flex;
+    width: 100%;
+}
+.payment-proof{
+    width: 30%;
+}
+.payment-proof a{
+    margin-top : 30%;
+    font-size: 20px;
+}
 /* media */
+
+@media(max-width: 1000px){
+    .container-payment{
+        display: block;
+        /*position: relative;*/
+        text-align: center;
+    }
+    .payment{
+        margin: auto auto -100px auto;
+        width: 100%;
+    }
+    .payment-proof{
+        width: 100%;
+        margin-left: 20%;
+        margin-right: 25%;
+    }
+}
 
 @media(min-width:900px){
     .speakertime-list{
@@ -177,11 +220,16 @@
     color: white;  
 }
 .btn.abstrak{
-    background-color: #37c544ff;
+    background-color: #5cb85c;
     color: white;
 }
 .btn.partisipan{
-    background-color: white;
+    background-color: #5bc0de;
+    color: white;
+}
+.btn.template{
+    color: white;
+    background-color: #61ce70;
 }
 .btn.abstrak:hover{
     background-color: #2e903bff;
@@ -191,6 +239,9 @@
 }
 .btn.partisipan:hover{
     background-color: #e6e6e6ff;
+}
+.btn.template:hover{
+    background-color: ;
 }
 
 @media(max-width:700px){
@@ -263,6 +314,9 @@
         width: 100%;
         height: 100%;
     }
+    .payment{
+        margin-bottom: -50px;
+    }
     
 }
 @media(max-width:448px){
@@ -280,6 +334,11 @@
     .btn{
         width: 200px;
         font-size: 20px;
+    }
+    .proof{
+        height: 4em;
+        white-space: normal;
+        font-size: 15px;
     }
 }
 @media(min-width:700px){

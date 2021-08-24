@@ -3,7 +3,7 @@
 
 {% block title %}Prototype Registrations{% endblock title %}
 
-{% block style %}<link rel="stylesheet" href="{% static 'prototype/form.css' %}">{% endblock style %}
+{% block style %}<link rel="stylesheet" href="{% static 'regisform/form.css' %}">{% endblock style %}
 
 <body>
   <div class="main-wrapper">
@@ -26,6 +26,25 @@
     <div class="garisbawah"></div>      
       <div class="form-v9">
         <div class="page-content">
+          {% if berhasil %}
+            <div id='card' class="animated fadeIn">
+                <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                  <img src="{% static 'check-mark.svg' %}"/>
+                  <h3 id='status'>
+                  Registration Success
+                </h3>
+              <div id='lower-side'>
+                <p id='message'>
+                  Thank you. We have sent you email to your registered email account. Please check your email to confirm your data
+                </p>
+                
+              </div>
+              <a href="{% url 'home' %}" id="contBtn">Back to Homepage</a>
+            </div>
+
+          {% else %}
           <div class="form-v9-content">
             <form class="form-detail" action="#" method="POST" enctype="multipart/form-data">
               {% csrf_token %}
@@ -60,8 +79,15 @@
                     <input type="text" id="instansi" name='instansi' required/>
                     <label for="name" class="form-label">Institute</label>
                 </div>
-                <div class="form-group form-input form-row">
-                    <input type="text" id="subtema" name='subtema' required/>
+                <div class="form-group form-input form-row cselect">
+                    <select id="subtema" name="subtema" required>
+                      <option value="" disabled selected hidden></option>
+                      <option value="Smart Infrastructure">Smart Infrastructure</option>
+                      <option value="Smart Living">Smart Living</option>
+                      <option value="Smart Energy">Smart Energy</option>
+                      <option value="Smart Farming">Smart Farming</option>
+                      <option value="Smart Manufacturing">Smart Manufacturing</option>
+                    </select>
                     <label for="name" class="form-label">Subtheme</label>
                 </div>
               </div>
@@ -88,44 +114,83 @@
                 </div>
               </div>
 
-              <div class="form-row-total">
+              <div class="form-row-total opsi">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="nama_anggota3" name='nama_anggota3' required/>
+                    <input class="opsi" type="text" id="nama_anggota3" name='nama_anggota3' placeholder=" " />
                     <label for="name" class="form-label">Member Name</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="prodi_anggota3" name='prodi_anggota3' required/>
+                    <input class="opsi" type="text" id="prodi_anggota3" name='prodi_anggota3' placeholder=" "/>
                     <label for="name" class="form-label">Member Study Program</label>
                 </div>
               </div>
 
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="nama_anggota4" name='nama_anggota4' required/>
+                    <input class="opsi" type="text" id="nama_anggota4" name='nama_anggota4' placeholder=" " />
                     <label for="name" class="form-label">Member Name</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="prodi_anggota4" name='prodi_anggota4' required/>
+                    <input class="opsi" type="text" id="prodi_anggota4" name='prodi_anggota4' placeholder=" " />
                     <label for="name" class="form-label">Member Study Program</label>
                 </div>
               </div>
 
+              <div class="label-info">
+                  <label for="name" class="tombol_up">File Abstract
+                  <div class="info-file">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    <div class="info-text">
+                      Ini contoh teksnya
+                      File diupload dengan format penamaan [Nama]_[NIM]_[Prodi].pdf
+                    </div>
+                  </div>
+                </label>  
+              </div>
               <div class="upload-btn-wrapper">
-                    <label for="name" class="tombol_up">File Abstract</label>
                     <button class="btn">Upload a file</button>
                     <input type="file" id="file_abstrak" name='file_abstrak' required/>
                     <span id="abstrak_chosen">No file chosen</span>
               </div>
-
+              
+              <div class="label-info dua">
+                  <label for="name" class="tombol_up">Student ID Card
+                  <div class="info-file">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    <div class="info-text">
+                      Ini contoh teksnya
+                      File diupload dengan format penamaan [Nama]_[NIM]_[Prodi].pdf
+                    </div>
+                  </div>
+                </label>  
+              </div>
               <div class="upload-btn-wrapper">
-                    <label for="name" class="tombol_up">Student ID Card</label>
                     <button class="btn">Upload a file</button>
                     <input type="file" id="file_ktm" name='file_ktm' required/>
                     <span id="ktm_chosen">No file chosen</span>
               </div>
 
+              <div class="label-info tiga">
+                  <label for="name" class="tombol_up">Screenshot Twibbon & Follow
+                  <div class="info-file">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    <div class="info-text">
+                      Ini contoh teksnya
+                      File diupload dengan format penamaan [Nama]_[NIM]_[Prodi].pdf
+                    </div>
+                  </div>
+                </label>  
+              </div>
               <div class="upload-btn-wrapper">
-                    <label for="name" class="tombol_up">Screenshot Twibbon & Follow</label>
                     <button class="btn">Upload a file</button>
                     <input type="file" id="file_foltwib" name='file_foltwib' required/>
                     <span id="foltwib_chosen">No file chosen</span>
@@ -150,6 +215,7 @@
 
             </form>
           </div>
+          {% endif %}
         </div>
       </div>
     </div>
