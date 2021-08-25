@@ -140,3 +140,11 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.icositer2021.com'
+EMAIL_PORT = '465'
+EMAIL_HOST_USER = 'confirmation@icositer2021.com'
+EMAIL_HOST_PASSWORD = 'this-icos-confir'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True

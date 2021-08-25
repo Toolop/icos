@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		.isi{
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<p>Thanks for register in ICoSITeR 2021, here is your registered data : <br><br>
+<div class="isi">
+	Competition Branch : {{lomba}}<br>
+	Leader Name : {{pendaftar.nama_ketua}}<br>
+	No Telpon : {{pendaftar.no_telepon}}<br>
+	Institusi : {{pendaftar.instansi}}<br>
+	Study Program : {{pendaftar.prodi_ketua}}<br>
+	Subtheme : {{pendaftar.subtema}}<br><br>
+	Member 1 :<br>
+	Name : {{pendaftar.nama_anggota1}}<br>
+	Study Program : {{pendaftar.prodi_anggota1}}<br><br>
+	
+	{% if pendaftar.nama_anggota2 %}
+	Member 2 :<br>
+	Name : {{pendaftar.nama_anggota2}}<br>
+	Study Program : {{pendaftar.prodi_anggota2}}<br><br>
+	{% endif %}
+
+	{% if pendaftar.nama_anggota3 and pendaftar.nama_anggota4 %}
+		Member 3 :<br>
+		Name : {{pendaftar.nama_anggota3}}<br>
+		Study Program : {{pendaftar.prodi_anggota3}}<br><br>
+		Member 4 :<br>
+		Name : {{pendaftar.nama_anggota4}}<br>
+		Study Program : {{pendaftar.prodi_anggota4}}<br>
+
+	{% elif pendaftar.nama_anggota3 or pendaftar.nama_anggota4 %}
+		{% if pendaftar.nama_anggota3 %}
+		Member 3 :<br>
+		Name : {{pendaftar.nama_anggota3}}<br>
+		Study Program : {{pendaftar.prodi_anggota3}}<br>
+		{% else %}
+		Member 3 :<br>
+		Name : {{pendaftar.nama_anggota4}}<br>
+		Study Program : {{pendaftar.prodi_anggota4}}<br>
+		{% endif %}
+	{% endif %}
+</div>
+If there is mistake, please contact : admin@icositer2021.com
+</p>
+
+
+</body>
+</html>
