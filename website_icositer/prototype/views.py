@@ -19,7 +19,7 @@ def regist(request):
             subject = 'Prototype Registration Confirmation'
             html_message = render_to_string('regisformconfir/confirmation.html', {'pendaftar': form.cleaned_data, 'lomba':'Prototype'})
             plain_message = strip_tags(html_message)
-            from_email = 'enrico-joe@icositer2021.com'
+            from_email = 'confirmation@icositer2021.com'
             to = email_peserta
             send_mail(subject, plain_message, from_email, [to], html_message=html_message)
             return HttpResponseRedirect("/prototype/registration?success")            
