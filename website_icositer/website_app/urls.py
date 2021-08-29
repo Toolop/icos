@@ -17,6 +17,7 @@ urlpatterns = [
     path('news', news.as_view(), name='news'),
     path('news/<slug:slug>', detail_news.as_view(), name='detail_news'),
 
+    path('webinar', regiswebinar, name='regiswebinar'),
     path('registration', regisconference, name='regisconference'),
     url(r'^writtenidea/', include('article.urls',namespace='article')),
     url(r'^poster/', include('poster.urls',namespace='poster')),

@@ -23,3 +23,21 @@ class News(models.Model):
 	class Meta:
 		verbose_name_plural = 'News'
 		db_table = "News"
+
+class Webinar(models.Model):
+	email = models.EmailField(max_length=100)
+	nama = models.CharField(max_length=100)
+	jurusan = models.CharField(max_length=100)
+	nim = models.CharField(max_length=100)
+	instansi = models.CharField(max_length=100)
+	negara_kota = models.CharField(max_length=100)
+	screenshot = models.FileField(upload_to='webinar')
+	lomba = models.CharField(max_length=100, null=True, blank = True)
+	alasan = models.CharField(max_length=1000)
+
+	def __str__(self):
+		return str(self.nama)
+
+	class Meta:
+		verbose_name_plural = 'Webinar'
+		db_table = 'Webinar'

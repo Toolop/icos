@@ -6,6 +6,7 @@ h1{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: 900;
+
 }
 
 /* garis */
@@ -28,6 +29,7 @@ h1{
     position: absolute;
     right: 20px;
 }
+
 .line{
     width: 3px;
     margin-left: 10px;
@@ -48,11 +50,24 @@ h1{
     margin-bottom: 30px;
     font-size: calc(35px + 3vw);
 }
+@media(max-width:500px){
+    .judul h1{
+        font-size: 35px;
+    }
+} 
+@media(max-width:700px){
+    .leftline{
+        display: none;
+    }
+    .rightline{
+        display: none;
+    }
+}  
 
 .garisbawah{
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 30%;
+    width: 50%;
     height: 3px;
     margin-left: auto;
     margin-right: auto;
@@ -147,7 +162,7 @@ body {
     -ms-border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
-    margin: 18px auto;
+    margin: 18px 0;
     font-family: 'Nunito', sans-serif;
     color: #fff;
     font-weight: 700;
@@ -197,7 +212,7 @@ body {
 .form-v9-content .form-detail .input-text {
     margin-bottom: 45px;
 }
-.form-v9-content .form-detail input:not(.regist), select {
+.form-v9-content .form-detail input:not(.regist) {
     width: 100%;
     padding: 14.5px 0px 14.5px 30px;
     border: 2px solid #ccc;
@@ -219,8 +234,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(255, 255, 255, 0.2)
 }
 .form-v9-content .form-detail input:focus {
     border: 2px solid #999;
@@ -300,34 +314,22 @@ input:-moz-placeholder { /* Firefox 18- */
     .form-v9-content .form-detail {
         padding: 30px 10px 30px 10px;
     }
-    .leftline{
-        display: none;
-    }
-    .rightline{
-        display: none;
-    }
-}
-@media screen and (max-width: 400px){
-    .label-info .info-file .info-text{
-        width: 200px;
-        height: 215px;
-        margin-left: -95px;
-    }
-    .pos .info-file .info-text{
-        width: 300px;
-        height: 150px;
-        margin-left: -145px;
-    }
 }
 
-@media screen and (max-width: 350px){
-    .tiga .info-file .info-text{
-        margin-left: -115px;
+@media screen and (max-width: 848px) {
+    .form-group.tombol{
+        /*background-color: black;*/
+        width: 1000px;
     }
 }
-@media screen and (max-width: 375px){
-    .judul h1{
-        font-size: 12vw;
+@media screen and (max-width: 815px) {
+    .cselect::after{
+        bottom: 5%;
+    }
+}
+@media (max-width: 335px){
+    .cselect::after{
+        margin-top: 15px;
     }
 }
 /*==========================================*/
@@ -339,139 +341,13 @@ input {
   -o-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   padding-top: 10px;
-  -webkit-appearance: none;
-}
-input:focus + .form-label, input:not(.opsi):valid + .form-label{
+  -webkit-appearance: none; }
+  input:focus + .form-label, input:valid + .form-label {
     top: 1px;
     font-size: 11px;
-    color: #edb77d; 
-}
+    color: #edb77d; }
 
-input:not(:placeholder-shown).opsi + .form-label{
-    top: 1px;
-    font-size: 11px;
-    color: #edb77d;
-}
-
-select {
-  transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  padding-top: 10px;
-  -webkit-appearance: none;
-}
-
-.cselect::after {
-    content: "\25b6";
-}
-
-.cselect { position: relative; }
-.cselect::after {
-  position: absolute;
-  top : 50%;
-  right: 25px;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s;
-  justify-content: center;
-  transform: rotate(90deg);
-}
-
-
-
-select:focus + .form-label, select:valid + .form-label {
-    top: 1px;
-    font-size: 11px;
-    color: #edb77d; 
-}
-
-.form-input option{
-    background-color: #001156;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.upload-btn-wrapper{
-  margin-top: 3px;
-  width: 100%;
-}
-
-.tombol_up{
-    left : 27px;
-    position: absolute;
-    font-size: 11px;
-    color: #edb77d;
-}
-
-.bi-info-circle{
-    color: white;
-    margin-left: 10px;
-}
-
-.info-file {
-    position: relative;
-    display: inline-block;
-    z-index: 3;
-}
-
-.dua {
-    z-index: 2;
-}
-
-.tiga{
-    z-index: 1;
-}
-
-/*.tiga .info-file .info-text{
-    height: 170px;
-    margin-left: -150px;
-}*/
-.info-file .info-text{
-    visibility: hidden;
-    width: 300px;
-    height: 160px;
-    background-color: black;
-    text-align: left;
-    border-radius: 20px;
-    padding: 7px;
-    position: absolute;
-    top: 105%;
-    left: 50%;
-    margin-left: -145px;
-    color: white;
-    font-size: 12px;
-}
-
-.info-file .info-text h5{
-    font-size: 20px;
-    text-align: center;
-}
-
-.info-file .info-text::after{
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #040505 transparent;
-}
-
-.info-file:hover .info-text{
-    visibility: visible;
-}
-
-.label-info{
-    position: absolute;
-    width: 100%;
-}
-
-input,  {
+input, select {
   box-sizing: border-box;
   width: 100%;
   display: block;
@@ -492,6 +368,14 @@ input,  {
   padding-top: 20px;
   width : 45% }
 
+option{
+    background-color: #001156;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .form-label {
   position: absolute;
   transition: 0.25s ease;
@@ -501,9 +385,27 @@ input,  {
   -ms-transition: 0.25s ease;
   color: #bebebe;
   left: 27px;
-  top: 38px; 
-  z-index: -1;
+  top: 38px; }
+
+.tombol_up {
+    left: 27px;
+    position: absolute;
+    font-size: 11px;
+    color: #edb77d;
+    /*background-color: black;*/
+    /*margin-left: 75px;*/
+    width: 30%;
 }
+
+.tombol{
+    margin-bottom: 15px;
+}
+/*.tombol input{
+    background-color: black;
+}
+.tombol button{
+    background-color: black;
+}*/
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -544,7 +446,6 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
   margin-top: 20px;
 }
-
 #file-chosen{
   margin-left: 0.3rem;
   font-family: sans-serif;
@@ -554,8 +455,31 @@ input:focus ~ label,
 input:not(:placeholder-shown) ~ label {
   z-index: -1;
 }
-
-
+.area{
+    height: 200px;
+    border-radius: 27.5px;
+    -o-border-radius: 27.5px;
+    -ms-border-radius: 27.5px;
+    -moz-border-radius: 27.5px;
+    -webkit-border-radius: 27.5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    color :white;
+}
+.selectbox{
+    border-radius: 27.5px;
+    -o-border-radius: 27.5px;
+    -ms-border-radius: 27.5px;
+    -moz-border-radius: 27.5px;
+    -webkit-border-radius: 27.5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    color :white;
+}
 .reg-button{
     color: white;
     background: #ff0048;
@@ -568,7 +492,21 @@ input:not(:placeholder-shown) ~ label {
     margin: 0 auto;
 }
 
-/*###########################################*/
+.cselect::after {
+    content: "\25b6";
+}
+
+.cselect { position: relative; }
+.cselect::after {
+  position: absolute;
+  top : 55%;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  justify-content: center;
+  transform: rotate(90deg);
+}
 
 #card {
   position: relative;
@@ -659,95 +597,4 @@ input:not(:placeholder-shown) ~ label {
         -moz-transition: all .4s ease;
         -o-transition: all .4s ease;
         transition: all .4s ease;
-}
-
-.kontak{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 100px;
-    max-width: 1200px;
-}
-.kontak h1{
-    margin-bottom: 70px;
-    font-size: 62px;
-}
-.kontak-list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.kontak-list-isi{
-    width: 300px;
-    height: 90px;
-    border-radius: 20px;
-    background-color: white;
-    margin:50px;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-    text-align: center;
-    display: flex;
-}
-.kontak .fab{
-    background-color: white;
-    color: green;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-.kontak-list-isi-teks{
-    color: green;
-    margin: auto;
-    margin-left: 0px;
-    font-weight: bolder;
-}
-@media (max-width:767px){
-    .judul h1{
-        font-size: 50px;
-    }
-    .kontak h1{
-        margin-bottom: 70px;
-        font-size: 50px;
-    }
-    .rightline{
-        height: 2400px;;
-    }
-    .leftline{
-        height: 2400px;
-    }
-}
-
-@media(max-width:500px){
-    .kontak{
-        width: 100%;
-    }
-    .judul h1{
-        font-size: 35px;
-    }
-    .kontak h1{
-        margin-bottom: 70px;
-        font-size: 40px;
-    }
-    .kontak .fab{
-        font-size: 30px;
-        margin: auto;
-    }
-    .kontak-list-isi-teks{
-        margin-left: -10px;
-    }
-} 
-@media(max-width:320px){
-    .kontak-list-isi-teks{
-        font-size: 14px;
-    }
-} 
-
-
-@media (max-width:999px){
-    .rightline{
-        height: 2000px;;
-    }
-    .leftline{
-        height: 2000px;
-    }
 }
