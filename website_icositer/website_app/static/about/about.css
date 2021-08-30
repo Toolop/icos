@@ -18,6 +18,13 @@
 
 /* garis */
 
+.surya p{
+    font-size: 17px;
+    /*background-color: black;*/
+    white-space: normal;
+    width: 200px;
+}
+
 
 .line{
     width: 3px;
