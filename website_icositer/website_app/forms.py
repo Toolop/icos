@@ -12,7 +12,6 @@ class WEBINARForm(forms.ModelForm):
 			'nim',
 			'instansi',
 			'negara_kota',
-			'screenshot',
 			'lomba',
 			'alasan'
 		]

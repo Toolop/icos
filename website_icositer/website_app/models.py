@@ -31,7 +31,6 @@ class Webinar(models.Model):
 	nim = models.CharField(max_length=100)
 	instansi = models.CharField(max_length=100)
 	negara_kota = models.CharField(max_length=100)
-	screenshot = models.FileField(upload_to='webinar')
 	lomba = models.CharField(max_length=100, null=True, blank = True)
 	alasan = models.CharField(max_length=1000)
 
