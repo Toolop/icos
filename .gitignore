@@ -12,3 +12,4 @@ files/
 settings.py
 # Env
 .env
+migrations/
