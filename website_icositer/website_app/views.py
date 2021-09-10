@@ -1,9 +1,9 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import News
+from .models import News, Webinar
+from .forms import WEBINARForm
 from django.views.generic import ListView, DetailView
 
-from .models import News
 # Create your views here.
 def homepage (request):
 	return render(request,'home/home.html')
@@ -31,6 +31,21 @@ def previus (request):
 
 def regisconference (request):
 	return render(request,'conference/regis.html')
+
+def regiswebinar (request):
+	berhasil = False
+	if request.method == "POST":
+		form = WEBINARForm(request.POST, request.FILES)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect("/webinar?success")
+	else:
+		if 'success' in request.GET:
+			berhasil=True
+	context = {
+		'berhasil':berhasil,
+	}
+	return render(request,'webinar/regis.html',context)
 
 # def news (request):
 # 	berita_utama = News.objects.last()

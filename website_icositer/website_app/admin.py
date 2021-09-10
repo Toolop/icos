@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from website_app.models import News
+from website_app.models import News, Webinar
 from prototype.models import Prototype
 from poster.models import Poster
 from article.models import Article
@@ -21,3 +21,7 @@ admin.site.register(Poster,ListPoster)
 class ListArticle(admin.ModelAdmin):
 	list_display = ('nama_ketua', 'instansi', 'subtema')
 admin.site.register(Article, ListArticle)
+
+class ListWebinar(admin.ModelAdmin):
+	list_display = ('nama', 'instansi', 'negara_kota', 'lomba')
+admin.site.register(Webinar, ListWebinar)

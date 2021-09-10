@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Webinar Registrations{% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'webinar/regis.css' %}">{% endblock style %}
+
+<body>
+  <div class="main-wrapper">
+{% block isi %}
+<div class="leftline">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+<div class="rightline">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
+  <div class="judul">
+    <h1>WEBINAR REGISTRATIONS</h1>
+    <div class="garisbawah"></div>      
+      <div class="form-v9">
+        <div class="page-content">
+          {% if berhasil %}
+              <div id='card' class="animated fadeIn">
+                  <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <img src="{% static 'check-mark.svg' %}"/>
+                    <h3 id='status'>
+                    Registration Success
+                  </h3>
+                <div id='lower-side'>
+                  <p id='message'>
+                    Thank you for registering for Webinar in ICoSITeR 2021. We'll send you conference meeting link to your email in the future
+                  </p>
+                  
+                </div>
+                <a href="{% url 'home' %}" id="contBtn">Back to Homepage</a>
+              </div>
+          {% else %}
+          <div class="form-v9-content">
+            <form class="form-detail" action="#" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" id="email" name='email' required/>
+                    <label for="name" class="form-label">Email</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" id="nama" name='nama' required/>
+                    <label for="name" class="form-label">Name</label>
+                </div>
+              </div>
+              
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" id="jurusan" name="jurusan" value="" required />
+                    <label for="phone" class="form-label">Dapartement</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" id="nim" name='nim' required/>
+                    <label for="name" class="form-label">Student ID Number</label>
+                </div>
+              </div>
+              
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="text" id="instansi" name='instansi' required/>
+                    <label for="name" class="form-label">Origin of Institution</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" id="negara_kota" name='negara_kota' required/>
+                    <label for="name" class="form-label">Origin Country/City</label>
+                </div>
+              </div>
+
+                <div class="form-group mt-4 cselect">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">For participants of the competition, the competitions that are followed :</label>
+                    <select class="custom-select my-1 mr-sm-2 selectbox" id="lomba" name="lomba">
+                        <option disabled selected hidden>Choose...</option>
+                        <option value="Prototype">Prototype</option>
+                        <option value="Poster">Poster Design</option>
+                        <option value="Written Idea">Written Idea</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label>Reason for joining Webinar :</label>
+                    <textarea class="form-control area" id="alasan" name="alasan" required></textarea>
+                </div>
+              <br>
+              
+
+              <div class="form-row-last">
+                <br>
+                <input type="submit" class="regist" value="Register" id="register">
+              </div>
+
+            </form>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+   var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("register");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    
+    btn.onclick = function() {
+      var namanya = document.getElementById("nama").value;
+      var emailnya = document.getElementById("email").value;
+      var prodinya = document.getElementById("prodi").value;
+      var no_teleponnya = document.getElementById("no_telepon").value;
+      var instansinya = document.getElementById("instansi").value;
+      var subtemanya = document.getElementById("subtema").value;
+      var nama_anggota1nya = document.getElementById("nama_anggota1").value;
+      var nama_anggota2nya = document.getElementById("nama_anggota2").value;
+      var prodi_anggota1nya = document.getElementById("prodi_anggota1").value;
+      var prodi_anggota2nya = document.getElementById("prodi_anggota2").value;
+      var filenya = document.getElementById("actual-btn").value;
+      
+      if(namanya!= "" && emailnya!="" && prodinya!="" && no_teleponnya!="" && instansinya!="" && subtemanya!="" && nama_anggota1nya!="" && nama_anggota2nya!="" && prodi_anggota1nya!="" && prodi_anggota2nya!="" && filenya!="" ){
+        modal.style.display = "block";
+      }
+
+       
+    }
+
+    const fileChosen = document.getElementById('file-chosen');
+    const actualBtn = document.getElementById('screenshot');
+    actualBtn.addEventListener('change', function(){
+      fileChosen.textContent = this.files[0].name
+    })
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+
+  </script>
+{% endblock isi %}
+</body>
