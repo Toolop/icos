@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}{{object.judul}}{% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'news/news_modals.css' %}">{% endblock style %}
+
+
+<body>
+{% block isi %}
+
+<!-- Start News Modal -->
+<div class="modal-wrapper">
+    <div class="news-modal">
+        <div class="news-modal-close">
+            <!-- Link back to news.html -->
+            <a href="#">
+                X
+            </a>
+        </div>
+        <div class="news-box">
+            <div class="news-selector previous">
+                <!-- Link to Previous Next  -->
+                <a href="#">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <path d="M18.4999 33.9166C27.0143 33.9166 33.9166 27.0144 33.9166 18.5C33.9166 9.98559 27.0143 3.08331 18.4999 3.08331C9.98553 3.08331 3.08325 9.98559 3.08325 18.5C3.08325 27.0144 9.98553 33.9166 18.4999 33.9166Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> -->
+                    <path d="M18.4999 12.3333L12.3333 18.5L18.4999 24.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24.6666 18.5L12.3333 18.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="news-selector next">
+                <!-- Link to Previous News  -->
+                <a href="#">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <path d="M18.5 3.08336C9.98557 3.08335 3.08329 9.98563 3.08329 18.5C3.08329 27.0144 9.98557 33.9167 18.5 33.9167C27.0143 33.9167 33.9166 27.0144 33.9166 18.5C33.9166 9.98563 27.0144 3.08336 18.5 3.08336Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> -->
+                    <path d="M18.5 24.6667L24.6666 18.5L18.5 12.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.3333 18.5L24.6666 18.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="news-image-div" id="news-image-div">
+                <!-- News Image -->
+                <img class="news-image" src="{% static 'home/asset/carausel-news/coming-soon-red.png' %}">
+            </div>
+            <div class="news-captions">
+                <!--  News Title -->
+                <div class="news-title">
+                    Judul BeritaJudul BeritaJudul BeritaJudul BeritaJudul Berita
+                </div>
+                <!-- News Date -->
+                <div class="news-date">
+                    29 Februari 1994
+                </div>
+                <hr class="news-divider"/>
+                <!-- News Content -->
+                <div class="news-text">
+                    Isi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari berita
+                    Isi dari
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End News Modal -->
+<!-- Start News Modal Script -->
+<script>
+    $(document).ready(function(){
+        $("#news-image-div").height($("#news-image-div").width()); 
+    })
+    $(window).resize(function(){
+        $("#news-image-div").height($("#news-image-div").width()); 
+    })
+</script>
+<!-- End News Modal Script -->
+{% endblock isi %}
+</body>
