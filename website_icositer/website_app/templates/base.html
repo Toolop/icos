@@ -82,13 +82,22 @@
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="nav-link" href="{% url 'regiswebinar' %}">Webinar</a>
 						<a class="nav-link" href="{% url 'competition' %}">Competition</a>
-						<a class="nav-link" href="{% url 'cultnight' %}">Cultural Night</a>
+						<a class="nav-link" href="{% url 'cultnight' %}">Cultural Show</a>
 						<a class="nav-link" href="{% url 'virtualex' %}">Virtual Exibition</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link about" href="{% url 'about' %}">More Info</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link event dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  More Info
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="nav-link" href="{% url 'about' %}">Organizing Committee</a>
+						<a class="nav-link" href="https://forms.gle/xtrLF6SgcziYG4tC6">Feedback</a>
+					</div>
 				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link about" href="{% url 'about' %}">More Info</a>
+				</li> -->
 	          </ul>
 	        </div>
 	      </nav>
