@@ -212,7 +212,7 @@ body {
 .form-v9-content .form-detail .input-text {
     margin-bottom: 45px;
 }
-.form-v9-content .form-detail input:not(.regist) {
+.form-v9-content .form-detail input:not(.regist), select {
     width: 100%;
     padding: 14.5px 0px 14.5px 30px;
     border: 2px solid #ccc;
@@ -234,7 +234,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    background: rgba(255, 255, 255, 0.2)
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 .form-v9-content .form-detail input:focus {
     border: 2px solid #999;
@@ -347,7 +348,23 @@ input {
     font-size: 11px;
     color: #edb77d; }
 
-input, select {
+select {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  padding-top: 10px;
+  -webkit-appearance: none;
+}
+
+select:focus + .form-label, select:valid + .form-label {
+    top: 1px;
+    font-size: 11px;
+    color: #edb77d; 
+}
+
+input,  {
   box-sizing: border-box;
   width: 100%;
   display: block;
@@ -368,7 +385,7 @@ input, select {
   padding-top: 20px;
   width : 45% }
 
-option{
+.form-input option{
     background-color: #001156;
     color: white;
     font-family: 'Nunito', sans-serif;
@@ -385,7 +402,9 @@ option{
   -ms-transition: 0.25s ease;
   color: #bebebe;
   left: 27px;
-  top: 38px; }
+  top: 38px; 
+  z-index: -1;
+}
 
 .tombol_up {
     left: 27px;
@@ -496,10 +515,12 @@ input:not(:placeholder-shown) ~ label {
     content: "\25b6";
 }
 
-.cselect { position: relative; }
+.cselect { 
+    position: relative; 
+}
 .cselect::after {
   position: absolute;
-  top : 55%;
+  top : 50%;
   right: 25px;
   display: flex;
   align-items: center;

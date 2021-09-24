@@ -33,6 +33,7 @@ class Webinar(models.Model):
 	negara_kota = models.CharField(max_length=100)
 	lomba = models.CharField(max_length=100, null=True, blank = True)
 	alasan = models.CharField(max_length=1000)
+	no_wa = models.CharField(max_length=100, null=True)
 
 	def __str__(self):
 		return str(self.nama)

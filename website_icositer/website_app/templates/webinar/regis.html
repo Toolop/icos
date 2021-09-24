@@ -49,12 +49,23 @@
               {% csrf_token %}
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="email" name='email' required/>
-                    <label for="name" class="form-label">Email</label>
-                </div>
-                <div class="form-group form-input form-row">
                     <input type="text" id="nama" name='nama' required/>
                     <label for="name" class="form-label">Name</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" id="nim" name='nim' required/>
+                    <label for="name" class="form-label">Student ID Number</label>
+                </div>
+              </div>
+
+              <div class="form-row-total">
+                <div class="form-group form-input form-row">
+                    <input type="number" id="no_wa" name='no_wa' value="" required/>
+                    <label for="name" class="form-label">Whatsapp Number</label>
+                </div>
+                <div class="form-group form-input form-row">
+                    <input type="text" id="email" name='email' required/>
+                    <label for="name" class="form-label">Email</label>
                 </div>
               </div>
               
@@ -64,23 +75,29 @@
                     <label for="phone" class="form-label">Dapartement</label>
                 </div>
                 <div class="form-group form-input form-row">
-                    <input type="text" id="nim" name='nim' required/>
-                    <label for="name" class="form-label">Student ID Number</label>
+                    <input type="text" id="instansi" name='instansi' required/>
+                    <label for="name" class="form-label">Origin of Institution</label>
                 </div>
               </div>
               
               <div class="form-row-total">
                 <div class="form-group form-input form-row">
-                    <input type="text" id="instansi" name='instansi' required/>
-                    <label for="name" class="form-label">Origin of Institution</label>
-                </div>
-                <div class="form-group form-input form-row">
                     <input type="text" id="negara_kota" name='negara_kota' required/>
                     <label for="name" class="form-label">Origin Country/City</label>
                 </div>
+                <div class="form-group form-input form-row cselect">
+                    <select id="lomba" name="lomba" required>
+                      <option value="" disabled selected hidden></option>
+                      <option value="Not Participating">Not Participating</option>
+                      <option value="Prototype">Prototype</option>
+                      <option value="Poster">Poster</option>
+                      <option value="Written Idea">Written Idea</option>
+                    </select>
+                    <label for="name" class="form-label">The competition that are followed</label>
+                </div>
               </div>
 
-                <div class="form-group mt-4 cselect">
+<!--                 <div class="form-group mt-4">
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">For participants of the competition, the competitions that are followed :</label>
                     <select class="custom-select my-1 mr-sm-2 selectbox" id="lomba" name="lomba">
                         <option disabled selected hidden>Choose...</option>
@@ -88,8 +105,9 @@
                         <option value="Poster">Poster Design</option>
                         <option value="Written Idea">Written Idea</option>
                     </select>
+                    
                 </div>
-
+ -->
                 <div class="form-group mt-4">
                     <label>Reason for joining Webinar :</label>
                     <textarea class="form-control area" id="alasan" name="alasan" required></textarea>

@@ -13,5 +13,6 @@ class WEBINARForm(forms.ModelForm):
 			'instansi',
 			'negara_kota',
 			'lomba',
-			'alasan'
+			'alasan',
+			'no_wa'
 		]
