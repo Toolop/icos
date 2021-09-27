@@ -112,8 +112,27 @@
                     <label>Reason for joining Webinar :</label>
                     <textarea class="form-control area" id="alasan" name="alasan" required></textarea>
                 </div>
-              <br>
-              
+
+              <div class="label-info satu">
+                  <label for="name" class="tombol_up">Visiting Lampung Geoscience Website
+                  <div class="info-file">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    <div class="info-text">
+                      <h5>Instruction</h5>
+                      1. Visit <a href="https://lgs.co.id/index.html">Lampung Geoscience Website</a><br>
+                      2. Screenshot then collect the image file at this form
+                    </div>
+                  </div>
+                </label>  
+              </div>
+              <div class="upload-btn-wrapper">
+                    <button class="btn">Upload a file</button>
+                    <input type="file" id="kunjungan" name='kunjungan' required/>
+                    <span id="file_chosen">No file chosen</span>
+              </div>
 
               <div class="form-row-last">
                 <br>
@@ -132,7 +151,7 @@
    var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("register");
+    var btn = document.getElementById("kunjungan");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -159,8 +178,8 @@
        
     }
 
-    const fileChosen = document.getElementById('file-chosen');
-    const actualBtn = document.getElementById('screenshot');
+    const fileChosen = document.getElementById('file_chosen');
+    const actualBtn = document.getElementById('kunjungan');
     actualBtn.addEventListener('change', function(){
       fileChosen.textContent = this.files[0].name
     })

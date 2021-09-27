@@ -554,7 +554,52 @@ input:not(:placeholder-shown) ~ label {
     margin-bottom: -50px;
 }
 
+.label-info{
+    position: absolute;
+    width: 100%;
+}
 
+.info-file {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+.info-file .info-text{
+    visibility: hidden;
+    width: 300px;
+    height: 160px;
+    background-color: black;
+    text-align: left;
+    border-radius: 20px;
+    padding: 7px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    margin-left: -145px;
+    color: white;
+    font-size: 12px;
+}
+
+.info-file .info-text h5{
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-file .info-text::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #040505 transparent;
+}
+
+.info-file:hover .info-text{
+    visibility: visible;
+}
 
 #upper-side {
   padding: 2em;
