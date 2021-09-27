@@ -34,6 +34,7 @@ class Webinar(models.Model):
 	lomba = models.CharField(max_length=100, null=True, blank = True)
 	alasan = models.CharField(max_length=1000)
 	no_wa = models.CharField(max_length=100, null=True)
+	kunjungan = models.FileField(upload_to='webinar', null=True)
 
 	def __str__(self):
 		return str(self.nama)
