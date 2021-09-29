@@ -102,14 +102,19 @@
         font-size: 140px;
        
     }
-    .judul h2{
-        font-size: 90px;
-
-    }
     .info h1{
         font-size:calc(110px);
     }
 }
+@media(min-width:1690px) {
+    .judul h2{
+        font-size: 70px;
+        width: 83%;
+        margin: auto;
+
+    }
+}
+
 
 /* media */ 
 
@@ -481,6 +486,7 @@
 
     .committee-tree {
         margin-bottom: 0;
+        margin-top: 350px;
     }
 
     .committee-section {
@@ -525,10 +531,9 @@
         font-size: 1rem;
     }
 }
-@media(min-width: 1690px){
-    .judul h2{
-        font-size: 70px;
-        width: 83%;
-        margin: auto;
+@media(max-width: 574px){
+    .committee-tree {
+        margin-bottom: 0;
+        margin-top: -50px;
     }
 }

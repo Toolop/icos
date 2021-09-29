@@ -208,10 +208,6 @@
     flex-wrap: wrap;
     text-align: center;
 }
-.submision a{
-    font-weight: 500;
-    
-}
 .btn{
     width: 300px;
     margin-left: 10px;
@@ -245,7 +241,7 @@
     background-color: #e6e6e6ff;
 }
 .btn.template:hover{
-    background-color: ;
+    background-color:#2e903bff ;
 }
 
 @media(max-width:700px){
