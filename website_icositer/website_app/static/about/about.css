@@ -525,3 +525,10 @@
         font-size: 1rem;
     }
 }
+@media(min-width: 1690px){
+    .judul h2{
+        font-size: 70px;
+        width: 83%;
+        margin: auto;
+    }
+}
