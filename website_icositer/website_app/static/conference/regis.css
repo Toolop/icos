@@ -208,6 +208,10 @@
     flex-wrap: wrap;
     text-align: center;
 }
+.submision a{
+    font-weight: 500;
+    
+}
 .btn{
     width: 300px;
     margin-left: 10px;
