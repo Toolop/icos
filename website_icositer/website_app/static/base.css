@@ -78,7 +78,7 @@ body{
     position: relative;
     margin-top: 5px ;
     margin-left: 150px;
-    margin-right: 620px;
+    margin-right: 545px;
 }
 .garis1{
     width: 100%;
@@ -165,7 +165,6 @@ body{
     border-radius: 100px;
 }
 
-
 /*puzzle*/
 
 .puzzelday1{
@@ -173,6 +172,8 @@ body{
     width: 100px;
     height: 50px;
     background-color: transparent;
+    pointer-events: none;
+    cursor: default;
     
 }
 #puzzel1{
@@ -194,8 +195,12 @@ body{
     margin-top: -100px;
 }
 
-
-
+.puzzelday2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
 
 @media(max-width:999px){
     .navbar{
