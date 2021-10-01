@@ -8,6 +8,7 @@ a:hover{
 }
 
 .modal-wrapper {
+    visibility: hidden;
     min-height: 100vh;
     min-width: 100vw;
     position: fixed;
@@ -18,6 +19,10 @@ a:hover{
     bottom: 0;
     z-index: 10000000000;
     overflow: auto;
+}
+
+#news_id:target{
+    visibility: visible;
 }
 
 .news-modal {

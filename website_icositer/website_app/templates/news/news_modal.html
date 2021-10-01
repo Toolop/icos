@@ -1,17 +1,14 @@
-{% extends 'base.html' %}
 {% load static %}
-
 
 {% block title %}{{object.judul}}{% endblock title %}
 
 {% block style %}<link rel="stylesheet" href="{% static 'news/news_modal.css' %}">{% endblock style %}
 
-
 <body>
 {% block isi %}
 
 <!-- Start News Modal -->
-<div class="modal-wrapper">
+<div class="modal-wrapper" id="news_id2">
     <div class="news-modal">
         <div class="news-modal-close">
             <!-- Link back to news.html -->
@@ -33,33 +30,37 @@
             <div class="news-selector next">
                 <!-- Link to Previous News  -->
                 <a href="#">
-                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"http://127.0.0.1:8000/news#>
                     <!-- <path d="M18.5 3.08336C9.98557 3.08335 3.08329 9.98563 3.08329 18.5C3.08329 27.0144 9.98557 33.9167 18.5 33.9167C27.0143 33.9167 33.9166 27.0144 33.9166 18.5C33.9166 9.98563 27.0144 3.08336 18.5 3.08336Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> -->
                     <path d="M18.5 24.6667L24.6666 18.5L18.5 12.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12.3333 18.5L24.6666 18.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
             </div>
+
             <div class="news-image-div" id="news-image-div">
                 <!-- News Image -->
-                <img class="news-image" src="{% static 'home/asset/carausel-news/coming-soon-red.png' %}">
+                <img class="news-image" src="{{object_list.2.gambar.url}}">
             </div>
             <div class="news-captions">
                 <!--  News Title -->
                 <div class="news-title">
-                    Judul BeritaJudul BeritaJudul BeritaJudul BeritaJudul Berita
+                    Ini Judul
+                    {{object_list.2.judul}}
                 </div>
                 <!-- News Date -->
                 <div class="news-date">
-                    29 Februari 1994
+                    TTESSSS
+                    {{object_list.2.tanggal}}
                 </div>
                 <hr class="news-divider"/>
                 <!-- News Content -->
                 <div class="news-text">
-                    Isi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari beritaIsi dari berita
-                    Isi dari
+                    tessssss
+                    {{object_list.2.isi}}
                 </div>
             </div>
+            
         </div>
     </div>
 </div>

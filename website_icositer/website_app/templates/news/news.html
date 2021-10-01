@@ -10,20 +10,9 @@
 <body>
 {% block isi %}
 
-{% with object_list.last as newest %}
 <div class="main-news">
-    <a class="news-isi satu" href="{{newest.get_absolute_url}}">
-        <div class="news-isi-gambar"><img src="{{newest.gambar.url}}" ></div>
-        <div class="news-isi-tulisan">
-            <p class="news-isi-tulisan-tanggal">{{newest.tanggal}}</p>
-            <h1 class="news-isi-tulisan-judul">{{newest.judul}}</h1>
-            <p class="news-isi-tulisan-thumbnail">{{newest.isi|safe}}</p>
-        </div>
-    </a>
-{% endwith %} 
 {% for News in object_list %}
-    {% ifnotequal News object_list.last %}
-        <a class="news-isi" href="{{News.get_absolute_url}}">
+    <a class="news-isi" href="#news_id">
         <div class="news-isi-gambar"><img src="{{News.gambar.url}}" ></div>
         <div class="news-isi-tulisan">
             <p class="news-isi-tulisan-tanggal">{{News.tanggal}}</p>
@@ -31,10 +20,8 @@
             <p class="news-isi-tulisan-thumbnail">{{News.isi|safe}}</p>
         </div>
     </a>
-    {% endifnotequal %}
-
 {% endfor %}
 </div>
-
+{% include 'news/news_modal.html' %}
 {% endblock isi %}
 </body>
